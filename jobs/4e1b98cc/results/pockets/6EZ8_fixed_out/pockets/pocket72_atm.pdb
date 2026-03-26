@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    72:
+HEADER 0  - Pocket Score                      : 0.0036
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    22
+HEADER 3  - Mean alpha-sphere radius          : 3.8320
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5287
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -8.0000
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 4.4000
+HEADER 9  - Pocket volume (Monte Carlo)       : 280.6526
+HEADER 10 - Pocket volume (convex hull)       : 16.9313
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   9963    O GLN A1268      70.837 110.049  94.987  0.70  3.21           O 0
+ATOM   9954    O GLN A1267      73.159 112.397  94.458  0.30  1.07           O 0
+ATOM  10319  OD2 ASP A1311      73.488 114.485  98.832  0.00  0.00           O 0
+ATOM  10062  NH2 ARG A1280      75.387 112.928  98.379  0.37  4.37           N 0
+ATOM  10318  OD1 ASP A1311      74.401 114.916 100.779  0.42  4.29           O 0
+ATOM  10310  OE1 GLN A1310      70.009 111.841 104.192  0.00  0.00           O 0
+ATOM  10061  NH1 ARG A1280      77.084 112.179  99.720  0.62  4.37           N 0
+ATOM   9964   CB GLN A1268      73.348 109.214  94.207  0.00  0.00           C 0
+ATOM   9967  OE1 GLN A1268      75.225 107.998  95.796  0.13  6.43           O 0
+ATOM  10578  NH1 ARG A1345      66.893 113.547 101.975  0.00  0.00           N 0
+ATOM   9982   CD PRO A1270      67.559 110.707  95.998  0.00  0.00           C 0
+ATOM  10579  NH2 ARG A1345      65.274 112.991 100.456  0.83  5.47           N 0
+ATOM  10280    O ASN A1307      66.433 115.065  98.071  0.00  0.00           O 0
+ATOM   9981   CG PRO A1270      66.464 110.212  96.899  0.00  0.00           C 0
+ATOM  10303    N GLN A1310      69.249 116.307 102.598  0.00  0.00           N 0
+ATOM  10295    N ILE A1309      67.988 117.056 100.153  0.00  0.00           N 0
+ATOM  10286   CA HIS A1308      68.559 116.806  97.817  0.00  0.00           C 0
+ATOM  10291  ND1 HIS A1308      70.684 115.111  96.093  0.51  1.09           N 0
+ATOM  10312    N ASP A1311      71.735 116.738 101.669  0.69  1.09           N 0
+ATOM  10307   CB GLN A1310      70.344 114.529 103.852  0.00  0.00           C 0
+TER
+END

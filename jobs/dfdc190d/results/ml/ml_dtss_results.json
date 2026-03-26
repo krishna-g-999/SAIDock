@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.393,
+  "binding_category": "Weak (0.35\u20130.50)",
+  "dg_norm": 0.372,
+  "admet_score": 0.1712,
+  "ml_confidence": 0.6289,
+  "pocket_druggability": 0.669,
+  "literature_score": 0.0,
+  "best_docking_score": -6.348,
+  "model_loaded": true,
+  "rna_displacement_score": 0.6465,
+  "rna_mode": true,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.1302,
+    "ADMET_score (\u00d70.20)": 0.0342,
+    "ML_confidence (\u00d70.20)": 0.1258,
+    "Pocket_druggability (\u00d70.15)": 0.1004,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.0646
+  },
+  "domain": "OUT_OF_DOMAIN",
+  "compound_name": "Compound_MW580",
+  "target_id": "5HDN"
+}

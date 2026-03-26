@@ -1,0 +1,92 @@
+{
+  "hbonds": 5,
+  "hydrophobic": 12,
+  "interactions": [
+    {
+      "residue": "ASP166",
+      "type": "HBond",
+      "distance": 3.49
+    },
+    {
+      "residue": "ASP99",
+      "type": "HBond",
+      "distance": 2.65
+    },
+    {
+      "residue": "VAL101",
+      "type": "HBond",
+      "distance": 3.25
+    },
+    {
+      "residue": "LYS51",
+      "type": "HBond",
+      "distance": 3.03
+    },
+    {
+      "residue": "ILE28",
+      "type": "HBond",
+      "distance": 3.13
+    },
+    {
+      "residue": "VAL36",
+      "type": "Hydrophobic",
+      "distance": 4.24
+    },
+    {
+      "residue": "LYS51",
+      "type": "Hydrophobic",
+      "distance": 4.29
+    },
+    {
+      "residue": "ASP166",
+      "type": "Hydrophobic",
+      "distance": 4.13
+    },
+    {
+      "residue": "CYS165",
+      "type": "Hydrophobic",
+      "distance": 4.05
+    },
+    {
+      "residue": "PHE33",
+      "type": "Hydrophobic",
+      "distance": 3.84
+    },
+    {
+      "residue": "ILE28",
+      "type": "Hydrophobic",
+      "distance": 3.91
+    },
+    {
+      "residue": "ALA49",
+      "type": "Hydrophobic",
+      "distance": 3.81
+    },
+    {
+      "residue": "LEU154",
+      "type": "Hydrophobic",
+      "distance": 4.34
+    },
+    {
+      "residue": "VAL76",
+      "type": "Hydrophobic",
+      "distance": 4.43
+    },
+    {
+      "residue": "LEU98",
+      "type": "Hydrophobic",
+      "distance": 4.14
+    },
+    {
+      "residue": "TYR100",
+      "type": "Hydrophobic",
+      "distance": 4.46
+    },
+    {
+      "residue": "GLY29",
+      "type": "Hydrophobic",
+      "distance": 4.28
+    }
+  ],
+  "method": "distance_fallback"
+}

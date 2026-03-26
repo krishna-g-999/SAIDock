@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : 0.0561
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.7255
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5140
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -13.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 201.5023
+HEADER 10 - Pocket volume (convex hull)       : 6.9457
+HEADER 11 - Charge Score                      :    -2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0556
+ATOM   2437   CB SER A 304       8.741  -4.771 -11.673  0.00  0.00           C 0
+ATOM   2436    O SER A 304       8.093  -1.707 -11.234  0.52  4.29           O 0
+ATOM   2468  OD2 ASP A 307       8.282  -2.431 -14.579  0.00  0.00           O 0
+ATOM   2244  OE2 GLU A 278       3.044  -4.885 -10.501  0.00  0.00           O 0
+ATOM   2241   CG GLU A 278       5.085  -4.721  -9.286  0.00  0.00           C 0
+ATOM   2465   CB ASP A 307       7.998  -0.140 -14.062  0.00  0.00           C 0
+ATOM   2440   CA PHE A 305       8.261  -1.464  -8.418  0.00  0.00           C 0
+ATOM   2442    O PHE A 305       7.693   0.835  -8.741  0.84  2.14           O 0
+ATOM   2243  OE1 GLU A 278       2.965  -3.908  -8.529  0.00  0.00           O 0
+ATOM   2242   CD GLU A 278       3.592  -4.487  -9.447  0.00  0.00           C 0
+ATOM   2240   CB GLU A 278       5.747  -4.251  -7.993  0.00  0.00           C 0
+ATOM   2445  CD1 PHE A 305       6.625  -0.532  -5.882  0.00  0.00           C 0
+ATOM   1013   NZ LYS A 125       4.227   2.544  -9.152  0.48  5.47           N 0
+ATOM   2226   CB PRO A 276       1.905  -1.878  -5.563  0.00  0.00           C 0
+ATOM   2469    N GLU A 308       7.073   2.810 -12.918  0.00  0.00           N 0
+TER
+END

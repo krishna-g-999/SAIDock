@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   109:
+HEADER 0  - Pocket Score                      : -0.0372
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.9469
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6679
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -6.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 2.8750
+HEADER 9  - Pocket volume (Monte Carlo)       : 282.7149
+HEADER 10 - Pocket volume (convex hull)       : 12.0608
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 1.0000
+HEADER 13 - Number of apolar alpha sphere     :     2
+HEADER 14 - Proportion of apolar alpha sphere : 0.1333
+ATOM  10778   CB ALA A1372      55.697 126.903 107.881  0.00  0.00           C 0
+ATOM  10773    O GLY A1371      53.990 128.210 111.306  0.58  3.21           O 0
+ATOM  10799  OG1 THR A1375      54.747 124.294 111.891  0.65  9.64           O 0
+ATOM  10775   CA ALA A1372      55.685 127.239 109.372  0.00  0.00           C 0
+ATOM  10774    N ALA A1372      55.341 128.642 109.563  0.73  1.09           N 0
+ATOM  11111    O GLN A1415      49.879 130.595 109.062  0.00  0.00           O 0
+ATOM  10763  NE2 GLN A1369      55.476 128.173 104.614  0.00  0.00           N 0
+ATOM  10800  CG2 THR A1375      53.351 125.588 113.331  0.00  0.00           C 0
+ATOM  11155   CD GLU A1420      49.630 125.152 113.373  0.00  0.00           C 0
+ATOM  11157  OE2 GLU A1420      50.365 124.183 113.647  0.90  5.36           O 0
+ATOM  11154   CG GLU A1420      48.308 124.865 112.704  0.00  0.00           C 0
+ATOM  11156  OE1 GLU A1420      49.931 126.332 113.640  0.00  0.00           O 0
+ATOM  11131   CD PRO A1417      47.717 128.849 110.943  0.00  0.00           C 0
+ATOM  10772    C GLY A1371      54.545 129.021 110.561  0.00  0.00           C 0
+ATOM  11109   CA GLN A1415      49.566 132.846 108.282  0.00  0.00           C 0
+ATOM  10752    O SER A1368      54.369 133.104 105.498  0.61  6.43           O 0
+ATOM  11113   CG GLN A1415      52.087 133.258 108.453  0.00  0.00           C 0
+ATOM  10762  OE1 GLN A1369      55.489 130.081 103.423  0.17  9.64           O 0
+TER
+END

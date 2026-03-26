@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    26:
+HEADER 0  - Pocket Score                      : -0.0885
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 3.9806
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5418
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 24.8000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.6000
+HEADER 9  - Pocket volume (Monte Carlo)       : 403.0990
+HEADER 10 - Pocket volume (convex hull)       : 14.8496
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.4211
+ATOM   2449   CB ALA A 326     -21.993  23.239  -0.151  0.00  0.00           C 0
+ATOM   2847    O LEU A 375     -26.364  25.533   2.855  0.00  0.00           O 0
+ATOM   2443  OE1 GLN A 325     -19.072  27.127   0.772  0.00  0.00           O 0
+ATOM   2859  OXT VAL A 376     -26.939  26.837  -0.620  0.00  0.00           O 0
+ATOM   2186  ND2 ASN A 291     -24.473  24.037  -9.942  0.00  0.00           N 0
+ATOM   2419   CB PRO A 322     -19.966  27.544  -5.507  0.00  0.00           C 0
+ATOM   2426   CB ALA A 323     -21.318  22.361  -5.060  0.00  0.00           C 0
+ATOM   2187    N GLY A 292     -20.226  23.576  -8.235  0.13  2.19           N 0
+ATOM   2693   NZ LYS A 356     -29.593  27.907  -7.689  0.00  0.00           N 0
+ATOM   2446   CA ALA A 326     -20.892  23.293   0.906  0.00  0.00           C 0
+ATOM   2439    O GLN A 325     -18.695  24.269   2.243  0.00  0.00           O 0
+ATOM   2448    O ALA A 326     -21.477  21.819   2.700  0.00  9.64           O 0
+ATOM   2417    C PRO A 322     -19.873  25.510  -4.020  0.00  0.00           C 0
+ATOM   2418    O PRO A 322     -20.487  25.757  -2.974  0.00  0.00           O 0
+ATOM   2856   CB VAL A 376     -27.388  24.420  -1.020  0.00  0.00           C 0
+ATOM   2857  CG1 VAL A 376     -26.676  23.085  -0.850  0.00  0.00           C 0
+ATOM   2423   CA ALA A 323     -20.575  23.169  -3.991  0.00  0.00           C 0
+ATOM   2422    N ALA A 323     -19.899  24.308  -4.597  0.48  1.09           N 0
+ATOM   2444  NE2 GLN A 325     -19.620  27.217  -1.405  0.00  0.00           N 0
+ATOM   2463  CE2 PHE A 328     -24.184  20.352  -2.019  0.00  0.00           C 0
+TER
+END

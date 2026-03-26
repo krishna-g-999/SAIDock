@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.3113,
+  "binding_category": "Poor (<0.35)",
+  "dg_norm": 0.3263,
+  "admet_score": 0.1712,
+  "ml_confidence": 0.3202,
+  "pocket_druggability": 0.6549,
+  "literature_score": 0.0,
+  "best_docking_score": -5.937,
+  "model_loaded": true,
+  "rna_displacement_score": 0.5,
+  "rna_mode": false,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.1142,
+    "ADMET_score (\u00d70.20)": 0.0342,
+    "ML_confidence (\u00d70.20)": 0.064,
+    "Pocket_druggability (\u00d70.15)": 0.0982,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.05
+  },
+  "domain": "IN_DOMAIN",
+  "compound_name": "Compound_MW580",
+  "target_id": "7XS0"
+}

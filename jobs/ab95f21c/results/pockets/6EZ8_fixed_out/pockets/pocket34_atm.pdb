@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    34:
+HEADER 0  - Pocket Score                      : 0.0598
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.8915
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4954
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 35.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.3333
+HEADER 9  - Pocket volume (Monte Carlo)       : 169.6500
+HEADER 10 - Pocket volume (convex hull)       : 1.1109
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.4000
+ATOM   7948  CD1 LEU A1017     119.917 132.855  81.602  0.00  0.00           C 0
+ATOM   7909    O GLU A1013     116.212 130.218  80.029  0.00  0.00           O 0
+ATOM   7625  NE2 GLN A 978     120.224 124.368  82.180  0.59  4.37           N 0
+ATOM   7913  OE1 GLU A1013     115.529 125.720  83.057  0.63  8.57           O 0
+ATOM   7910   CB GLU A1013     115.241 127.327  80.871  0.00  0.00           C 0
+ATOM   7920   CG MET A1014     120.710 129.260  77.494  0.00  0.00           C 0
+ATOM   7620    O GLN A 978     125.063 128.848  82.375  0.26  3.21           O 0
+ATOM   7648    N HIS A 982     124.680 132.456  80.764  0.00  0.00           N 0
+ATOM   7645   CB VAL A 981     123.766 131.445  77.863  0.00  0.00           C 0
+ATOM   7618   CA GLN A 978     124.228 127.113  80.987  0.00  0.00           C 0
+ATOM   7908    C GLU A1013     116.169 129.139  79.435  0.00  0.00           C 0
+ATOM   7915    N MET A1014     117.120 128.760  78.593  0.81  1.09           N 0
+ATOM   7622   CG GLN A 978     122.125 125.703  81.493  0.00  0.00           C 0
+ATOM   7916   CA MET A1014     118.291 129.581  78.321  0.00  0.00           C 0
+ATOM   7919   CB MET A1014     119.328 128.702  77.632  0.00  0.00           C 0
+TER
+END

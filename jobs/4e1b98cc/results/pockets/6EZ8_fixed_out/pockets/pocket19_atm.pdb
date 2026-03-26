@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    19:
+HEADER 0  - Pocket Score                      : 0.1124
+HEADER 1  - Drug Score                        : 0.0018
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.6065
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4772
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 95.0000
+HEADER 7  - Polarity Score                    :     0
+HEADER 8  - Amino Acid based volume Score     : 5.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 78.2786
+HEADER 10 - Pocket volume (convex hull)       : 0.6010
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 16.0000
+HEADER 13 - Number of apolar alpha sphere     :    17
+HEADER 14 - Proportion of apolar alpha sphere : 0.8500
+ATOM   7810    C LEU A1002     119.250 126.924  68.883  0.00  0.00           C 0
+ATOM   7823  CD2 LEU A1003     116.973 130.174  66.571  0.00  0.00           C 0
+ATOM   7811    O LEU A1002     118.317 126.201  69.234  0.00  0.00           O 0
+ATOM   7812   CB LEU A1002     120.072 128.249  70.851  0.00  0.00           C 0
+ATOM   7896  CG1 VAL A1011     118.269 125.422  73.465  0.00  0.00           C 0
+ATOM   7894    O VAL A1011     116.572 127.229  75.399  0.57  1.07           O 0
+ATOM   7848  CG1 ILE A1006     115.214 126.664  68.526  0.00  0.00           C 0
+ATOM   8126  CD1 ILE A1037     113.809 130.662  69.300  0.00  0.00           C 0
+ATOM   7929  CD1 PHE A1015     117.021 131.952  72.558  0.00  0.00           C 0
+ATOM   7849  CG2 ILE A1006     113.288 126.271  69.777  0.00  0.00           C 0
+ATOM   7905  CD2 LEU A1012     112.599 127.267  73.373  0.00  0.00           C 0
+ATOM   7844   CA ILE A1006     115.183 124.609  69.980  0.00  0.00           C 0
+ATOM   7931  CE1 PHE A1015     117.015 132.685  71.395  0.00  0.00           C 0
+ATOM   7928   CG PHE A1015     115.863 131.785  73.294  0.00  0.00           C 0
+ATOM   7927   CB PHE A1015     115.878 130.975  74.552  0.00  0.00           C 0
+TER
+END

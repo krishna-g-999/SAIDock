@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   116:
+HEADER 0  - Pocket Score                      : -0.0420
+HEADER 1  - Drug Score                        : 0.0009
+HEADER 2  - Number of alpha spheres           :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.9673
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4458
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 18.8000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Amino Acid based volume Score     : 4.6000
+HEADER 9  - Pocket volume (Monte Carlo)       : 278.7882
+HEADER 10 - Pocket volume (convex hull)       : 12.1940
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.2667
+ATOM   2006   CB GLN A 254     109.657  64.525  79.892  0.00  0.00           C 0
+ATOM   2303  NH2 ARG A 293     104.568  67.511  81.851  0.43  8.75           N 0
+ATOM   2014    O ASP A 255     111.514  67.291  83.919  0.32  4.29           O 0
+ATOM   2003   CA GLN A 254     110.290  65.923  79.912  0.00  0.00           C 0
+ATOM   2027  CE1 HIS A 256     110.311  64.988  87.127  0.00  0.00           C 0
+ATOM   2302  NH1 ARG A 293     103.803  67.259  83.994  0.54  6.56           N 0
+ATOM   2601    O ASP A 334     105.789  64.273  88.257  0.49  7.50           O 0
+ATOM   2604  OD1 ASP A 334     103.505  62.892  86.653  0.44  7.50           O 0
+ATOM   2612  CG2 VAL A 335     103.763  67.462  87.388  0.00  0.00           C 0
+ATOM   2025  ND1 HIS A 256     110.949  66.144  87.139  0.56  3.28           N 0
+ATOM   2049  CG1 VAL A 259     109.041  71.298  83.864  0.00  0.00           C 0
+ATOM   2642  CG1 VAL A 339     107.858  71.438  87.404  0.00  0.00           C 0
+ATOM   2050  CG2 VAL A 259     109.999  69.688  82.309  0.00  0.00           C 0
+ATOM   2301   CZ ARG A 293     103.695  66.995  82.702  0.00  0.00           C 0
+ATOM   2300   NE ARG A 293     102.718  66.212  82.259  0.59  7.66           N 0
+ATOM   2611  CG1 VAL A 335     105.045  69.202  88.580  0.00  0.00           C 0
+ATOM   2497  CD1 PHE A 320     103.901  71.469  84.160  0.00  0.00           C 0
+ATOM   2643  CG2 VAL A 339     109.668  70.538  88.877  0.00  0.00           C 0
+ATOM   2613    N ARG A 336     107.088  67.582  90.659  0.64  1.09           N 0
+ATOM   2499  CE1 PHE A 320     104.938  71.701  83.295  0.00  0.00           C 0
+ATOM   2607   CA VAL A 335     105.214  66.808  89.313  0.00  0.00           C 0
+TER
+END

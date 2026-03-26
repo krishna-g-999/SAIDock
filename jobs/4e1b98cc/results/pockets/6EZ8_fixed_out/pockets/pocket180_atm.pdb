@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   180:
+HEADER 0  - Pocket Score                      : -0.1308
+HEADER 1  - Drug Score                        : 0.0008
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 3.9479
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5348
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 34.7143
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.2857
+HEADER 9  - Pocket volume (Monte Carlo)       : 259.1526
+HEADER 10 - Pocket volume (convex hull)       : 6.4178
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 11.0000
+HEADER 13 - Number of apolar alpha sphere     :    12
+HEADER 14 - Proportion of apolar alpha sphere : 0.7059
+ATOM  15381  CE2 TRP A1959     118.351  74.178 151.082  0.00  0.00           C 0
+ATOM  15385  CH2 TRP A1959     116.585  75.209 149.921  0.00  0.00           C 0
+ATOM  15435  CD1 LEU A1966     120.882  77.984 145.999  0.00  0.00           C 0
+ATOM  15383  CZ2 TRP A1959     117.241  74.061 150.259  0.00  0.00           C 0
+ATOM  15384  CZ3 TRP A1959     117.012  76.455 150.381  0.00  0.00           C 0
+ATOM  14202    C LEU A1808     114.748  70.416 147.011  0.00  0.00           C 0
+ATOM  14203    O LEU A1808     114.620  69.801 148.071  0.48  8.57           O 0
+ATOM  15380  NE1 TRP A1959     119.188  73.215 151.575  0.00  0.00           N 0
+ATOM  14250  ND2 ASN A1813     119.200  74.542 143.702  0.75  5.47           N 0
+ATOM  15408  CG2 THR A1962     123.304  76.379 150.369  0.00  0.00           C 0
+ATOM  14225  CG2 THR A1810     122.229  76.337 142.378  0.00  0.00           C 0
+ATOM  15415   CD PRO A1963     124.733  77.907 146.241  0.00  0.00           C 0
+ATOM  15379  CD2 TRP A1959     118.806  75.419 151.560  0.00  0.00           C 0
+ATOM  15382  CE3 TRP A1959     118.115  76.574 151.196  0.00  0.00           C 0
+ATOM  14249  OD1 ASN A1813     117.189  74.243 144.651  0.56  4.29           O 0
+ATOM  14248   CG ASN A1813     118.071  74.992 144.237  0.00  0.00           C 0
+TER
+END

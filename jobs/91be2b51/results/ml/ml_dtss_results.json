@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.3597,
+  "binding_category": "Weak (0.35\u20130.50)",
+  "dg_norm": 0.3343,
+  "admet_score": 0.4487,
+  "ml_confidence": 0.4303,
+  "pocket_druggability": 0.1572,
+  "literature_score": 0.0,
+  "best_docking_score": -6.009,
+  "model_loaded": true,
+  "rna_displacement_score": 0.8361,
+  "rna_mode": true,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.117,
+    "ADMET_score (\u00d70.20)": 0.0897,
+    "ML_confidence (\u00d70.20)": 0.0861,
+    "Pocket_druggability (\u00d70.15)": 0.0236,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.0836
+  },
+  "domain": "IN_DOMAIN",
+  "compound_name": "Ellagic_Acid",
+  "target_id": "5HDN"
+}

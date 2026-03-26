@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   205:
+HEADER 0  - Pocket Score                      : -0.2156
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 4.2436
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5984
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 12.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.1429
+HEADER 9  - Pocket volume (Monte Carlo)       : 331.3294
+HEADER 10 - Pocket volume (convex hull)       : 11.2842
+HEADER 11 - Charge Score                      :    -2
+HEADER 12 - Local hydrophobic density Score   : 8.0000
+HEADER 13 - Number of apolar alpha sphere     :     9
+HEADER 14 - Proportion of apolar alpha sphere : 0.4500
+ATOM  15298  NE2 GLN A1950     106.287  72.221 166.704  0.24  8.75           N 0
+ATOM  15296   CD GLN A1950     106.702  71.847 165.501  0.00  0.00           C 0
+ATOM  15588  ND2 ASN A1985     111.036  73.086 171.478  0.00  0.00           N 0
+ATOM  15297  OE1 GLN A1950     106.689  70.674 165.128  0.23  9.64           O 0
+ATOM  15295   CG GLN A1950     107.222  72.944 164.597  0.00  0.00           C 0
+ATOM  15331   CG GLU A1954     114.119  70.520 161.164  0.00  0.00           C 0
+ATOM  15624  CD1 LEU A1989     115.742  74.687 166.151  0.00  0.00           C 0
+ATOM  15293    O GLN A1950     110.439  72.655 161.457  0.63  4.29           O 0
+ATOM  15334  OE2 GLU A1954     113.269  68.567 162.222  0.31  9.64           O 0
+ATOM  15294   CB GLN A1950     107.818  72.404 163.314  0.00  0.00           C 0
+ATOM  15594   CG GLN A1986     108.452  76.868 167.295  0.00  0.00           C 0
+ATOM  15568  OE1 GLU A1983     106.395  74.555 170.395  0.74  2.14           O 0
+ATOM  15586   CG ASN A1985     111.417  74.355 171.540  0.00  0.00           C 0
+ATOM  15584    O ASN A1985     112.333  77.057 169.866  0.00  0.00           O 0
+ATOM  15587  OD1 ASN A1985     112.593  74.696 171.436  0.10  9.64           O 0
+ATOM  15324  CD1 LEU A1953     112.055  76.820 164.136  0.00  0.00           C 0
+ATOM  15590   CA GLN A1986     110.488  78.120 168.162  0.00  0.00           C 0
+ATOM  15291   CA GLN A1950     108.376  73.479 162.384  0.00  0.00           C 0
+ATOM  15322   CB LEU A1953     113.058  75.637 162.200  0.00  0.00           C 0
+TER
+END

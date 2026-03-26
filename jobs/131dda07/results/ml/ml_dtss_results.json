@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.5483,
+  "binding_category": "Moderate (0.50\u20130.65)",
+  "dg_norm": 0.5902,
+  "admet_score": 0.4487,
+  "ml_confidence": 0.4303,
+  "pocket_druggability": 0.9995,
+  "literature_score": 0.0,
+  "best_docking_score": -8.312,
+  "model_loaded": true,
+  "rna_displacement_score": 0.5,
+  "rna_mode": false,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.2066,
+    "ADMET_score (\u00d70.20)": 0.0897,
+    "ML_confidence (\u00d70.20)": 0.0861,
+    "Pocket_druggability (\u00d70.15)": 0.1499,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.05
+  },
+  "domain": "IN_DOMAIN",
+  "compound_name": "Ellagic_Acid",
+  "target_id": "6CZ8"
+}

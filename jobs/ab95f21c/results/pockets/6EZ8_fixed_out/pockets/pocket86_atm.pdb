@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    86:
+HEADER 0  - Pocket Score                      : -0.0165
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 4.0822
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6890
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 24.8000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.6000
+HEADER 9  - Pocket volume (Monte Carlo)       : 117.1991
+HEADER 10 - Pocket volume (convex hull)       : 0.5060
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 4.0000
+HEADER 13 - Number of apolar alpha sphere     :     5
+HEADER 14 - Proportion of apolar alpha sphere : 0.3333
+ATOM   1441  NE2 GLN A 185     123.268  94.625  82.541  0.68  8.75           N 0
+ATOM   1413    N SER A 182     126.806  90.874  80.259  0.00  0.00           N 0
+ATOM   1417   CB SER A 182     128.218  91.616  82.112  0.00  0.00           C 0
+ATOM   1394    O GLY A 178     127.742  87.983  82.624  0.59  4.29           O 0
+ATOM   1414   CA SER A 182     127.367  92.043  80.924  0.00  0.00           C 0
+ATOM   1408    C VAL A 181     125.627  90.969  79.648  0.00  0.00           C 0
+ATOM   1410   CB VAL A 181     123.892  89.080  79.657  0.00  0.00           C 0
+ATOM   1409    O VAL A 181     125.021  92.041  79.607  0.00  0.00           O 0
+ATOM   1777   CB TYR A 226     121.291  87.506  82.324  0.00  0.00           C 0
+ATOM   1780  CD2 TYR A 226     122.746  85.740  83.394  0.00  0.00           C 0
+ATOM   1778   CG TYR A 226     121.598  86.518  83.433  0.00  0.00           C 0
+ATOM   1392   CA GLY A 178     126.377  86.044  82.845  0.00  0.00           C 0
+ATOM   1411  CG1 VAL A 181     122.672  89.955  79.651  0.00  0.00           C 0
+ATOM   1776    O TYR A 226     120.109  90.211  81.631  0.68  5.36           O 0
+TER
+END

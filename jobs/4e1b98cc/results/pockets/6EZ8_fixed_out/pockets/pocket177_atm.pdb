@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   177:
+HEADER 0  - Pocket Score                      : -0.1257
+HEADER 1  - Drug Score                        : 0.0020
+HEADER 2  - Number of alpha spheres           :    25
+HEADER 3  - Mean alpha-sphere radius          : 3.8404
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4783
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 29.3333
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.5556
+HEADER 9  - Pocket volume (Monte Carlo)       : 250.2165
+HEADER 10 - Pocket volume (convex hull)       : 12.2772
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 9.0000
+HEADER 13 - Number of apolar alpha sphere     :    10
+HEADER 14 - Proportion of apolar alpha sphere : 0.4000
+ATOM  12948  CE3 TRP A1648      82.748  79.689 147.790  0.00  0.00           C 0
+ATOM  13598  NH1 ARG A1734      88.359  80.976 148.415  0.58  7.66           N 0
+ATOM  14381  CG1 VAL A1832      87.184  82.608 153.112  0.00  0.00           C 0
+ATOM  12950  CZ3 TRP A1648      83.636  78.635 147.718  0.00  0.00           C 0
+ATOM  14382  CG2 VAL A1832      86.636  84.973 153.731  0.00  0.00           C 0
+ATOM  12920   CA PRO A1645      80.343  82.875 152.367  0.00  0.00           C 0
+ATOM  12923   CB PRO A1645      80.732  82.675 153.835  0.00  0.00           C 0
+ATOM  12919    N PRO A1645      80.294  84.338 152.233  0.00  0.00           N 0
+ATOM  12914    O LEU A1644      80.335  84.180 150.000  0.64  2.14           O 0
+ATOM  12905    O GLN A1643      82.758  86.705 150.708  0.51  6.43           O 0
+ATOM  12922    O PRO A1645      79.019  81.027 151.657  0.59  2.14           O 0
+ATOM  12956   CB SER A1649      78.357  77.956 149.359  0.00  0.00           C 0
+ATOM  13599  NH2 ARG A1734      87.086  82.195 146.951  0.64  1.09           N 0
+ATOM  14399  ND2 ASN A1835      87.440  84.729 148.645  0.60  1.09           N 0
+ATOM  12897    O LEU A1642      83.274  85.749 146.492  0.42  1.07           O 0
+ATOM  12942   CB TRP A1648      80.851  82.343 147.345  0.00  0.00           C 0
+ATOM  12945  CD2 TRP A1648      82.658  80.566 146.706  0.00  0.00           C 0
+ATOM  12943   CG TRP A1648      81.898  81.747 146.450  0.00  0.00           C 0
+TER
+END

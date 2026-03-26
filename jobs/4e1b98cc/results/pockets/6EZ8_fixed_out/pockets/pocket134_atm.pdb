@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   134:
+HEADER 0  - Pocket Score                      : -0.0698
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.8351
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4065
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 24.6000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.6000
+HEADER 9  - Pocket volume (Monte Carlo)       : 260.1916
+HEADER 10 - Pocket volume (convex hull)       : 11.4523
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0625
+ATOM  13911    O GLN A1774     113.891  72.629 135.175  0.00  0.00           O 0
+ATOM  13915  OE1 GLN A1774     114.103  70.285 138.839  0.00  0.00           O 0
+ATOM  13912   CB GLN A1774     112.730  70.336 136.326  0.00  0.00           C 0
+ATOM  14218  NH2 ARG A1809     121.007  68.411 137.508  0.35  5.47           N 0
+ATOM  14215   NE ARG A1809     120.421  70.167 138.870  0.61  6.56           N 0
+ATOM  14211    O ARG A1809     118.271  75.133 140.603  0.00  0.00           O 0
+ATOM  14213   CG ARG A1809     119.699  72.258 139.953  0.00  0.00           C 0
+ATOM  14196    O VAL A1807     114.249  71.587 144.048  0.42  4.29           O 0
+ATOM  14212   CB ARG A1809     120.285  73.192 138.906  0.00  0.00           C 0
+ATOM  14209   CA ARG A1809     119.440  74.435 138.632  0.00  0.00           C 0
+ATOM  14208    N ARG A1809     120.035  75.236 137.567  0.35  6.56           N 0
+ATOM  14242  CD1 ILE A1812     114.609  75.177 137.076  0.00  0.00           C 0
+ATOM  14249  OD1 ASN A1813     117.189  74.243 144.651  0.56  4.29           O 0
+ATOM  14239   CB ILE A1812     114.722  75.935 139.479  0.00  0.00           C 0
+ATOM  14241  CG2 ILE A1812     113.283  75.517 139.727  0.00  0.00           C 0
+TER
+END

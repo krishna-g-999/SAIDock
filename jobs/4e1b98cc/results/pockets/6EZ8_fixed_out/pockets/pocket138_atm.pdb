@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   138:
+HEADER 0  - Pocket Score                      : -0.0765
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 3.7853
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4507
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 29.2857
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.7143
+HEADER 9  - Pocket volume (Monte Carlo)       : 111.7161
+HEADER 10 - Pocket volume (convex hull)       : 0.5449
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 4.0000
+HEADER 13 - Number of apolar alpha sphere     :     5
+HEADER 14 - Proportion of apolar alpha sphere : 0.2941
+ATOM   3860  CD2 LEU A 497     108.474 100.031 107.289  0.00  0.00           C 0
+ATOM   4322    O VAL A 554     111.399 101.340 106.726  0.54  2.14           O 0
+ATOM   3889   CB ALA A 501     105.475 102.596 103.526  0.00  0.00           C 0
+ATOM   4345   CB SER A 558     107.576 103.542 106.667  0.00  0.00           C 0
+ATOM   4341    N SER A 558     109.627 104.628 105.937  0.00  0.00           N 0
+ATOM   4372  NH1 ARG A 561     107.940 102.213 100.104  0.70  3.28           N 0
+ATOM   4340   CB ALA A 557     112.528 104.233 104.193  0.00  0.00           C 0
+ATOM   4371   CZ ARG A 561     108.729 103.200  99.707  0.00  0.00           C 0
+ATOM   4373  NH2 ARG A 561     109.732 102.950  98.878  0.00  0.00           N 0
+ATOM   3869  OE2 GLU A 498     110.542  97.118 101.579  0.42  7.50           O 0
+ATOM   3866   CG GLU A 498     108.431  97.810 102.451  0.00  0.00           C 0
+ATOM   3856    O LEU A 497     105.659  99.900 105.381  0.00  0.00           O 0
+ATOM   4338    C ALA A 557     110.382 105.229 105.024  0.00  0.00           C 0
+ATOM   4339    O ALA A 557     109.900 105.799 104.040  0.00  0.00           O 0
+ATOM   4324  CG1 VAL A 554     111.903  98.492 105.449  0.00  0.00           C 0
+TER
+END

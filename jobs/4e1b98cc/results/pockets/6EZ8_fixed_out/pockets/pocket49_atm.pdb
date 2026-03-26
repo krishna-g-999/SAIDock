@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    49:
+HEADER 0  - Pocket Score                      : 0.0356
+HEADER 1  - Drug Score                        : 0.0008
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.5730
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4087
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 32.7500
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.7500
+HEADER 9  - Pocket volume (Monte Carlo)       : 117.4778
+HEADER 10 - Pocket volume (convex hull)       : 3.1895
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 5.0000
+HEADER 13 - Number of apolar alpha sphere     :     6
+HEADER 14 - Proportion of apolar alpha sphere : 0.3750
+ATOM  14657  CG1 VAL A1868      88.879 115.376 159.838  0.00  0.00           C 0
+ATOM  14693  CD1 ILE A1872      91.342 112.919 157.026  0.00  0.00           C 0
+ATOM  17142   CA ALA A2187      94.065 116.522 157.476  0.00  0.00           C 0
+ATOM  14639  NH2 ARG A1865      92.460 114.173 163.096  0.00  0.00           N 0
+ATOM  16850   CB ARG A2150      98.419 110.567 161.194  0.00  0.00           C 0
+ATOM  16845  CD2 LEU A2149      97.773 116.273 160.100  0.00  0.00           C 0
+ATOM  16846    N ARG A2150      99.659 112.652 161.154  0.00  0.00           N 0
+ATOM  16820    O HIS A2146      99.412 111.418 157.516  0.67  4.29           O 0
+ATOM  16847   CA ARG A2150      98.803 111.818 161.983  0.00  0.00           C 0
+ATOM  17145   CB ALA A2187      95.265 115.724 156.972  0.00  0.00           C 0
+ATOM  14638  NH1 ARG A1865      93.473 112.228 162.442  0.45  6.56           N 0
+ATOM  16877  OE2 GLU A2153      95.831 112.286 163.790  0.00  0.00           O 0
+ATOM  17144    O ALA A2187      94.729 117.357 159.622  0.00  0.00           O 0
+ATOM  16856  NH2 ARG A2150      94.458 109.431 158.562  0.44  6.56           N 0
+ATOM  16823  ND1 HIS A2146      96.684 113.346 154.484  0.65  2.19           N 0
+ATOM  16853   NE ARG A2150      96.369 108.911 159.732  0.00  0.00           N 0
+ATOM  16854   CZ ARG A2150      95.046 109.021 159.675  0.00  0.00           C 0
+TER
+END

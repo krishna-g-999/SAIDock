@@ -1,0 +1,132 @@
+[
+  {
+    "best_score": -4.096,
+    "mean_top3": -4.091,
+    "all_scores": [
+      -4.096,
+      -4.088,
+      -4.088,
+      -4.002,
+      -3.989,
+      -3.805,
+      -3.733,
+      -3.691,
+      -3.658
+    ],
+    "n_poses": 9,
+    "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/38e83032/results/docking/pocket2_poses.pdbqt",
+    "pocket_id": 2,
+    "has_clash": false,
+    "pocket_drugg_score": 0.3998,
+    "center": [
+      8.886791666666666,
+      6.291916666666666,
+      23.873000000000005
+    ],
+    "engine": "AutoDock Vina"
+  },
+  {
+    "best_score": -4.091,
+    "mean_top3": -3.974,
+    "all_scores": [
+      -4.091,
+      -4.086,
+      -3.745,
+      -3.703,
+      -3.602,
+      -3.575,
+      -3.554,
+      -3.513,
+      -3.487
+    ],
+    "n_poses": 9,
+    "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/38e83032/results/docking/pocket1_poses.pdbqt",
+    "pocket_id": 1,
+    "has_clash": false,
+    "pocket_drugg_score": 0.39,
+    "center": [
+      2.86592,
+      2.3335200000000005,
+      17.535919999999997
+    ],
+    "engine": "AutoDock Vina"
+  },
+  {
+    "best_score": -3.758,
+    "mean_top3": -3.693,
+    "all_scores": [
+      -3.758,
+      -3.665,
+      -3.655,
+      -3.554,
+      -3.529,
+      -3.519,
+      -3.468,
+      -3.418,
+      -3.37
+    ],
+    "n_poses": 9,
+    "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/38e83032/results/docking/pocket3_poses.pdbqt",
+    "pocket_id": 3,
+    "has_clash": false,
+    "pocket_drugg_score": 0.156,
+    "center": [
+      -1.137235294117647,
+      17.09688235294118,
+      11.978470588235293
+    ],
+    "engine": "AutoDock Vina"
+  },
+  {
+    "best_score": -3.74,
+    "mean_top3": -3.707,
+    "all_scores": [
+      -3.74,
+      -3.727,
+      -3.654,
+      -3.602,
+      -3.596,
+      -3.535,
+      -3.448,
+      -3.408,
+      -3.393
+    ],
+    "n_poses": 9,
+    "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/38e83032/results/docking/pocket5_poses.pdbqt",
+    "pocket_id": 5,
+    "has_clash": false,
+    "pocket_drugg_score": 0.3007,
+    "center": [
+      1.6931333333333332,
+      13.177533333333335,
+      7.213733333333334
+    ],
+    "engine": "AutoDock Vina"
+  },
+  {
+    "best_score": -3.706,
+    "mean_top3": -3.696,
+    "all_scores": [
+      -3.706,
+      -3.692,
+      -3.69,
+      -3.686,
+      -3.685,
+      -3.616,
+      -3.601,
+      -3.601,
+      -3.489
+    ],
+    "n_poses": 9,
+    "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/38e83032/results/docking/pocket4_poses.pdbqt",
+    "pocket_id": 4,
+    "has_clash": false,
+    "pocket_drugg_score": 0.4745,
+    "center": [
+      22.36622222222222,
+      9.623222222222223,
+      7.865222222222221
+    ],
+    "engine": "AutoDock Vina"
+  }
+]

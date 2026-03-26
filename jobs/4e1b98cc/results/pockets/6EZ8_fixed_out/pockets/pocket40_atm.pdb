@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    40:
+HEADER 0  - Pocket Score                      : 0.0462
+HEADER 1  - Drug Score                        : 0.0026
+HEADER 2  - Number of alpha spheres           :    21
+HEADER 3  - Mean alpha-sphere radius          : 3.5357
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3898
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 70.8333
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 5.5000
+HEADER 9  - Pocket volume (Monte Carlo)       : 77.0756
+HEADER 10 - Pocket volume (convex hull)       : 0.6905
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 20.0000
+HEADER 13 - Number of apolar alpha sphere     :    21
+HEADER 14 - Proportion of apolar alpha sphere : 1.0000
+ATOM  11549  CH2 TRP A1465      53.965 106.871 148.274  0.00  0.00           C 0
+ATOM  11477    O VAL A1457      52.417 112.374 151.511  0.00  0.00           O 0
+ATOM  11513   CE LYS A1461      50.236 109.875 149.317  0.00  0.00           C 0
+ATOM  11479  CG1 VAL A1457      50.893 110.399 153.552  0.00  0.00           C 0
+ATOM  11733   CG PHE A1490      52.544 105.790 153.068  0.00  0.00           C 0
+ATOM  11504  CG1 VAL A1460      55.701 111.770 151.424  0.00  0.00           C 0
+ATOM  11548  CZ3 TRP A1465      54.419 108.126 147.859  0.00  0.00           C 0
+ATOM  11511   CG LYS A1461      52.290 110.952 148.313  0.00  0.00           C 0
+ATOM  11735  CD2 PHE A1490      52.430 106.415 154.300  0.00  0.00           C 0
+ATOM  11732   CB PHE A1490      53.888 105.316 152.576  0.00  0.00           C 0
+ATOM  11731    O PHE A1490      55.656 105.141 150.318  0.69  1.07           O 0
+ATOM  11677  CD1 ILE A1482      57.258 108.071 153.846  0.00  0.00           C 0
+ATOM  11675  CG1 ILE A1482      57.071 108.877 155.111  0.00  0.00           C 0
+TER
+END

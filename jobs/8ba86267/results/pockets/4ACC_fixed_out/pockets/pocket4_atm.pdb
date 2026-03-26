@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 0.1827
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.9794
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5791
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -7.7143
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Amino Acid based volume Score     : 4.1429
+HEADER 9  - Pocket volume (Monte Carlo)       : 326.0338
+HEADER 10 - Pocket volume (convex hull)       : 12.4882
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0625
+ATOM   2098  NE2 GLN A 261      11.965 -24.523  14.237  0.42  4.37           N 0
+ATOM   1921  CG2 THR A 241      13.330 -20.654  13.757  0.00  0.00           C 0
+ATOM   2071   NZ LYS A 258      15.818 -23.038  15.163  0.52  1.09           N 0
+ATOM   1925    O PRO A 242      16.635 -20.958  11.392  0.73  2.14           O 0
+ATOM   2097  OE1 GLN A 261      10.896 -24.169  12.299  0.00  0.00           O 0
+ATOM   1918    O THR A 241      13.535 -20.071   9.775  0.37  5.36           O 0
+ATOM   1919   CB THR A 241      12.229 -20.498  12.707  0.00  0.00           C 0
+ATOM   2070   CE LYS A 258      16.815 -23.254  16.242  0.00  0.00           C 0
+ATOM   1940   CB ARG A 244      21.423 -24.715  11.145  0.00  0.00           C 0
+ATOM   1943   NE ARG A 244      21.612 -28.188  10.991  0.00  0.00           N 0
+ATOM   1930   CA THR A 243      17.606 -22.300   9.070  0.00  0.00           C 0
+ATOM   1935  CG2 THR A 243      16.164 -22.837   7.030  0.00  0.00           C 0
+ATOM   1936    N ARG A 244      19.655 -23.352   9.986  0.00  0.00           N 0
+ATOM   1941   CG ARG A 244      21.659 -25.846  10.131  0.00  0.00           C 0
+ATOM   1942   CD ARG A 244      22.448 -27.006  10.734  0.00  0.00           C 0
+ATOM   2042  CG2 THR A 255      23.898 -23.468  13.744  0.00  0.00           C 0
+ATOM   1945  NH1 ARG A 244      23.246 -29.357  12.128  0.61  5.47           N 0
+ATOM   2039    O THR A 255      22.279 -23.144  16.594  0.76  5.36           O 0
+ATOM   1944   CZ ARG A 244      22.011 -29.277  11.645  0.00  0.00           C 0
+TER
+END

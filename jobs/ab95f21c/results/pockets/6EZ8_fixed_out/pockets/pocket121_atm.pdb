@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   121:
+HEADER 0  - Pocket Score                      : -0.0473
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.8090
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4599
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 41.2857
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.5714
+HEADER 9  - Pocket volume (Monte Carlo)       : 138.2426
+HEADER 10 - Pocket volume (convex hull)       : 1.2290
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0625
+ATOM   4811  CG2 ILE A 616     110.504 115.989 115.431  0.00  0.00           C 0
+ATOM   5118   SG CYS A 657     111.086 120.634 119.931  0.00  0.00           S 0
+ATOM   5092    O TRP A 655     110.941 121.469 116.072  0.32  1.07           O 0
+ATOM   4808    O ILE A 616     108.791 114.997 117.838  0.57  7.50           O 0
+ATOM   5117   CB CYS A 657     109.479 121.404 120.157  0.00  0.00           C 0
+ATOM   4786   OG SER A 613     104.670 119.816 115.298  0.52  7.50           O 0
+ATOM   4784    O SER A 613     104.482 117.210 115.796  0.53  2.14           O 0
+ATOM   4817   CB ALA A 617     104.856 115.031 118.810  0.00  0.00           C 0
+ATOM   4814   CA ALA A 617     106.288 114.529 118.694  0.00  0.00           C 0
+ATOM   5088    O GLY A 654     107.577 120.456 114.098  0.00  0.00           O 0
+ATOM   4809   CB ILE A 616     109.147 115.665 114.820  0.00  0.00           C 0
+ATOM   4807    C ILE A 616     107.965 114.745 116.970  0.00  0.00           C 0
+ATOM   5106    O HIS A 656     107.874 122.935 117.554  0.48  6.43           O 0
+TER
+END

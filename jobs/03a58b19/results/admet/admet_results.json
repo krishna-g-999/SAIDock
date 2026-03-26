@@ -1,0 +1,23 @@
+{
+  "compound": "compound",
+  "MW": 580.47,
+  "LogP": 3.095,
+  "HBD": 4,
+  "HBA": 12,
+  "TPSA": 186.72,
+  "RotBonds": 10,
+  "HeavyAtoms": 40,
+  "MolRefractivity": 139.08,
+  "AromaticRings": 3,
+  "QED": 0.256,
+  "FractionCSP3": 0.304,
+  "Lipinski_violations": 2,
+  "Lipinski_pass": false,
+  "Veber_pass": false,
+  "Ghose_pass": false,
+  "BBB_penetrant": false,
+  "GI_absorption": "Low",
+  "Pgp_substrate": "Likely",
+  "Solubility_class": "Poorly Soluble",
+  "LogSw_estimated": -6.949
+}

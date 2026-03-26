@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   136:
+HEADER 0  - Pocket Score                      : -0.0744
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    26
+HEADER 3  - Mean alpha-sphere radius          : 3.8983
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4809
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 1.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 5.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 265.3769
+HEADER 10 - Pocket volume (convex hull)       : 7.1864
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 5.0000
+HEADER 13 - Number of apolar alpha sphere     :     6
+HEADER 14 - Proportion of apolar alpha sphere : 0.2308
+ATOM  12523  ND1 HIS A1594      66.113  90.422 164.833  0.85  5.47           N 0
+ATOM  12526  NE2 HIS A1594      67.174  91.011 166.598  0.71  8.75           N 0
+ATOM  11933   NZ LYS A1517      63.259  96.536 167.398  0.00  0.00           N 0
+ATOM  12525  CE1 HIS A1594      66.156  90.300 166.148  0.00  0.00           C 0
+ATOM  12524  CD2 HIS A1594      67.803  91.612 165.535  0.00  0.00           C 0
+ATOM  11931   CD LYS A1517      65.143  97.821 166.424  0.00  0.00           C 0
+ATOM  12522   CG HIS A1594      67.139  91.242 164.415  0.00  0.00           C 0
+ATOM  12521   CB HIS A1594      67.365  91.585 162.977  0.00  0.00           C 0
+ATOM  11971  OE1 GLU A1522      63.481  97.204 162.549  0.63  9.64           O 0
+ATOM  11970   CD GLU A1522      64.718  97.136 162.387  0.00  0.00           C 0
+ATOM  12520    O HIS A1594      67.049  90.684 159.987  0.29  6.43           O 0
+ATOM  12533  CD1 LEU A1595      67.953  94.896 158.613  0.00  0.00           C 0
+ATOM  11969   CG GLU A1522      65.285  97.411 161.011  0.00  0.00           C 0
+ATOM  12534  CD2 LEU A1595      68.631  94.569 161.012  0.00  0.00           C 0
+ATOM  11968   CB GLU A1522      64.204  97.613 159.962  0.00  0.00           C 0
+ATOM  11993  NH2 ARG A1525      64.771  91.139 157.387  0.46  9.84           N 0
+ATOM  12002  OE2 GLU A1526      59.587  93.528 157.247  0.00  0.00           O 0
+ATOM  11967    O GLU A1522      63.573  96.474 156.883  0.00  0.00           O 0
+ATOM  11972  OE2 GLU A1522      65.511  96.847 163.306  0.81  3.21           O 0
+TER
+END

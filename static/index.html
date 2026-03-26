@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SAIDock — NDD Drug-Target Docking Platform</title>
+<style>
+/* ── Reset ────────────────────────────────────────────────── */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;
+     color:#0d1f3c;min-height:100vh;font-size:15px}
+a{color:#f5820d;text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ── SHARP colour tokens ──────────────────────────────────── */
+:root{
+  --navy:    #0d1f3c;
+  --navy2:   #132847;
+  --navy3:   #1e3a5f;
+  --orange:  #f5820d;   /* SHARP orange — not gold */
+  --orange2: #ff9a38;
+  --white:   #ffffff;
+  --bg:      #f0f2f5;
+  --card-bg: #ffffff;
+  --border:  #d8e0ec;
+  --text2:   #4a6080;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.header{
+  background:linear-gradient(100deg, #0a1628 0%, #0d1f3c 55%, #1a2f50 100%);
+  padding:0 40px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:92px;
+  border-bottom:4px solid var(--orange);
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 3px 20px rgba(0,0,0,.45);
+}
+.header-left{display:flex;align-items:center;gap:14px}
+
+/* SAINet logo */
+.logo-sainet{
+  height:68px;width:68px;border-radius:8px;
+  object-fit:contain;background:transparent;
+  flex-shrink:0;
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,.4));
+}
+/* Fallback if image missing */
+.logo-fallback{
+  height:48px;width:48px;border-radius:6px;
+  background:var(--orange);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:10px;color:var(--navy);
+  line-height:1.1;text-align:center;flex-shrink:0;
+}
+
+.header-titles{display:flex;flex-direction:column;gap:1px}
+.header-titles h1{
+  font-size:22px;font-weight:800;color:var(--white);
+  letter-spacing:.4px;line-height:1
+}
+.header-titles h1 span{color:var(--orange)}
+.header-sub{font-size:11px;color:#8aaac8;letter-spacing:.3px}
+
+/* SSSIHL logo */
+.logo-sssihl{
+  height:68px;width:68px;border-radius:50%;
+  object-fit:contain;background:var(--white);
+  padding:4px;border:3px solid var(--orange);
+  flex-shrink:0;
+  box-shadow:0 2px 10px rgba(245,130,13,.35);
+}
+.logo-sssihl-fallback{
+  height:52px;width:52px;border-radius:50%;
+  background:var(--white);
+  display:flex;align-items:center;justify-content:center;
+  font-size:8px;font-weight:800;color:var(--navy);
+  text-align:center;line-height:1.2;
+  border:2px solid var(--orange);
+  flex-shrink:0;
+}
+
+/* ── Main layout ──────────────────────────────────────────── */
+.main{display:flex;gap:28px;padding:28px 40px;
+      max-width:1400px;margin:0 auto}
+.sidebar{width:360px;flex-shrink:0}
+.content{flex:1;min-width:0}
+
+/* ── Cards ────────────────────────────────────────────────── */
+.card{background:var(--card-bg);border-radius:10px;
+      border:1px solid var(--border);padding:22px;
+      margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+.card-title{
+  font-size:14px;font-weight:700;color:var(--navy);
+  padding-bottom:8px;margin-bottom:4px;
+  border-bottom:2.5px solid var(--orange);
+  display:inline-block;letter-spacing:.2px;
+}
+
+/* ── Form ─────────────────────────────────────────────────── */
+label.field-label{
+  display:block;font-size:12px;font-weight:700;
+  color:var(--text2);text-transform:uppercase;
+  letter-spacing:.6px;margin:14px 0 4px;
+}
+textarea,input[type=text]{
+  width:100%;padding:11px 14px;
+  border:1.5px solid var(--border);border-radius:6px;
+  font-size:14px;font-family:monospace;
+  background:#f7f9fc;color:var(--navy);
+  resize:vertical;transition:border .15s;
+}
+textarea:focus,input[type=text]:focus{
+  outline:none;border-color:var(--orange);background:#fff;
+  box-shadow:0 0 0 3px rgba(245,130,13,.12);
+}
+textarea{height:90px}
+
+.preset-label{font-size:11px;color:#8896a5;
+              margin:10px 0 6px;display:block}
+.preset-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.preset-btn{
+  background:#f0f4fa;border:1px solid var(--border);
+  border-radius:5px;padding:6px 13px;font-size:12px;
+  color:var(--navy3);cursor:pointer;transition:all .15s;
+}
+.preset-btn:hover{background:var(--navy);color:#fff;
+                  border-color:var(--navy)}
+
+.run-btn{
+  width:100%;margin-top:16px;padding:15px;
+  background:var(--orange);color:#fff;
+  border:none;border-radius:7px;font-size:15px;
+  font-weight:700;cursor:pointer;
+  transition:background .15s,box-shadow .15s;
+  letter-spacing:.4px;
+  box-shadow:0 2px 8px rgba(245,130,13,.35);
+}
+.run-btn:hover{background:#e06f00;
+               box-shadow:0 4px 14px rgba(245,130,13,.45)}
+.run-btn:disabled{background:#aaa;cursor:not-allowed;box-shadow:none}
+
+/* ── Status bar ───────────────────────────────────────────── */
+.status-bar{
+  border-radius:7px;padding:10px 16px;margin-bottom:14px;
+  font-size:13px;font-weight:500;
+  display:none;align-items:center;justify-content:space-between;
+  border:1px solid var(--border);background:#f7f9fc;
+}
+.status-bar.running{background:#fff8f0;
+  border-color:var(--orange);color:#7a3e00}
+.status-bar.done{background:#f0fff4;
+  border-color:#22c55e;color:#15803d}
+.status-bar.error{background:#fff0f0;
+  border-color:#ef4444;color:#b91c1c}
+.progress{height:4px;background:#e4e8f0;border-radius:2px;
+          margin-top:6px;overflow:hidden}
+.progress-fill{height:100%;background:var(--orange);
+               border-radius:2px;width:0%;transition:width .3s;
+               animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.progress-fill.done{background:#22c55e;width:100%;animation:none}
+.progress-fill.error{background:#ef4444;width:100%;animation:none}
+.elapsed{font-size:11px;color:#8896a5;font-variant-numeric:tabular-nums}
+
+/* ── Result inner tabs ────────────────────────────────────── */
+.itabs{border-bottom:2px solid var(--border);
+       margin-bottom:16px;display:flex;gap:0;
+       padding:0 20px;background:#fff;
+       border-radius:10px 10px 0 0}
+.itab{padding:14px 24px;font-size:14px;color:var(--text2);
+      cursor:pointer;border-bottom:2.5px solid transparent;
+      margin-bottom:-2px;transition:all .15s;font-weight:500}
+.itab:hover{color:var(--navy)}
+.itab.active{color:var(--orange);
+             border-bottom-color:var(--orange);font-weight:700}
+.itab-pane{display:none}
+.itab-pane.active{display:block}
+
+/* ── Log terminal ─────────────────────────────────────────── */
+.log-box{background:#0d1117;border-radius:7px;padding:16px;
+         font-family:'Courier New',monospace;font-size:13.5px;
+         height:380px;overflow-y:auto;line-height:1.7}
+.log-box .ok{color:#3fb950}
+.log-box .warn{color:#f5820d}
+.log-box .error{color:#f85149}
+.log-box .step{color:#58a6ff;font-weight:700}
+.log-box .info{color:#c9d1d9}
+
+/* ── DTSS badge ───────────────────────────────────────────── */
+.dtss-banner{
+  border-radius:8px;padding:16px 22px;
+  display:flex;align-items:center;
+  justify-content:space-between;flex-wrap:wrap;gap:12px;
+  margin-bottom:18px;border:1px solid var(--border);
+}
+.dtss-banner.excellent{background:#e8f5e9;border-color:#66bb6a}
+.dtss-banner.good     {background:#e3f2fd;border-color:#42a5f5}
+.dtss-banner.moderate {background:#fff8e1;border-color:var(--orange)}
+.dtss-banner.weak     {background:#fce4ec;border-color:#ef9a9a}
+.dtss-banner.poor     {background:#f5f5f5;border-color:#bdbdbd}
+.dtss-val{font-size:36px;font-weight:900;line-height:1}
+.dtss-val.excellent{color:#2e7d32}
+.dtss-val.good     {color:#1565c0}
+.dtss-val.moderate {color:var(--orange)}
+.dtss-val.weak     {color:#c62828}
+.dtss-val.poor     {color:#757575}
+.dtss-label{font-size:12px;color:var(--text2);margin-top:2px}
+
+/* ── Metric grid ──────────────────────────────────────────── */
+.metric-grid{display:grid;
+             grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+             gap:12px;margin-bottom:18px}
+.metric-card{background:#f7f9fc;border:1px solid var(--border);
+             border-radius:8px;padding:14px;text-align:center}
+.metric-card .mv{font-size:24px;font-weight:800;color:var(--navy);
+                  margin-bottom:3px}
+.metric-card .ml{font-size:12px;color:var(--text2);font-weight:600;
+                  text-transform:uppercase;letter-spacing:.4px}
+
+/* ── ADMET grid ───────────────────────────────────────────── */
+.admet-grid{display:grid;
+            grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+            gap:10px;margin-top:14px}
+.admet-card{border:1px solid var(--border);border-radius:8px;
+            padding:12px;text-align:center;background:#f7f9fc}
+.admet-card .al{font-size:10px;color:var(--text2);font-weight:700;
+                text-transform:uppercase;margin-bottom:5px}
+.admet-card .av{font-size:15px;font-weight:800;margin-bottom:3px}
+.av.pass{color:#2e7d32}.av.fail{color:#c62828}.av.ok{color:var(--navy)}
+.admet-card .as{font-size:10px}
+.as.pass{color:#2e7d32}.as.fail{color:#c62828}
+
+/* ── Results table ────────────────────────────────────────── */
+.results-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead tr{background:var(--navy);color:#fff}
+th{padding:9px 12px;text-align:left;font-weight:700;white-space:nowrap}
+td{padding:8px 12px;border-bottom:1px solid var(--border);white-space:nowrap}
+tr:hover td{background:#f7f9fc}
+.dtss-good{color:#2e7d32;font-weight:700}
+.dtss-mod {color:var(--orange);font-weight:700}
+.dtss-weak{color:#c62828}
+
+/* ── Download buttons ─────────────────────────────────────── */
+.dl-links{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+.dl-btn{
+  padding:8px 16px;border-radius:6px;font-size:12px;
+  font-weight:700;border:1.5px solid var(--orange);
+  color:var(--orange);background:#fff;cursor:pointer;
+  text-decoration:none;display:inline-block;transition:all .15s;
+}
+.dl-btn:hover{background:var(--orange);color:#fff;
+              text-decoration:none}
+
+/* ── Placeholder ──────────────────────────────────────────── */
+.placeholder{color:#8896a5;font-size:13px;text-align:center;
+             padding:48px 0;font-style:italic}
+
+/* ── About section ────────────────────────────────────────── */
+.about-wrap{max-width:860px;margin:0 auto}
+.about-wrap h2{
+  font-size:17px;color:var(--navy);margin:24px 0 8px;
+  padding-bottom:6px;border-bottom:2.5px solid var(--orange);
+  display:inline-block;font-weight:800;
+}
+.about-wrap h2:first-child{margin-top:0}
+.about-wrap p{font-size:13.5px;color:#3a4a60;line-height:1.8;
+              margin-bottom:12px}
+.about-wrap ul{font-size:13px;color:#3a4a60;line-height:2;
+               margin-left:18px;margin-bottom:14px}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;
+           gap:14px;margin-top:8px}
+.team-card{border:1px solid var(--border);border-radius:8px;
+           padding:16px;background:#f7f9fc}
+.team-card .role{font-size:11px;color:var(--orange);font-weight:800;
+                  text-transform:uppercase;margin-bottom:4px}
+.team-card .name{font-size:14px;font-weight:800;color:var(--navy);
+                  margin-bottom:2px}
+.team-card .inst{font-size:12px;color:var(--text2)}
+.disclaimer{
+  background:#fff8f0;border:1px solid var(--orange);
+  border-radius:7px;padding:12px 16px;
+  font-size:12px;color:#7a3e00;margin-top:20px;line-height:1.7;
+}
+blockquote{
+  border-left:3.5px solid var(--orange);padding:10px 18px;
+  color:#5a4000;font-style:italic;margin:12px 0;
+  background:#fff8f0;border-radius:0 6px 6px 0;
+}
+
+/* ── Top nav tabs (only 2 now) ────────────────────────────── */
+.tab-nav{
+  background:#fff;border-bottom:2px solid var(--border);
+  padding:0 40px;display:flex;gap:0;
+  box-shadow:0 1px 6px rgba(0,0,0,.07);
+}
+.tab-btn{
+  padding:17px 30px;font-size:14px;font-weight:600;
+  color:var(--text2);border:none;background:none;cursor:pointer;
+  border-bottom:3px solid transparent;margin-bottom:-2px;
+  transition:all .15s;
+}
+.tab-btn:hover{color:var(--navy)}
+.tab-btn.active{color:var(--orange);
+                border-bottom-color:var(--orange);font-weight:800}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+
+/* ── iframe report ────────────────────────────────────────── */
+#report-frame{width:100%;height:600px;border:1px solid var(--border);
+              border-radius:7px;display:block}
+</style>
+  <script src="https://unpkg.com/ngl@2.0.0-dev.38/dist/ngl.js"></script>
+</head>
+<body>
+
+<!-- ══ HEADER ═══════════════════════════════════════════════════════ -->
+<div class="header">
+
+  <!-- LEFT: SAI-Net logo + SAIDock label below it -->
+  <div style="display:flex;align-items:center;gap:18px">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:5px">
+      <img src="/static/logos/SAI-Net.png"
+           style="height:70px;width:70px;border-radius:9px;
+                  object-fit:contain;
+                  filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))"
+           alt="SAI-Net"
+           onerror="this.style.display='none';
+                    document.getElementById('sainet-fallback').style.display='flex'">
+      <div id="sainet-fallback"
+           style="display:none;height:70px;width:70px;border-radius:9px;
+                  background:var(--orange);align-items:center;
+                  justify-content:center;font-weight:900;
+                  font-size:11px;color:var(--navy);text-align:center">
+        SAI<br>Net
+      </div>
+      <div style="font-size:10px;font-weight:800;color:var(--orange);
+                  letter-spacing:1.5px;text-transform:uppercase;
+                  line-height:1">SAI-Net</div>
+    </div>
+
+    <!-- Divider -->
+    <div style="width:2px;height:64px;background:rgba(255,255,255,.12);
+                border-radius:2px"></div>
+
+    <!-- Centre block: SAIDock + tagline + description -->
+    <div style="display:flex;flex-direction:column;
+                align-items:flex-start;gap:4px">
+      <div style="display:flex;align-items:baseline;gap:0">
+        <span style="font-size:34px;font-weight:900;color:#fff;
+                     letter-spacing:-.5px;line-height:1">SAI</span>
+        <span style="font-size:34px;font-weight:900;color:var(--orange);
+                     letter-spacing:-.5px;line-height:1">Dock</span>
+        <span style="font-size:12px;font-weight:600;color:#8aaac8;
+                     margin-left:12px;letter-spacing:1.8px;
+                     text-transform:uppercase;line-height:1;
+                     align-self:center">v 1.0</span>
+      </div>
+      <div style="font-size:14px;font-weight:800;color:var(--orange);
+                  letter-spacing:3px;text-transform:uppercase;line-height:1">
+        Science for Society
+      </div>
+      <div style="font-size:12px;color:#7a9abe;letter-spacing:.4px;
+                  line-height:1.5;margin-top:1px">
+        Automated Drug-Target Docking &amp; Assessment &nbsp;·&nbsp;
+        NDD Research Platform &nbsp;·&nbsp; SAI-Net Framework
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Institution block + SSSIHL logo -->
+  <div style="display:flex;align-items:center;gap:14px">
+    <div style="text-align:right;display:flex;flex-direction:column;gap:3px">
+      <div style="font-size:16px;font-weight:900;color:#fff;letter-spacing:.5px">
+        SSSIHL
+      </div>
+      <div style="font-size:11px;color:#8aaac8;letter-spacing:.3px;line-height:1.5">
+        Sri Sathya Sai Institute<br>of Higher Learning
+      </div>
+      <div style="font-size:10px;color:var(--orange);letter-spacing:1.2px;
+                  text-transform:uppercase;font-weight:700">
+        Puttaparthi &nbsp;·&nbsp; Est. 1981
+      </div>
+    </div>
+    <img src="/static/logos/SSSIHL-Logo.png"
+         style="height:72px;width:72px;border-radius:50%;
+                object-fit:contain;background:#fff;
+                padding:4px;border:3px solid var(--orange);
+                box-shadow:0 2px 12px rgba(245,130,13,.4)"
+         alt="SSSIHL"
+         onerror="this.style.display='none';
+                  document.getElementById('sssihl-fallback').style.display='flex'">
+    <div id="sssihl-fallback"
+         style="display:none;height:72px;width:72px;border-radius:50%;
+                background:#fff;align-items:center;justify-content:center;
+                font-size:9px;font-weight:800;color:var(--navy);
+                text-align:center;border:3px solid var(--orange)">
+      SSSIHL<br>1981
+    </div>
+  </div>
+
+</div>
+
+<!-- ══ NAV — 2 tabs only ═════════════════════════════════════════════ -->
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('dock',this)">
+    ⬡ &nbsp;Compound Docking
+  </button>
+  <button class="tab-btn" onclick="switchTab('about',this)">
+    ℹ &nbsp;About SAIDock
+  </button>
+</div>
+
+
+<!-- ══ TAB: DOCKING ══════════════════════════════════════════════════ -->
+<div class="tab-pane active" id="pane-dock">
+<div class="main">
+
+  <!-- ── Sidebar ── -->
+  <div class="sidebar">
+    <div class="card">
+      <div class="card-title">Submit Docking Job</div>
+      <p style="font-size:13.5px;color:var(--text2);
+                margin-top:10px;line-height:1.7">
+        Enter a SMILES string and PDB target ID to run
+        automated pocket detection, multi-pocket Vina docking,
+        ADMET profiling, ML scoring, and DTSS assessment.
+      </p>
+
+      <label class="field-label">SMILES String</label>
+      <textarea id="inp-smiles"
+        placeholder="Paste SMILES — e.g.  OC(=O)C=Cc1ccc(O)c(O)c1
+Available from PubChem · ChEMBL · DrugBank"></textarea>
+
+      <label class="field-label">PDB Target ID</label>
+      <input type="text" id="inp-target"
+        placeholder="e.g.  4XMB · 5HDN · 7XS0 · 6RVF · 6N37"/>
+
+      <span class="preset-label">Quick load — click to fill:</span>
+      <div class="preset-row">
+        <button class="preset-btn"
+          onclick="setPreset('4XMB','OC(=O)C=Cc1ccc(O)c(O)c1')">
+          4XMB — KEAP1
+        </button>
+        <button class="preset-btn"
+          onclick="setPreset('5HDN','OC(=O)C=Cc1ccc(O)c(O)c1')">
+          5HDN — TDP-43
+        </button>
+        <button class="preset-btn"
+          onclick="setPreset('7XS0','O=c1cc(-c2ccc(O)cc2)oc2cc(O)cc(O)c12')">
+          7XS0 — CDK6
+        </button>
+        <button class="preset-btn"
+          onclick="setPreset('6RVF','COc1cc(/C=C/C(=O)O)ccc1O')">
+          6RVF — CK2α
+        </button>
+        <button class="preset-btn"
+          onclick="setPreset('2C9V','OC(=O)C=Cc1ccc(O)c(O)c1')">
+          2C9V — Parkin
+        </button>
+      </div>
+
+      <button class="run-btn" id="run-btn"
+              onclick="submitJob()">
+        ▶ &nbsp; Run Docking Analysis
+      </button>
+    </div>
+  </div><!-- /sidebar -->
+
+  <!-- ── Content ── -->
+  <div class="content">
+
+    <!-- Status -->
+    <div class="status-bar" id="status-bar">
+      <span id="status-msg">Submitting...</span>
+      <span class="elapsed" id="elapsed-display"></span>
+    </div>
+    <div class="progress" id="progress-wrap"
+         style="display:none;margin-bottom:14px">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Result card with inner tabs -->
+    <div class="card" style="padding:0;overflow:hidden">
+
+      <div class="itabs" id="inner-tabs">
+        <div class="itab active" id="itab-log"
+             onclick="switchInner('log')">Live Log</div>
+        <div class="itab" id="itab-results"
+             onclick="switchInner('results')">Docking Results</div>
+        <div class="itab" id="itab-admet"
+             onclick="switchInner('admet')">ADMET</div>
+        <div class="itab" id="itab-pockets3d"
+             onclick="switchInner('pockets3d')">&#128300; Pocket View</div>
+        <div class="itab" id="itab-report"
+             onclick="switchInner('report')">Full Report</div>
+      </div>
+
+      <div style="padding:16px 20px">
+
+        <!-- Log -->
+        <div class="itab-pane active" id="ipane-log">
+
+        <!-- ═══════════════════════════════════════════════════════
+             RESULT PANES — one per tab, switched by switchInner()
+        ═══════════════════════════════════════════════════════ -->
+
+        <!-- PANE: Live Log -->
+        <div id="pane-log" style="display:block">
+          <div id="log-box" class="log-box">
+            <p class="log-placeholder" id="log-placeholder">
+              Submit a job to see the live pipeline log.
+            </p>
+          </div>
+        </div>
+
+        <!-- PANE: Docking Results -->
+        <div id="pane-results" style="display:none">
+          <div id="results-placeholder" style="text-align:center;padding:40px;color:var(--text2);font-size:13px">
+            Run a docking job to see results.
+          </div>
+          <!-- DTSS banner -->
+          <div id="dtss-banner-wrap"></div>
+          <!-- Key metric cards -->
+          <div id="metrics-wrap"></div>
+          <!-- Progress + status (updated during run) -->
+          <div style="display:none">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-fill" class="progress-fill" style="width:0%"></div>
+            </div>
+            <div id="status-text" style="font-size:12px;color:var(--text2);margin-top:4px"></div>
+          </div>
+          <!-- Pocket docking table -->
+          <div id="results-table">
+            <div class="results-wrap">
+              <table class="pocket-table">
+                <thead><tr>
+                  <th>Pocket</th><th>Best &Delta;G</th><th>Mean Top-3</th>
+                  <th>Poses</th><th>Engine</th><th>Druggability</th>
+                </tr></thead>
+                <tbody id="pocket-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Download links -->
+          <div id="dl-links" style="display:none;gap:10px;margin-top:16px;flex-wrap:wrap">
+            <a id="dl-report" href="#" target="_blank"
+               style="display:inline-flex;align-items:center;gap:6px;padding:9px 18px;
+                      border-radius:7px;font-size:13px;font-weight:600;
+                      background:var(--orange);color:#fff;text-decoration:none">
+              &#128196; Download Report
+            </a>
+          </div>
+        </div>
+
+        <!-- PANE: ADMET -->
+        <div id="pane-admet" style="display:none">
+          <div id="admet-placeholder" style="text-align:center;padding:40px;color:var(--text2);font-size:13px">
+            ADMET profile will appear here after the job completes.
+          </div>
+          <div id="admet-wrap"></div>
+        </div>
+
+        <!-- PANE: Pocket View (2D Interaction Map) -->
+        <div id="pane-pockets3d" style="display:none">
+          <div class="pocket-explorer-header">
+            <h3 class="section-title">Binding Pocket Explorer</h3>
+            <p style="font-size:13px;color:var(--text2);margin-top:4px">
+              All fpocket-detected binding sites with properties and docking scores.
+              Best docking pocket highlighted in orange.
+            </p>
+          </div>
+          <!-- 2D Interaction diagram -->
+          <div id="interaction-2d-wrap"
+               style="border-radius:10px;border:2px solid var(--border);
+                      background:#fff;min-height:200px;padding:0;
+                      display:flex;align-items:center;justify-content:center;flex-direction:column">
+            <div id="interaction-2d-status"
+                 style="padding:24px;font-size:13px;color:var(--text2);text-align:center">
+              &#128257; Interaction diagram will load after job completes
+            </div>
+          </div>
+          <!-- Download row -->
+          <div id="pocket-dl-row"
+               style="display:none;margin-top:12px;gap:10px;flex-wrap:wrap">
+            <a id="dl-interaction-png" href="#" target="_blank"
+               style="display:inline-flex;align-items:center;gap:6px;padding:9px 18px;
+                      border-radius:7px;font-size:13px;font-weight:600;
+                      background:var(--orange);color:#fff;text-decoration:none">
+              &#128247; Download 2D PNG
+            </a>
+            <a id="dl-interaction-svg" href="#" target="_blank"
+               style="display:inline-flex;align-items:center;gap:6px;padding:9px 18px;
+                      border-radius:7px;font-size:13px;font-weight:600;
+                      background:#fff;color:var(--navy);text-decoration:none;
+                      border:2px solid var(--border)">
+              &#127912; Download SVG
+            </a>
+            <a id="dl-pdbqt-best" href="#" target="_blank"
+               style="display:inline-flex;align-items:center;gap:6px;padding:9px 18px;
+                      border-radius:7px;font-size:13px;font-weight:600;
+                      background:#fff;color:var(--navy);text-decoration:none;
+                      border:2px solid var(--border)">
+              &#128190; Download Best Pose (.pdbqt)
+            </a>
+          </div>
+          <!-- Pocket properties table -->
+          <div id="pocket-table-wrap" style="margin-top:20px"></div>
+        </div>
+
+        <!-- PANE: Full Report -->
+        <div id="pane-report" style="display:none">
+          <div id="report-content">
+            <div id="report-empty"
+                 style="text-align:center;padding:40px;color:var(--text2);font-size:13px">
+              Surface report will appear here after the job completes.
+            </div>
+          </div>
+          <div id="inner-report" style="display:none">
+            <iframe id="report-frame"
+                    style="width:100%;height:700px;border:none;border-radius:8px"
+                    src="about:blank"></iframe>
+          </div>
+        </div>
+        </div>
+
+      </div><!-- /padding -->
+    </div><!-- /card -->
+
+  </div><!-- /content -->
+</div><!-- /main -->
+</div><!-- /pane-dock -->
+
+
+<!-- ══ TAB: ABOUT ════════════════════════════════════════════════════ -->
+<div class="tab-pane" id="pane-about">
+<div class="main" style="display:block">
+<div class="card">
+<div class="about-wrap">
+
+  <h2>About SAIDock</h2>
+  <p>
+    SAIDock is an automated drug-target surface analysis and molecular
+    docking platform developed as part of the
+    <strong>SAI-Net (Structure-Activity Intelligence Network)</strong>
+    computational neuropharmacology framework at Sri Sathya Sai
+    Institute of Higher Learning, Puttaparthi.
+  </p>
+  <p>
+    The platform integrates multi-pocket detection, AutoDock Vina
+    docking, protein-ligand interaction profiling, ADMET prediction,
+    and a novel ML-based Drug-Target Suitability Score (DTSS) to
+    profile candidate therapeutic compounds against NDD-relevant
+    protein targets.
+  </p>
+
+  <h2>Pipeline Modules</h2>
+  <ul>
+    <li><strong>[1/8] Target Preparation</strong> — PDB download,
+      chain extraction, missing residue repair, PDBQT generation</li>
+    <li><strong>[2/8] Pocket Detection</strong> — fpocket Voronoi;
+      composite druggability scoring; top-5 pockets selected</li>
+    <li><strong>[3/8] Ligand Preparation</strong> — SMILES → 3D
+      (ETKDG + MMFF94), pH 7.4 protonation, PDBQT conversion</li>
+    <li><strong>[4/8] Docking</strong> — AutoDock Vina 1.2,
+      exhaustiveness=16, multi-pocket screening</li>
+    <li><strong>[5/8] Interactions</strong> — ProLIF H-bond,
+      π-stacking, hydrophobic contacts; distance fallback</li>
+    <li><strong>[6/8] ADMET</strong> — QED, LogP, TPSA, Lipinski,
+      BBB penetration, GI absorption (RDKit)</li>
+    <li><strong>[7/8] ML + DTSS</strong> — Per-target Random Forest
+      (n=300, 2063-dim Morgan+physicochemical fingerprint);
+      adaptive DTSS with applicability domain flagging</li>
+    <li><strong>[8/8] Report</strong> — HTML surface report + JSON
+      export with full DTSS component breakdown</li>
+  </ul>
+
+  <h2>DTSS Score</h2>
+  <p>
+    The Drug-Target Suitability Score (DTSS) is a composite [0,1]
+    metric combining five evidence streams with adaptive weights:
+  </p>
+  <ul>
+    <li><strong>ΔG_norm × 0.35–0.45</strong> — Normalised Vina
+      docking free energy</li>
+    <li><strong>ADMET × 0.20</strong> — Drug-likeness and safety
+      profile</li>
+    <li><strong>ML × 0.10–0.20</strong> — Target-specific
+      bioactivity prediction (ChEMBL-trained RF)</li>
+    <li><strong>Pocket druggability × 0.15</strong> — fpocket
+      composite score</li>
+    <li><strong>Literature prior × 0.10</strong> — ChEMBL pChEMBL
+      converted to [0,1]</li>
+  </ul>
+  <ul>
+    <li><strong style="color:#2e7d32">≥ 0.65</strong> — Good to
+      Excellent: strong multi-evidence binding support</li>
+    <li><strong style="color:var(--orange)">0.50–0.65</strong> —
+      Moderate: promising, consider structural optimisation</li>
+    <li><strong style="color:#c62828">0.35–0.50</strong> — Weak:
+      limited evidence, interpret with caution</li>
+  </ul>
+
+  <h2>Research Team</h2>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="role">Principal Investigator</div>
+      <div class="name">Prof. Venketesh Sivaramakrishnan</div>
+      <div class="inst">Sri Sathya Sai Institute of Higher Learning
+        · Puttaparthi, Andhra Pradesh</div>
+    </div>
+    <div class="team-card">
+      <div class="role">Developer &amp; Computational Researcher</div>
+      <div class="name">Krishnasalini Gunanathan</div>
+      <div class="inst">Sri Sathya Sai Institute of Higher Learning
+        · Puttaparthi, Andhra Pradesh</div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Educational and Research Use Only.</strong>
+    SAIDock is not intended for clinical or medical decision-making.
+    All docking scores and ADMET predictions are computational
+    estimates and require independent experimental validation.
+  </div>
+
+  <h2>Data Sources</h2>
+  <p>
+    Protein structures: <a href="https://www.rcsb.org"
+    target="_blank">RCSB Protein Data Bank</a>.
+    Bioactivity data: <a href="https://www.ebi.ac.uk/chembl"
+    target="_blank">ChEMBL</a>.
+    ADMET: RDKit descriptors cross-referenced with Lipinski,
+    Veber, and published BBB penetration criteria.
+  </p>
+
+  <h2>100 Years of Selfless Service</h2>
+  <blockquote>
+    "True knowledge is that which makes man work for the welfare
+    of humanity."<br>
+    <small>— Bhagawan Sri Sathya Sai Baba (1926–2011)</small>
+  </blockquote>
+
+</div><!-- /about-wrap -->
+</div><!-- /card -->
+</div><!-- /main -->
+</div><!-- /pane-about -->
+
+
+<!-- ══ JAVASCRIPT ════════════════════════════════════════════════════ -->
+<script>
+const API = window.location.origin;
+var jobId=null, timer=null, tStart=null, evtSrc=null;
+
+function switchTab(name,btn){
+  document.querySelectorAll('.tab-pane')
+    .forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn')
+    .forEach(b=>b.classList.remove('active'));
+  document.getElementById('pane-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+
+function switchInner(name){
+  /* Hide all panes, show selected, mark tab active */
+  var panes = ['log','results','admet','pockets3d','report'];
+  panes.forEach(function(p){
+    var el = document.getElementById('pane-'+p);
+    if(el) el.style.display = (p===name) ? 'block' : 'none';
+    var tb = document.getElementById('itab-'+p);
+    if(tb){
+      tb.style.color       = (p===name) ? 'var(--orange)' : 'var(--text2)';
+      tb.style.borderBottom= (p===name) ? '2px solid var(--orange)' : '2px solid transparent';
+      tb.style.fontWeight  = (p===name) ? '700' : '400';
+    }
+  });
+}
+
+function setPreset(pdb,smi){
+  document.getElementById('inp-target').value=pdb;
+  document.getElementById('inp-smiles').value=smi;
+}
+
+function logClear(){document.getElementById('log-box').innerHTML='';}
+function logLine(text,cls){
+  const box=document.getElementById('log-box');
+  const d=document.createElement('div');
+  d.className=cls||'info'; d.textContent=text;
+  box.appendChild(d); box.scrollTop=box.scrollHeight;
+}
+
+function setStatus(st,msg){
+  const bar=document.getElementById('status-bar');
+  const fill=document.getElementById('progress-fill');
+  const wrap=document.getElementById('progress-wrap');
+  bar.style.display='flex'; wrap.style.display='block';
+  bar.className='status-bar '+st;
+  document.getElementById('status-msg').textContent=
+    msg||{running:'Running analysis…',done:'Complete ✓',
+          error:'Error — see log',queued:'Queued'}[st]||st;
+  fill.className='progress-fill '+(st==='done'||st==='error'?st:'');
+  if(st==='running') fill.style.width='70%';
+}
+
+function startTimer(){
+  tStart=Date.now();
+  timer=setInterval(()=>{
+    const s=Math.floor((Date.now()-tStart)/1000);
+    document.getElementById('elapsed-display').textContent=
+      Math.floor(s/60)+'m '+('0'+s%60).slice(-2)+'s';
+  },1000);
+}
+function stopTimer(){if(timer){clearInterval(timer);timer=null;}}
+
+async function submitJob(){
+  const smi=document.getElementById('inp-smiles').value.trim();
+  const tgt=document.getElementById('inp-target').value.trim();
+  if(!smi){alert('Please enter a SMILES string.');return;}
+  if(!tgt){alert('Please enter a PDB target ID.');return;}
+
+  document.getElementById('run-btn').disabled=true;
+  logClear();
+  _lastLogLine=0;
+  setStatus('running');
+  startTimer();
+  switchInner('log');
+
+  const payload={smiles:smi,target:tgt,
+    exhaustiveness:16,n_pockets:5,cpu:4,chain:'A',
+    do_admet:true,do_interactions:true,do_ml:true};
+
+  try{
+    // API uses Form(...) — must send FormData, NOT JSON
+  const fd = new FormData();
+  fd.append('smiles', smi);
+  fd.append('target', tgt);
+  const r=await fetch(API+'/api/run',
+      {method:'POST', body:fd});
+    const j=await r.json();
+    jobId=j.job_id||j.id||j.jobId; logLine('[OK] Job ID: '+jobId,'ok');
+    localStorage.setItem('saidock_last_job', jobId);
+    logLine('[OK] Job submitted — ID: '+jobId,'ok');
+    pollJob();
+  }catch(e){
+    logLine('[ERROR] Cannot reach API server: '+e,'error');
+    logLine('Running in local mode…','warn');
+    setStatus('error','API unreachable — check server');
+    document.getElementById('run-btn').disabled=false;
+    stopTimer();
+  }
+}
+
+function pollJob(){
+  // No SSE endpoint — use polling directly
+  setTimeout(()=>pollFallback(),3000);
+}
+
+// Track last log line seen
+var _lastLogLine = 0;
+
+function pollFallback(){
+  // Poll job status
+  fetch(API+'/api/jobs/'+jobId)
+    .then(r=>r.json()).then(d=>{
+      // Update progress bar
+      const pct = d.status==='complete'?100:
+                  d.status==='failed' ?100:
+                  d.status==='running'?60 : 30;
+      document.getElementById('progress-fill').style.width=pct+'%';
+
+      // Fetch new log lines
+      fetch(API+'/api/jobs/'+jobId+'/log?offset='+_lastLogLine)
+        .then(r=>r.json()).then(lg=>{
+          const lines = lg.lines||lg.log_lines||[];
+          lines.forEach(l=>{
+            const cls = l.includes('[OK]')||l.includes('✓')?'ok':
+                        l.includes('ERROR')||l.includes('FAIL')?'error':
+                        l.includes('WARNING')||l.includes('WARN')?'warn':
+                        l.startsWith('[') && l.includes('/8')?'step':'info';
+            logLine(l, cls);
+            _lastLogLine++;
+          });
+        }).catch(()=>{});
+
+      const st = (d.status||'').toLowerCase();
+      if(st==='complete'||st==='done'||st==='completed'){
+        stopTimer(); setStatus('done');
+        document.getElementById('run-btn').disabled=false;
+        // Fetch full results
+        fetch(API+'/api/jobs/'+jobId+'/results')
+          .then(r=>r.json()).then(res=>{
+            showResults(res, jobId);
+            switchInner('results');
+
+  // ── NGL 3D Pocket Viewer ────────────────────────────────────────
+
+          }).catch(e=>{
+            logLine('[WARN] Could not fetch results: '+e,'warn');
+          });
+      } else if(st==='failed'||st==='error'){
+        stopTimer(); setStatus('error',d.error||d.message||'Pipeline failed');
+        document.getElementById('run-btn').disabled=false;
+        logLine('[ERROR] '+(d.error||d.message||'Job failed'),'error');
+      } else {
+        // Still running
+        if(d.step) logLine('[INFO] '+d.step,'step');
+        setTimeout(()=>pollFallback(),3500);
+      }
+    }).catch(e=>{
+      logLine('[WARN] Poll error: '+e,'warn');
+      setTimeout(()=>pollFallback(),5000);
+    });
+}
+
+function dtssClass(v){
+  if(v>=0.80) return 'excellent';
+  if(v>=0.65) return 'good';
+  if(v>=0.50) return 'moderate';
+  if(v>=0.35) return 'weak';
+  return 'poor';
+}
+
+function showResults(state, jid){
+  if(!state) return;
+
+  /* ── Extract all data safely ───────────────────────────────────── */
+  var ml   = state.ml_results  || {};
+  var adm  = state.admet       || {};
+  var dr   = state.docking_results || [];
+  var pks  = state.pockets     || [];
+  var ints = state.interactions || {};
+
+  var dtss    = ml.DTSS              || 0;
+  var cat     = ml.binding_category  || 'N/A';
+  var bestDG  = ml.best_docking_score|| 0;
+  var admetSc = ml.admet_score       || 0;
+  var mlConf  = ml.ml_confidence     || 0.5;
+  var pktDrug = ml.pocket_druggability || 0;
+  var litSc   = ml.literature_score  || 0;
+  var mlAD    = ml.ml_ad_status      || (ml.model_loaded ? 'IN_DOMAIN' : 'OUT_OF_DOMAIN');
+
+  /* ── Progress bar: mark complete ──────────────────────────────── */
+  var pf = document.getElementById('progress-fill');
+  if(pf){ pf.style.width='100%'; pf.style.background='#16a34a'; }
+  var st = document.getElementById('status-text');
+  if(st){ st.textContent='Complete \u2713'; st.style.color='#16a34a'; }
+
+  /* ── Switch to results pane ────────────────────────────────────── */
+  switchInner('results');
+
+  /* ══════════════════════════════════════════════════════════════
+     TAB: DOCKING RESULTS
+  ══════════════════════════════════════════════════════════════ */
+  /* Hide placeholder */
+  var rp = document.getElementById('results-placeholder');
+  if(rp) rp.style.display = 'none';
+
+  /* DTSS banner */
+  var bw = document.getElementById('dtss-banner-wrap');
+  if(bw){
+    var cls = dtss>=0.75?'dtss-strong':dtss>=0.65?'dtss-good':
+              dtss>=0.50?'dtss-mod':dtss>=0.35?'dtss-weak':'dtss-poor';
+    bw.innerHTML =
+      '<div class="dtss-banner '+cls+'" style="display:flex;align-items:center;'
+      +'gap:20px;flex-wrap:wrap;padding:18px;border-radius:10px;'
+      +'background:#fff8f0;border:2px solid var(--orange);margin-bottom:16px">'
+      +'<div><span style="font-size:52px;font-weight:900;color:var(--orange)">'
+      +dtss.toFixed(3)+'</span><br>'
+      +'<span style="font-size:12px;font-weight:600;color:var(--text2)">DTSS Score (0–1)</span><br>'
+      +'<span style="font-size:13px;font-weight:700;color:var(--navy)">'+cat+'</span>'
+      +'</div>'
+      +'<div style="flex:1;min-width:220px;font-size:12px;line-height:1.9;color:var(--text2)">'
+      +'<b style="color:var(--navy)">Drug-Target Suitability Score (DTSS)</b><br>'
+      +'DTSS = 0.35\u00d7\u0394G<sub>norm</sub> + 0.20\u00d7ADMET + 0.20\u00d7ML'
+      +' + 0.15\u00d7Pocket + 0.10\u00d7Lit<br>'
+      +'<span style="background:'+(mlAD==='IN_DOMAIN'?'#dcfce7':'#fef9c3')
+      +';color:'+(mlAD==='IN_DOMAIN'?'#16a34a':'#b45309')
+      +';padding:2px 8px;border-radius:4px;font-weight:700;font-size:11px">'
+      +'ML domain: '+mlAD+'</span>'
+      +'</div>'
+      +'</div>';
+  }
+
+  /* Metric cards */
+  var mw = document.getElementById('metrics-wrap');
+  if(mw){
+    var metrics = [
+      [bestDG.toFixed(3)+' kcal/mol','Best Binding Affinity'],
+      [dr.length,'Pockets Screened'],
+      [admetSc.toFixed(4),'ADMET Score'],
+      [mlConf.toFixed(4),'ML Confidence'],
+      [pktDrug.toFixed(4),'Pocket Drugg.'],
+      [litSc.toFixed(4),'Literature Score'],
+    ];
+    mw.innerHTML = '<div class="metric-grid" style="display:grid;grid-template-columns:'
+      +'repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:20px">'
+      +metrics.map(function(m){
+        return '<div class="metric-card" style="background:#fff;border:1px solid var(--border);'
+          +'border-radius:8px;padding:14px;text-align:center">'
+          +'<div class="mv" style="font-size:20px;font-weight:800;color:var(--navy)">'+m[0]+'</div>'
+          +'<div class="ml" style="font-size:11px;color:var(--text2);margin-top:4px">'+m[1]+'</div>'
+          +'</div>';
+      }).join('')+'</div>';
+  }
+
+  /* Pocket docking table — use correct field names from API */
+  var tbody = document.getElementById('pocket-tbody');
+  if(tbody && dr.length){
+    /* Merge druggability from pockets array by pocket_id */
+    var pkMap = {};
+    pks.forEach(function(p){ pkMap[p.pocket_id] = p; });
+
+    var sorted = dr.slice().sort(function(a,b){
+      return (a.best_score||0)-(b.best_score||0);
+    });
+    tbody.innerHTML = sorted.map(function(r,idx){
+      var pid   = r.pocket_id;
+      var pname = 'Pocket '+pid;
+      var dg    = (r.best_score||0).toFixed(3);
+      var mean3 = (r.mean_top3||0).toFixed(3);
+      var poses = r.n_poses||9;
+      var eng   = r.engine||'AutoDock Vina';
+      /* druggability: try docking_result field first, fallback to pockets map */
+      var drug  = r.druggability_score || r.pocket_drugg_score ||
+                  r.composite_score    ||
+                  (pkMap[pid] ? (pkMap[pid].composite_score||pkMap[pid].druggability_score||0) : 0);
+      var best  = idx===0;
+      var dgNum = parseFloat(dg);
+      var dgCol = dgNum<=-8?'#16a34a':dgNum<=-6?'var(--orange)':'#dc2626';
+      return '<tr'+(best?' style="background:#fff8f0"':'')+'>'
+        +'<td style="font-weight:'+(best?'700':'400')+';color:'+(best?'var(--orange)':'inherit')+'">'
+        +(best?'[BEST] ':'')+pname+'</td>'
+        +'<td style="font-weight:700;color:'+dgCol+'">'+dg+'</td>'
+        +'<td>'+mean3+'</td>'
+        +'<td>'+poses+'</td>'
+        +'<td>'+eng+'</td>'
+        +'<td>'+drug.toFixed(3)+'</td>'
+        +'</tr>';
+    }).join('');
+  }
+
+  /* Download links */
+  var dll = document.getElementById('dl-links');
+  if(dll) dll.style.display='flex';
+  var dlr = document.getElementById('dl-report');
+  if(dlr) dlr.href = API+'/api/jobs/'+jid+'/report';
+  // Load report into iframe with cache-bust
+  var rf = document.getElementById('report-frame');
+  if(rf){
+    rf.src = API+'/api/jobs/'+jid+'/report?t='+Date.now();
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+     TAB: ADMET
+  ══════════════════════════════════════════════════════════════ */
+  var admetPh = document.getElementById('admet-placeholder');
+  if(admetPh) admetPh.style.display='none';
+
+  var admetWrap = document.getElementById('admet-wrap');
+  if(admetWrap && Object.keys(adm).length){
+    /* Lipinski + ADMET table */
+    var PROPS = [
+      {k:'MW',              label:'MW (g/mol)',     thresh:'\u2264 500',
+       pass:function(v){return parseFloat(v)<=500;}},
+      {k:'LogP',            label:'LogP',           thresh:'\u2264 5',
+       pass:function(v){return parseFloat(v)<=5;}},
+      {k:'HBD',             label:'HBD',            thresh:'\u2264 5',
+       pass:function(v){return parseFloat(v)<=5;}},
+      {k:'HBA',             label:'HBA',            thresh:'\u2264 10',
+       pass:function(v){return parseFloat(v)<=10;}},
+      {k:'TPSA',            label:'TPSA (\u00c5\u00b2)', thresh:'\u2264 140',
+       pass:function(v){return parseFloat(v)<=140;}},
+      {k:'RotBonds',        label:'RotBonds',        thresh:'\u2264 10',
+       pass:function(v){return parseFloat(v)<=10;}},
+      {k:'QED',             label:'QED',             thresh:'\u2265 0.5 ideal',
+       pass:function(v){return parseFloat(v)>=0.5;}},
+      {k:'GI_absorption',   label:'GI Absorption',   thresh:'High',
+       pass:function(v){return String(v).toLowerCase().includes('high');}},
+      {k:'BBB_penetrant',   label:'BBB Penetrant',   thresh:'-',
+       pass:function(v){return null;}},
+      {k:'Solubility_class',label:'Solubility',      thresh:'-',
+       pass:function(v){return null;}},
+      {k:'Lipinski_violations',label:'Lipinski Violations',thresh:'\u2264 1',
+       pass:function(v){return parseFloat(v)<=1;}},
+    ];
+    var propRows = PROPS.map(function(p){
+      /* Try multiple key variants */
+      var val = adm[p.k] !== undefined ? adm[p.k] :
+                adm[p.k.toLowerCase()] !== undefined ? adm[p.k.toLowerCase()] :
+                adm[p.k.replace(/_/g,' ')] !== undefined ? adm[p.k.replace(/_/g,' ')] :
+                undefined;
+      if(val===undefined) return '';
+      var passResult = p.pass(val);
+      var num = typeof val==='number' ? val.toFixed(val%1===0?0:3) : String(val);
+      var badge = passResult===null ? '<span style="color:#64748b">—</span>' :
+                  passResult ?
+                  '<span style="color:#16a34a;font-weight:700">\u2713 Pass</span>' :
+                  '<span style="color:#dc2626;font-weight:700">\u2717 Fail</span>';
+      return '<tr><td>'+p.label+'</td><td><b>'+num+'</b></td>'
+            +'<td style="color:var(--text2)">'+p.thresh+'</td><td>'+badge+'</td></tr>';
+    }).filter(Boolean).join('');
+
+    /* ML scoring table */
+    var mlRows = [
+      ['DTSS',              dtss.toFixed(4)],
+      ['Binding Category',  cat],
+      ['\u0394G Normalised',(ml.dg_norm||0).toFixed(4)],
+      ['ADMET Score',       admetSc.toFixed(4)],
+      ['ML Confidence',     mlConf.toFixed(4)],
+      ['Pocket Druggability',pktDrug.toFixed(4)],
+      ['Literature Score',  litSc.toFixed(4)],
+      ['ChEMBL pChEMBL',    ml.chembl_pchembl||'Not in DB'],
+    ].map(function(r){
+      return '<tr><td>'+r[0]+'</td><td style="font-weight:600">'+r[1]+'</td></tr>';
+    }).join('');
+
+    var TS = 'style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:24px"';
+    var TH = 'style="background:var(--navy);color:#fff;padding:10px 14px;text-align:left;font-size:12px"';
+    var TD = 'style="padding:9px 14px;border-bottom:1px solid var(--border)"';
+
+    admetWrap.innerHTML =
+      '<h3 style="font-size:15px;font-weight:700;color:var(--navy);margin:0 0 14px">ADMET Drug-likeness Assessment</h3>'
+      +'<table '+TS+'><thead><tr>'
+      +'<th '+TH+'>Property</th><th '+TH+'>Value</th><th '+TH+'>Threshold</th><th '+TH+'>Status</th>'
+      +'</tr></thead><tbody>'+propRows+'</tbody></table>'
+      +'<h3 style="font-size:15px;font-weight:700;color:var(--navy);margin:0 0 14px">ML Scoring Components</h3>'
+      +'<table '+TS+'><thead><tr>'
+      +'<th '+TH+'>Component</th><th '+TH+'>Value</th>'
+      +'</tr></thead><tbody>'+mlRows+'</tbody></table>';
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+     TAB: POCKET VIEW — load interaction diagram
+  ══════════════════════════════════════════════════════════════ */
+  if(jid && typeof loadLigPlot === 'function') loadLigPlot(jid);
+
+  /* ══════════════════════════════════════════════════════════════
+     TAB: FULL REPORT — load server HTML
+  ══════════════════════════════════════════════════════════════ */
+  var reportContent = document.getElementById('report-content');
+  var reportEmpty   = document.getElementById('report-empty');
+  var innerReport   = document.getElementById('inner-report');
+  var reportFrame   = document.getElementById('report-frame');
+
+  if(reportFrame){
+    reportFrame.src = API+'/api/jobs/'+jid+'/report';
+    if(reportEmpty) reportEmpty.style.display='none';
+    if(innerReport) innerReport.style.display='block';
+  } else if(reportContent){
+    /* Fetch and embed directly */
+    fetch(API+'/api/jobs/'+jid+'/report')
+      .then(function(res){ return res.ok ? res.text() : null; })
+      .then(function(html){
+        if(html && reportContent){
+          if(reportEmpty) reportEmpty.style.display='none';
+          reportContent.innerHTML = html;
+        }
+      }).catch(function(){});
+  }
+}
+
+/* ── Inline report builder (fallback when /report endpoint absent) ── */
+function buildInlineReport(state, jid, ml, adm, dr){
+  var dtss   = (ml.DTSS||0).toFixed(4);
+  var bestDG = (ml.best_docking_score||0).toFixed(3);
+  var date   = new Date().toISOString().slice(0,10);
+  var nRes   = (state.target_info && state.target_info.n_residues) || '—';
+  var target = (state.target_info && state.target_info.pdb_id)     || jid;
+
+  var pocketRows = Array.isArray(dr) ? dr.map(function(p,i){
+    return '<tr'+(i===0?' style="background:#fff8f0"':'')+'>'
+      +'<td>'+(i===0?'<b>[BEST] ':'')+( p.pocket_name||'Pocket '+p.pocket_id)+(i===0?'</b>':'')+'</td>'
+      +'<td>'+( p.best_score||0).toFixed(3)+'</td>'
+      +'<td>'+( p.mean_top3 ||0).toFixed(3)+'</td>'
+      +'<td>'+(p.druggability||0).toFixed(3)+'</td>'
+      +'</tr>';
+  }).join('') : '';
+
+  return '<div style="font-family:Arial,sans-serif;padding:10px">'
+    +'<h2 style="color:#1a2a4a;border-bottom:3px solid #f5820d;padding-bottom:8px">'
+    +'SAIDock Assessment Report</h2>'
+    +'<p style="color:#666;font-size:13px">Target: <b>'+target+'</b>'
+    +' &nbsp;|&nbsp; '+date+'</p>'
+    +'<table style="width:100%;border-collapse:collapse;margin:16px 0">'
+    +'<tr><td style="padding:8px;background:#f8f9fa;font-weight:700">DTSS</td>'
+    +'<td style="padding:8px;font-size:28px;font-weight:900;color:#f5820d">'+dtss+'</td></tr>'
+    +'<tr><td style="padding:8px;background:#f8f9fa;font-weight:700">Best \u0394G</td>'
+    +'<td style="padding:8px">'+bestDG+' kcal/mol</td></tr>'
+    +'<tr><td style="padding:8px;background:#f8f9fa;font-weight:700">ADMET Score</td>'
+    +'<td style="padding:8px">'+(ml.admet_score||0).toFixed(4)+'</td></tr>'
+    +'<tr><td style="padding:8px;background:#f8f9fa;font-weight:700">ML Confidence</td>'
+    +'<td style="padding:8px">'+(ml.ml_confidence||0).toFixed(4)+'</td></tr>'
+    +'<tr><td style="padding:8px;background:#f8f9fa;font-weight:700">Pockets Screened</td>'
+    +'<td style="padding:8px">'+dr.length+'</td></tr>'
+    +'</table>'
+    +'<h3 style="color:#1a2a4a;margin-top:24px">Multi-Pocket Docking Results</h3>'
+    +'<table style="width:100%;border-collapse:collapse;font-size:13px">'
+    +'<thead><tr style="background:#1a2a4a;color:#fff">'
+    +'<th style="padding:10px;text-align:left">Pocket</th>'
+    +'<th style="padding:10px;text-align:left">Best \u0394G</th>'
+    +'<th style="padding:10px;text-align:left">Mean Top-3</th>'
+    +'<th style="padding:10px;text-align:left">Druggability</th>'
+    +'</tr></thead><tbody>'+pocketRows+'</tbody></table>'
+    +'<p style="margin-top:32px;font-size:11px;color:#999">'
+    +'Generated by SAIDock v1.0 | SSSIHL, Puttaparthi</p>'
+    +'</div>';
+}
+
+// ════════════════════════════════════════════════════════════════════
+// NGL Pocket Viewer
+// ════════════════════════════════════════════════════════════════════
+var _nglStage = null;
+
+function initNGLViewer(jobId, dockingResults, pocketsData){
+  const base = API+'/api/jobs/'+jobId+'/files/results/';
+
+  // Build pocket score lookup: pocket_id → best_score
+  const scoreMap = {};
+  (dockingResults||[]).forEach(p=>{ scoreMap[p.pocket_id]=p.best_score||0; });
+
+  // Find best pocket
+  const bestPocketId = dockingResults.length ?
+    dockingResults.reduce((a,b)=>(a.best_score||0)<(b.best_score||0)?a:b).pocket_id : 1;
+
+  // Pocket colour scheme
+  const pocketColors = {
+    1:'#4fc3f7', 2:'#81d4fa', 3:'#f5820d',
+    4:'#ce93d8', 5:'#80cbc4', 6:'#ffcc80'
+  };
+
+  // Render pocket selector cards
+  const cardCont = document.getElementById('pocket-cards');
+  if(cardCont && pocketsData.length){
+    cardCont.innerHTML='';
+    pocketsData.forEach(pk=>{
+      const pid = pk.pocket_id||pk.id;
+      const score = scoreMap[pid]||0;
+      const isBest = pid===bestPocketId;
+      const card = document.createElement('div');
+      card.style.cssText=`cursor:pointer;padding:10px 16px;border-radius:8px;
+        border:2px solid ${isBest?'var(--orange)':'var(--border)'};
+        background:${isBest?'#fff8f0':'#f7f9fc'};min-width:110px;
+        transition:all .15s;`;
+      card.innerHTML=`
+        <div style="font-size:11px;font-weight:700;color:var(--text2);
+             text-transform:uppercase;margin-bottom:4px">Pocket ${pid}
+             ${isBest?' ★':''}</div>
+        <div style="font-size:16px;font-weight:800;
+             color:${isBest?'var(--orange)':'var(--navy)'}">
+          ${score?score.toFixed(2):'N/A'}</div>
+        <div style="font-size:10px;color:var(--text2)">kcal/mol</div>
+        <div style="font-size:10px;color:var(--text2);margin-top:3px">
+          Drugg: ${(pk.druggability_score||pk.composite_score||0).toFixed(3)}</div>`;
+      card.onclick=()=>focusPocket(pid);
+      cardCont.appendChild(card);
+    });
+  }
+
+  // Build pocket properties table
+  const tbody = document.getElementById('pocket-props-body');
+  if(tbody && pocketsData.length){
+    tbody.innerHTML='';
+    const roles = {
+      1:'Potential allosteric site',
+      2:'Surface groove / secondary site',
+      3:'Primary RRM binding cleft',
+      4:'RNA-recognition interface',
+      5:'Hydrophobic core pocket',
+      6:'Peripheral binding site'
+    };
+    pocketsData.forEach(pk=>{
+      const pid = pk.pocket_id||pk.id;
+      const score = scoreMap[pid]||0;
+      const isBest = pid===bestPocketId;
+      const tr = document.createElement('tr');
+      tr.style.background = isBest ? '#fff8f0' : 'transparent';
+      tr.innerHTML=`
+        <td style="padding:10px 14px;font-weight:${isBest?700:400}">
+          ${isBest?'★ ':''}Pocket ${pid}</td>
+        <td style="padding:10px 14px;text-align:right;
+            color:${isBest?'var(--orange)':'inherit'};
+            font-weight:${isBest?700:400}">${score?score.toFixed(3):'—'}</td>
+        <td style="padding:10px 14px;text-align:right">${(pk.volume||0).toFixed(1)}</td>
+        <td style="padding:10px 14px;text-align:right">${(pk.total_sasa||0).toFixed(1)}</td>
+        <td style="padding:10px 14px;text-align:right">${(pk.hydrophobicity||0).toFixed(2)}</td>
+        <td style="padding:10px 14px;text-align:right">${(pk.druggability_score||0).toFixed(3)}</td>
+        <td style="padding:10px 14px;text-align:right">${(pk.composite_score||0).toFixed(3)}</td>
+        <td style="padding:10px 14px;color:var(--text2);font-size:12px">
+          ${roles[pid]||'Binding site'}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Init NGL Stage
+  document.getElementById('ngl-status').textContent='Loading protein...';
+  if(_nglStage) _nglStage.dispose();
+  _nglStage = new NGL.Stage('ngl-viewport',{
+    backgroundColor:'#1a1a2e',
+    quality:'medium'
+  });
+
+  // Load protein surface
+  _nglStage.loadFile(base+'target/5HDN_fixed.pdb', {ext:'pdb'}).then(comp=>{
+    comp.addRepresentation('surface',{
+      color:'#a5d6a7', opacity:0.35, side:'front'
+    });
+    comp.addRepresentation('cartoon',{
+      color:'#4a7fa5', opacity:0.7
+    });
+    _nglStage.autoView();
+    document.getElementById('ngl-status').textContent='Protein loaded ✓';
+
+    // Load best pocket atoms
+    (pocketsData||[]).slice(0,5).forEach(pk=>{
+      const pid = pk.pocket_id||pk.id;
+      const pdbPath = base+'pockets/5HDN_fixed_out/pockets/pocket'+pid+'_atm.pdb';
+      const col = (pid===bestPocketId)?'#f5820d':'#4fc3f7';
+      _nglStage.loadFile(pdbPath,{ext:'pdb'}).then(pc=>{
+        pc.addRepresentation('ball+stick',{color:col, opacity:0.85, scale:0.5});
+        pc.addRepresentation('surface',{color:col, opacity:0.3, side:'front'});
+      }).catch(()=>{}); // skip if pocket file missing
+    });
+
+    // Load ligand pose (best pocket)
+    const pdbqt = base+'docking/pocket'+bestPocketId+'_poses.pdbqt';
+    _nglStage.loadFile(pdbqt,{ext:'pdbqt'}).then(lc=>{
+      lc.addRepresentation('ball+stick',{
+        color:'#ffcc00', opacity:1.0, scale:0.8
+      });
+      document.getElementById('ngl-status').textContent=
+        'Structure loaded ✓ — Best pose shown';
+    }).catch(()=>{
+      document.getElementById('ngl-status').textContent=
+        'Protein + pockets loaded ✓';
+    });
+
+  }).catch(e=>{
+    document.getElementById('ngl-status').textContent='Load error: '+e;
+  });
+}
+
+function focusPocket(pid){
+  if(!_nglStage) return;
+  // Highlight selected pocket card
+  const cards = document.querySelectorAll('#pocket-cards > div');
+  cards.forEach((c,i)=>{
+    c.style.border='2px solid '+((i+1===pid)?'var(--orange)':'var(--border)');
+    c.style.background=(i+1===pid)?'#fff8f0':'#f7f9fc';
+  });
+  // Auto-zoom to that pocket representation (index = 2 + pocket index)
+  _nglStage.autoView(500);
+}
+
+
+// ════════════════════════════════════════════════════════════════════
+// LigPlot: load server-rendered 2D interaction SVG
+// ════════════════════════════════════════════════════════════════════
+function autoRestore(){
+  var saved = localStorage.getItem('saidock_last_job');
+  if(!saved) return;
+  fetch(API+'/api/jobs/'+saved)
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(d){
+      if(!d || d.status==='running') return;
+      jobId = saved;
+      // Restore progress bar to complete
+      var pf = document.getElementById('progress-fill');
+      if(pf) pf.style.width='100%';
+      var pb = document.getElementById('progress-bar');
+      if(pb){ pb.style.display='block'; pb.className='progress-bar complete'; }
+      var st = document.getElementById('status-text');
+      if(st) st.textContent='Complete ✓ (restored)';
+      // Fetch and show results
+      return fetch(API+'/api/jobs/'+saved+'/results')
+        .then(function(r){ return r.json(); })
+        .then(function(res){ showResults(res, saved); })
+        .catch(function(e){ console.warn('Restore failed:',e); });
+    })
+    .catch(function(){});
+
+
+}
+
+
+function loadLigPlot(jid){
+  var wrap   = document.getElementById('interaction-2d-wrap');
+  var status = document.getElementById('interaction-2d-status');
+  var dlrow  = document.getElementById('pocket-dl-row');
+  if(!wrap) return;
+
+  if(status) status.innerHTML = '&#128257; Generating interaction diagram...';
+
+  // Load PNG version
+  var pngUrl = API+'/api/jobs/'+jid+'/interaction_png';
+  var img    = document.createElement('img');
+  img.alt    = 'Ligand-protein interaction diagram';
+  img.style.cssText = 'max-width:100%;height:auto;border-radius:8px;display:block;';
+
+  img.onload = function(){
+    if(status) status.style.display='none';
+    wrap.innerHTML='';
+    wrap.style.padding='10px';
+    wrap.appendChild(img);
+    // Set download links
+    if(dlrow){
+      dlrow.style.display='flex';
+      var dlPng = document.getElementById('dl-interaction-png');
+      var dlSvg = document.getElementById('dl-interaction-svg');
+      var dlPdb = document.getElementById('dl-pdbqt-best');
+      if(dlPng) dlPng.href = pngUrl+'?download=1';
+      if(dlSvg) dlSvg.href = API+'/api/jobs/'+jid+'/interaction_svg';
+      if(dlPdb) dlPdb.href = API+'/api/jobs/'+jid+'/best_pose_pdbqt';
+    }
+  };
+
+  img.onerror = function(){
+    // Fallback to inline SVG
+    fetch(API+'/api/jobs/'+jid+'/ligplot')
+      .then(function(r){ return r.ok ? r.text() : null; })
+      .then(function(svg){
+        if(!svg){ 
+          if(status) status.textContent='Interaction diagram unavailable for this job';
+          return;
+        }
+        if(status) status.style.display='none';
+        wrap.innerHTML='<div style="padding:10px">'+svg+'</div>';
+        var s=wrap.querySelector('svg');
+        if(s){ s.style.maxWidth='100%'; s.style.height='auto'; }
+      })
+      .catch(function(){
+        if(status) status.textContent='Could not load interaction diagram';
+      });
+  };
+
+  img.src = pngUrl;
+}
+</script>
+</body>
+</html>

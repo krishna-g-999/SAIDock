@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 0.1500
+HEADER 1  - Drug Score                        : 0.0104
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.5704
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3318
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 83.3000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Amino Acid based volume Score     : 5.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 140.6851
+HEADER 10 - Pocket volume (convex hull)       : 3.4267
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 19.0000
+HEADER 13 - Number of apolar alpha sphere     :    20
+HEADER 14 - Proportion of apolar alpha sphere : 1.0000
+ATOM   8683    O LEU A1110      92.701 134.652  71.865  0.00  0.00           O 0
+ATOM   8693  CG1 ILE A1111      92.292 132.339  74.958  0.00  0.00           C 0
+ATOM   9024   CZ PHE A1152      90.030 128.951  69.367  0.00  0.00           C 0
+ATOM   8684   CB LEU A1110      94.263 132.723  70.361  0.00  0.00           C 0
+ATOM   8659   CG LEU A1107      93.568 127.818  72.838  0.00  0.00           C 0
+ATOM   9398  CD1 ILE A1198      88.089 129.895  74.572  0.00  0.00           C 0
+ATOM   8695  CD1 ILE A1111      92.221 131.095  75.789  0.00  0.00           C 0
+ATOM   8754  CG1 VAL A1119      90.798 133.677  66.418  0.00  0.00           C 0
+ATOM   8755  CG2 VAL A1119      91.815 135.535  67.692  0.00  0.00           C 0
+ATOM   9445  CE1 PHE A1204      89.002 134.923  73.087  0.00  0.00           C 0
+ATOM   9023  CE2 PHE A1152      88.742 129.341  69.653  0.00  0.00           C 0
+ATOM   9477  CD1 ILE A1207      86.143 132.308  70.687  0.00  0.00           C 0
+ATOM   8753   CB VAL A1119      90.697 135.153  66.750  0.00  0.00           C 0
+ATOM   8725   CA GLU A1116      88.085 137.775  70.149  0.00  0.00           C 0
+ATOM   8761   CG LEU A1120      86.341 134.232  65.598  0.00  0.00           C 0
+ATOM   8727    O GLU A1116      87.484 137.662  67.844  0.42  1.07           O 0
+ATOM   8729   CG GLU A1116      85.816 136.584  70.366  0.00  0.00           C 0
+TER
+END

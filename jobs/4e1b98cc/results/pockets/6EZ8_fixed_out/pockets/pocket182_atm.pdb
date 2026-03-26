@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   182:
+HEADER 0  - Pocket Score                      : -0.1341
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    23
+HEADER 3  - Mean alpha-sphere radius          : 4.2641
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6336
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -7.0000
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 3.4444
+HEADER 9  - Pocket volume (Monte Carlo)       : 340.5308
+HEADER 10 - Pocket volume (convex hull)       : 13.9688
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 2.0000
+HEADER 13 - Number of apolar alpha sphere     :     3
+HEADER 14 - Proportion of apolar alpha sphere : 0.1304
+ATOM  11579   CG ASP A1469      62.251 114.267 140.862  0.00  0.00           C 0
+ATOM  11580  OD1 ASP A1469      62.010 114.777 139.749  0.00  0.00           O 0
+ATOM  18275  NH2 ARG A2330      59.758 120.886 144.155  0.46  5.47           N 0
+ATOM  18264   OG SER A2329      65.029 119.407 146.136  0.65  4.29           O 0
+ATOM  11518    O SER A1462      56.828 114.727 142.930  0.41  6.43           O 0
+ATOM  11529  NE2 GLN A1463      58.703 117.837 145.273  0.51  2.19           N 0
+ATOM  11520   OG SER A1462      55.365 116.997 143.825  0.64  6.43           O 0
+ATOM  11581  OD2 ASP A1469      61.376 114.100 141.738  0.81  2.14           O 0
+ATOM  11555  OG1 THR A1466      57.830 112.522 138.918  0.48  6.43           O 0
+ATOM  11578   CB ASP A1469      63.671 113.835 141.169  0.00  0.00           C 0
+ATOM  11588    N ALA A1471      66.699 114.842 143.159  0.00  0.00           N 0
+ATOM  11582    N SER A1470      66.488 114.507 140.485  0.00  0.00           N 0
+ATOM  11526   CG GLN A1463      60.010 115.826 145.006  0.00  0.00           C 0
+ATOM  18296   NZ LYS A2333      65.799 124.564 140.746  0.55  7.66           N 0
+ATOM  18269   CB ARG A2330      63.525 123.991 144.904  0.00  0.00           C 0
+ATOM  18262    O SER A2329      67.025 122.136 145.698  0.00  0.00           O 0
+ATOM  18266   CA ARG A2330      64.930 123.903 145.499  0.00  0.00           C 0
+ATOM  11592   CB ALA A1471      65.297 115.476 145.059  0.00  0.00           C 0
+ATOM  18272   NE ARG A2330      60.728 122.955 144.396  0.66  7.66           N 0
+TER
+END

@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.4947,
+  "binding_category": "Weak (0.35\u20130.50)",
+  "dg_norm": 0.488,
+  "admet_score": 0.8644,
+  "ml_confidence": 0.3499,
+  "pocket_druggability": 0.5406,
+  "literature_score": 0.0,
+  "best_docking_score": -7.392,
+  "model_loaded": true,
+  "rna_displacement_score": 0.5,
+  "rna_mode": false,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.1708,
+    "ADMET_score (\u00d70.20)": 0.1729,
+    "ML_confidence (\u00d70.20)": 0.07,
+    "Pocket_druggability (\u00d70.15)": 0.0811,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.05
+  },
+  "domain": "OUT_OF_DOMAIN",
+  "compound_name": "compound",
+  "target_id": "4XMB"
+}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAIDock Report &mdash; compound vs 4ACC</title>
+<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: #EEF2F9;
+  color: #1E293B;
+  font-size: 0.89rem;
+  line-height: 1.65;
+}
+
+/* ── HEADER — exact SAIDock app match ── */
+.site-header {
+  background: linear-gradient(135deg, #040E1C 0%, #112A47 100%);
+  border-bottom: 3px solid #F0A500;
+  padding: 0 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  gap: 1.2rem;
+}
+.hdr-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hdr-logo-ring {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  border: 2.5px solid #F0A500;
+  box-shadow: 0 0 12px rgba(240,165,0,.40);
+  background: #1A3A5C;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; font-weight: 800; color: #F0A500;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.hdr-logo-ring img {
+  width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+}
+.hdr-divider {
+  width: 2px; height: 44px; flex-shrink: 0;
+  background: linear-gradient(to bottom, transparent, #F0A500, transparent);
+}
+.hdr-brand { display: flex; flex-direction: column; }
+.hdr-tool-name {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #F0A500;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+.hdr-tool-name span {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #94A3B8;
+  letter-spacing: 0;
+}
+.hdr-science {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #F0A500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+.hdr-sub {
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: #64748B;
+  letter-spacing: 0.2px;
+  margin-top: 2px;
+}
+.hdr-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hdr-inst {
+  text-align: right;
+  line-height: 1.4;
+}
+.hdr-inst-name {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #CBD5E1;
+  letter-spacing: 0.2px;
+}
+.hdr-inst-sub {
+  font-size: 0.70rem;
+  color: #64748B;
+}
+.hdr-inst-city {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #F0A500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+.hdr-sssihl-ring {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.25);
+  background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.hdr-sssihl-ring img {
+  width: 100%; height: 100%; object-fit: contain; padding: 3px;
+}
+
+/* ── Sub-nav ── */
+.subnav {
+  background: #0D2137;
+  padding: 6px 2.2rem;
+  font-size: 0.75rem;
+  color: #64748B;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.subnav strong { color: #94A3B8; }
+
+/* ── Page ── */
+.page { max-width: 980px; margin: 0 auto; padding: 26px 20px 60px; }
+
+/* ── Section title ── */
+.stitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0D2137;
+  border-bottom: 2px solid #F0A500;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+/* ── Cards ── */
+.card {
+  background: #fff;
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(4,14,28,.06);
+}
+
+/* ── DTSS hero ── */
+.dtss-hero {
+  display: flex; align-items: flex-start;
+  gap: 28px; flex-wrap: wrap;
+  padding: 20px; border-radius: 8px;
+  border-left: 5px solid #F0A500;
+  margin-bottom: 18px;
+}
+.dtss-num {
+  font-size: 3.4rem; font-weight: 800;
+  line-height: 1; letter-spacing: -1px;
+}
+.dtss-lbl {
+  font-size: 0.68rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1.6px;
+  color: #94A3B8; margin-top: 4px;
+}
+.dtss-cat { font-size: 0.93rem; font-weight: 600; color: #0D2137; margin-top: 4px; }
+.dtss-formula { font-size: 0.82rem; color: #475569; line-height: 1.9; }
+.dtss-scale {
+  font-size: 0.75rem; color: #64748B;
+  margin-top: 8px; padding-top: 8px;
+  border-top: 1px solid #E2E8F0;
+}
+
+/* ── Metric grid ── */
+.mgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 12px; margin: 16px 0;
+}
+.mcard {
+  background: #F0F5FB; border: 1px solid #CBD5E1;
+  border-radius: 8px; padding: 14px 10px; text-align: center;
+}
+.mval { font-size: 1.25rem; font-weight: 800; color: #0D2137; }
+.mlbl {
+  font-size: 0.68rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1.4px;
+  color: #94A3B8; margin-top: 3px;
+}
+
+/* ── Tables ── */
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+thead tr { background: linear-gradient(135deg, #040E1C, #112A47); }
+thead th {
+  padding: 10px 14px; text-align: left;
+  color: #CBD5E1; font-size: 0.68rem; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+tbody tr:nth-child(even) { background: #F8FAFC; }
+tbody tr:hover { background: #FFF8E8; transition: background .12s; }
+td { padding: 9px 14px; border-bottom: 1px solid #F1F5F9; vertical-align: middle; }
+
+/* ── Chips & badges ── */
+.chip {
+  display: inline-block; padding: 2px 9px;
+  border-radius: 6px; font-size: 0.78rem; font-weight: 500;
+  border-width: 1px; border-style: solid; white-space: nowrap;
+}
+.badge {
+  display: inline-block; padding: 2px 10px;
+  border-radius: 5px; font-size: 0.78rem; font-weight: 600;
+}
+
+/* ── Chart wrap ── */
+.chart-wrap {
+  margin: 14px 0; border: 1px solid #CBD5E1;
+  border-radius: 8px; overflow: hidden; background: #FAFCFF;
+}
+
+/* ── About grid ── */
+.agrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.ablock {
+  background: #F0F5FB; border: 1px solid #CBD5E1;
+  border-radius: 8px; padding: 16px 18px;
+}
+.ablock h4 {
+  font-size: 0.68rem; font-weight: 800; color: #0D2137;
+  text-transform: uppercase; letter-spacing: 1.6px;
+  margin-bottom: 8px; padding-bottom: 5px;
+  border-bottom: 1px solid #CBD5E1;
+}
+.ablock p, .ablock li { font-size: 0.82rem; color: #475569; line-height: 1.7; }
+.ablock ul { padding-left: 14px; }
+
+/* ── Footer ── */
+.footer {
+  text-align: center; font-size: 0.75rem; color: #94A3B8;
+  margin-top: 36px; padding-top: 16px;
+  border-top: 1px solid #CBD5E1;
+}
+.footer strong { color: #0D2137; }
+
+@media print {
+  body { background: #fff; }
+  .site-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .card { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="hdr-left">
+    <div class="hdr-logo-ring">SD</div>
+    <div class="hdr-divider"></div>
+    <div class="hdr-brand">
+      <div class="hdr-tool-name">SAIDock <span>V 1.0</span></div>
+      <div class="hdr-science">Science for Society</div>
+      <div class="hdr-sub">
+        Automated Drug-Target Docking &amp; Assessment
+        &nbsp;&middot;&nbsp; NDD Research Platform
+        &nbsp;&middot;&nbsp; SAI-Net Framework
+      </div>
+    </div>
+  </div>
+  <div class="hdr-right">
+    <div class="hdr-inst">
+      <div class="hdr-inst-name">SSSIHL</div>
+      <div class="hdr-inst-sub">Sri Sathya Sai Institute<br>of Higher Learning</div>
+      <div class="hdr-inst-city">Puttaparthi &nbsp;&middot;&nbsp; Est. 1981</div>
+    </div>
+    <div class="hdr-sssihl-ring" style="font-size:0.52rem;font-weight:800;color:#1B2A4A;text-align:center;padding:4px;line-height:1.2">SSSIHL</div>
+  </div>
+</header>
+
+<div class="subnav">
+  <strong>Ligand:</strong> compound
+  &nbsp;&nbsp;<strong>Target:</strong> 4ACC (351 residues)
+  &nbsp;&nbsp;<strong>Generated:</strong> 2026-03-11 16:31
+  &nbsp;&nbsp;SAIDock v1.0 &nbsp;&middot;&nbsp; SAI-Net Research Framework
+</div>
+
+<div class="page">
+
+<div class="card">
+  <div class="dtss-hero" style="background:#FFF3E0">
+    <div>
+      <div class="dtss-num" style="color:#9B5C00">0.548</div>
+      <div class="dtss-lbl">Drug-Target Suitability Score</div>
+      <div class="dtss-cat">Moderate (0.50–0.65)</div>
+      <div style="margin-top:10px"><span class="badge" style="color:#92710C;background:#FFF3CD">OUT OF DOMAIN</span></div>
+    </div>
+    <div style="flex:1;min-width:260px">
+      <div class="stitle" style="font-size:0.93rem;margin-bottom:10px">DTSS Scoring Formula</div>
+      <div class="dtss-formula">
+        DTSS = 0.35 &times; &Delta;G<sub>norm</sub>
+        + 0.20 &times; ADMET
+        + 0.20 &times; ML<sub>confidence</sub>
+        + 0.15 &times; Pocket<sub>druggability</sub>
+        + 0.10 &times; Literature<sub>prior</sub>
+      </div>
+      <div class="dtss-scale">
+        &ge; 0.75 Strong &nbsp;|&nbsp;
+        0.65&ndash;0.75 Good &nbsp;|&nbsp;
+        0.50&ndash;0.65 Moderate &nbsp;|&nbsp;
+        0.35&ndash;0.50 Weak &nbsp;|&nbsp;
+        &lt; 0.35 Poor
+      </div>
+    </div>
+  </div>
+  <div class="mgrid">
+    <div class="mcard"><div class="mval" style="color:#F0A500">-9.156</div><div class="mlbl">Best &Delta;G kcal/mol</div></div>
+    <div class="mcard"><div class="mval">5</div><div class="mlbl">Pockets Screened</div></div>
+    <div class="mcard"><div class="mval">5</div><div class="mlbl">Hydrogen Bonds</div></div>
+    <div class="mcard"><div class="mval">12</div><div class="mlbl">Hydrophobic</div></div>
+    <div class="mcard"><div class="mval">0.449</div><div class="mlbl">ADMET Score</div></div>
+    <div class="mcard"><div class="mval">0.794</div><div class="mlbl">Pocket Druggability</div></div>
+  </div>
+  <div class="chart-wrap"><div>                            <div id="99e43a0d-b61e-4b93-9f07-ea048049506e" class="plotly-graph-div" style="height:268px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("99e43a0d-b61e-4b93-9f07-ea048049506e")) {                    Plotly.newPlot(                        "99e43a0d-b61e-4b93-9f07-ea048049506e",                        [{"hovertemplate":"%{y}: %{x:.4f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#1A3A5C","#1B6B45","#7C3AED","#F0A500","#94A3B8"]},"orientation":"h","text":["0.239","0.090","0.100","0.119","0.000"],"textposition":"outside","x":[0.2394,0.08974,0.1,0.1191,0.0],"y":["DG (x0.35)","ADMET (x0.20)","ML conf (x0.20)","Pocket (x0.15)","Literature (x0.10)"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"shapes":[{"line":{"color":"#9B2335","dash":"dash","width":1.5},"type":"line","x0":0.5482,"x1":0.5482,"xref":"x","y0":0,"y1":1,"yref":"y domain"}],"annotations":[{"font":{"color":"#9B2335","size":10},"showarrow":false,"text":"DTSS=0.548","x":0.5482,"xanchor":"left","xref":"x","y":1,"yanchor":"top","yref":"y domain"}],"title":{"font":{"size":13,"family":"Inter,sans-serif","color":"#0D2137"},"text":"DTSS Component Breakdown"},"font":{"family":"Inter,sans-serif","size":11,"color":"#1E293B"},"xaxis":{"title":{"text":"Weighted contribution"},"range":[0,0.646876],"gridcolor":"#E2E8F0"},"margin":{"l":165,"r":70,"t":46,"b":38},"plot_bgcolor":"#FAFCFF","paper_bgcolor":"#FAFCFF","height":268},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div></div>
+</div>
+
+<div class="card">
+  <div class="stitle">Multi-Pocket Docking Results</div>
+  <div class="chart-wrap" style="margin-bottom:16px"><div>                            <div id="ee82a67d-204e-44b6-92c1-a9443de20601" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ee82a67d-204e-44b6-92c1-a9443de20601")) {                    Plotly.newPlot(                        "ee82a67d-204e-44b6-92c1-a9443de20601",                        [{"error_x":{"array":[0.0810000000000013,0.10000000000000053,0.07900000000000063,0.04499999999999993,0.06299999999999972],"color":"#94A3B8","thickness":1.5,"type":"data","width":4},"hovertemplate":"Pocket %{y}: %{x:.3f} kcal\u002fmol\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#1A3A5C","#475569","#9B5C00","#475569","#9B5C00"]},"orientation":"h","text":["-9.16","-7.14","-7.07","-6.89","-6.85"],"textposition":"outside","x":[-9.156,-7.142,-7.073,-6.891,-6.848],"y":["Pocket 2","Pocket 1","Pocket 5","Pocket 16","Pocket 18"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"title":{"font":{"size":13,"family":"Inter,sans-serif","color":"#0D2137"},"text":"Binding Affinity by Pocket \u2014 AutoDock Vina"},"font":{"family":"Inter,sans-serif","size":11,"color":"#1E293B"},"xaxis":{"title":{"text":"Binding Affinity (kcal\u002fmol)"},"gridcolor":"#E2E8F0"},"margin":{"l":110,"r":80,"t":46,"b":38},"plot_bgcolor":"#FAFCFF","paper_bgcolor":"#FAFCFF","height":300},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div></div>
+  <table>
+    <thead><tr>
+      <th>Binding Pocket</th><th>Best &Delta;G (kcal/mol)</th>
+      <th>Mean Top-3</th><th>Poses</th><th>Engine</th>
+      <th>Druggability</th><th>Site Classification</th>
+    </tr></thead>
+    <tbody>
+      <tr style="background:#FFFBEB">
+        <td style="font-weight:700;color:#92400E">Best Pocket &mdash; Pocket 2</td>
+        <td style="font-weight:700;color:#1B6B45">-9.156</td>
+        <td style="color:#475569">-9.075</td>
+        <td>9</td>
+        <td style="color:#475569">AutoDock Vina</td>
+        <td style="font-weight:600;color:#1B6B45">0.794</td>
+        <td><span class="chip" style="color:#1A3A5C;background:#EEF4FF;border-color:#C5D7F0">ORTHOSTERIC</span></td>
+      </tr>
+      <tr style="background:transparent">
+        <td style="font-weight:500;color:#1E293B">Pocket 1</td>
+        <td style="font-weight:700;color:#9B5C00">-7.142</td>
+        <td style="color:#475569">-7.042</td>
+        <td>9</td>
+        <td style="color:#475569">AutoDock Vina</td>
+        <td style="font-weight:600;color:#9B5C00">0.458</td>
+        <td><span class="chip" style="color:#475569;background:#F8FAFC;border-color:#CBD5E1">SURFACE</span></td>
+      </tr>
+      <tr style="background:transparent">
+        <td style="font-weight:500;color:#1E293B">Pocket 5</td>
+        <td style="font-weight:700;color:#9B5C00">-7.073</td>
+        <td style="color:#475569">-6.994</td>
+        <td>9</td>
+        <td style="color:#475569">AutoDock Vina</td>
+        <td style="font-weight:600;color:#9B5C00">0.418</td>
+        <td><span class="chip" style="color:#9B5C00;background:#FFF3E0;border-color:#F5D9A0">SECONDARY</span></td>
+      </tr>
+      <tr style="background:transparent">
+        <td style="font-weight:500;color:#1E293B">Pocket 16</td>
+        <td style="font-weight:700;color:#9B5C00">-6.891</td>
+        <td style="color:#475569">-6.846</td>
+        <td>9</td>
+        <td style="color:#475569">AutoDock Vina</td>
+        <td style="font-weight:600;color:#9B5C00">0.502</td>
+        <td><span class="chip" style="color:#475569;background:#F8FAFC;border-color:#CBD5E1">SURFACE</span></td>
+      </tr>
+      <tr style="background:transparent">
+        <td style="font-weight:500;color:#1E293B">Pocket 18</td>
+        <td style="font-weight:700;color:#9B5C00">-6.848</td>
+        <td style="color:#475569">-6.785</td>
+        <td>9</td>
+        <td style="color:#475569">AutoDock Vina</td>
+        <td style="font-weight:600;color:#9B5C00">0.435</td>
+        <td><span class="chip" style="color:#9B5C00;background:#FFF3E0;border-color:#F5D9A0">SECONDARY</span></td>
+      </tr></tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="stitle">Binding Pocket Explorer</div>
+  <p style="font-size:0.82rem;color:#475569;margin-bottom:14px">
+    All fpocket-detected binding sites ranked by composite druggability score.
+    Hover a chip for scientific rationale.
+  </p>
+  <div class="chart-wrap" style="margin-bottom:16px"><div>                            <div id="2237389d-eea4-42a6-b876-90ab52b7a860" class="plotly-graph-div" style="height:305px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("2237389d-eea4-42a6-b876-90ab52b7a860")) {                    Plotly.newPlot(                        "2237389d-eea4-42a6-b876-90ab52b7a860",                        [{"marker":{"color":"#F0A500"},"name":"Druggability Score","text":["0.794","0.502","0.458","0.435","0.418"],"textposition":"outside","x":["Pocket 2","Pocket 16","Pocket 1","Pocket 18","Pocket 5"],"y":[0.794,0.5025,0.4578,0.4355,0.4177],"type":"bar"},{"marker":{"color":"#0D2137"},"name":"Volume \u002f 1500","opacity":0.6,"x":["Pocket 2","Pocket 16","Pocket 1","Pocket 18","Pocket 5"],"y":[0.5133346666666666,0.717584,0.5158773333333333,0.44997933333333334,0.3905786666666667],"type":"bar"},{"marker":{"color":"#1B6B45"},"name":"Hydrophobicity \u002f 80","opacity":0.65,"x":["Pocket 2","Pocket 16","Pocket 1","Pocket 18","Pocket 5"],"y":[0.536175,0.2357125,0.11000000000000001,0.127775,0.09166250000000001],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"shapes":[{"line":{"color":"#9B2335","dash":"dot","width":1.2},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0.7,"y1":0.7,"yref":"y"}],"annotations":[{"font":{"color":"#9B2335","size":10},"showarrow":false,"text":"Druggable threshold 0.70","x":1,"xanchor":"right","xref":"x domain","y":0.7,"yanchor":"bottom","yref":"y"}],"title":{"font":{"size":13,"family":"Inter,sans-serif","color":"#0D2137"},"text":"Pocket Druggability Profile"},"font":{"family":"Inter,sans-serif","size":11,"color":"#1E293B"},"yaxis":{"title":{"text":"Normalised score"},"gridcolor":"#E2E8F0"},"legend":{"font":{"size":10},"orientation":"h","y":1.12,"x":0.5,"xanchor":"center"},"margin":{"l":55,"r":55,"t":60,"b":38},"plot_bgcolor":"#FAFCFF","paper_bgcolor":"#FAFCFF","barmode":"group","height":305},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div></div>
+  <table>
+    <thead><tr>
+      <th>Pocket</th><th>Best &Delta;G</th><th>Volume (A³)</th>
+      <th>SASA (A²)</th><th>Buried %</th><th>Hydrophobicity</th>
+      <th>Alpha Spheres</th><th>Druggability</th><th>Classification</th>
+    </tr></thead>
+    <tbody>
+      <tr title="Primary binding site — highest druggability and best docking affinity">
+        <td style="font-weight:600">Pocket 2</td>
+        <td style="font-weight:700;color:#1B6B45">-9.156</td>
+        <td>770.0</td><td>192.0</td>
+        <td>65.8%</td><td>42.89</td><td>69</td>
+        <td style="font-weight:600;color:#1B6B45">0.794</td>
+        <td><span class="chip" style="color:#1A3A5C;background:#EEF4FF;border-color:#C5D7F0">ORTHOSTERIC</span></td>
+      </tr>
+      <tr title="Low druggability — transient or solvent-exposed groove">
+        <td style="font-weight:600">Pocket 16</td>
+        <td style="font-weight:700;color:#9B5C00">-6.891</td>
+        <td>1076.4</td><td>272.5</td>
+        <td>59.8%</td><td>18.86</td><td>58</td>
+        <td style="font-weight:600;color:#9B5C00">0.502</td>
+        <td><span class="chip" style="color:#475569;background:#F8FAFC;border-color:#CBD5E1">SURFACE</span></td>
+      </tr>
+      <tr title="Low druggability — transient or solvent-exposed groove">
+        <td style="font-weight:600">Pocket 1</td>
+        <td style="font-weight:700;color:#9B5C00">-7.142</td>
+        <td>773.8</td><td>190.1</td>
+        <td>59.7%</td><td>8.80</td><td>75</td>
+        <td style="font-weight:600;color:#9B5C00">0.458</td>
+        <td><span class="chip" style="color:#475569;background:#F8FAFC;border-color:#CBD5E1">SURFACE</span></td>
+      </tr>
+      <tr title="Moderate druggability — candidate for fragment screening">
+        <td style="font-weight:600">Pocket 18</td>
+        <td style="font-weight:700;color:#9B5C00">-6.848</td>
+        <td>675.0</td><td>210.3</td>
+        <td>56.9%</td><td>10.22</td><td>61</td>
+        <td style="font-weight:600;color:#9B5C00">0.435</td>
+        <td><span class="chip" style="color:#9B5C00;background:#FFF3E0;border-color:#F5D9A0">SECONDARY</span></td>
+      </tr>
+      <tr title="Moderate druggability — candidate for fragment screening">
+        <td style="font-weight:600">Pocket 5</td>
+        <td style="font-weight:700;color:#9B5C00">-7.073</td>
+        <td>585.9</td><td>113.8</td>
+        <td>64.7%</td><td>7.33</td><td>33</td>
+        <td style="font-weight:600;color:#9B5C00">0.418</td>
+        <td><span class="chip" style="color:#9B5C00;background:#FFF3E0;border-color:#F5D9A0">SECONDARY</span></td>
+      </tr></tbody>
+  </table>
+</div>
+
+
+
+<div class="card">
+  <div class="stitle">ADMET Drug-Likeness Assessment</div>
+  <table>
+    <thead><tr><th>Property</th><th>Value</th><th>Threshold</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr>
+        <td style="font-weight:500">Molecular Weight</td>
+        <td style="font-weight:600">302.190 <span style="color:#94A3B8;font-size:0.75rem">g/mol</span></td>
+        <td style="color:#94A3B8">&le; 500</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Lipophilicity</td>
+        <td style="font-weight:600">1.313 <span style="color:#94A3B8;font-size:0.75rem">LogP</span></td>
+        <td style="color:#94A3B8">&le; 5</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">H-Bond Donors</td>
+        <td style="font-weight:600">4.000</td>
+        <td style="color:#94A3B8">&le; 5</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">H-Bond Acceptors</td>
+        <td style="font-weight:600">8.000</td>
+        <td style="color:#94A3B8">&le; 10</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Topological PSA</td>
+        <td style="font-weight:600">141.340 <span style="color:#94A3B8;font-size:0.75rem">A²</span></td>
+        <td style="color:#94A3B8">&le; 140</td>
+        <td><span class="badge" style="color:#9B2335;background:#FDE8EA">Fail</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Rotatable Bonds</td>
+        <td style="font-weight:600">0.000</td>
+        <td style="color:#94A3B8">&le; 10</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Heavy Atom Count</td>
+        <td style="font-weight:600">22.000</td>
+        <td style="color:#94A3B8">20&ndash;70</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Molar Refractivity</td>
+        <td style="font-weight:600">73.880</td>
+        <td style="color:#94A3B8">40&ndash;130</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Aromatic Ring Count</td>
+        <td style="font-weight:600">4.000</td>
+        <td style="color:#94A3B8">&le; 4</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Drug-likeness QED</td>
+        <td style="font-weight:600">0.216</td>
+        <td style="color:#94A3B8">&ge; 0.5</td>
+        <td><span class="badge" style="color:#9B2335;background:#FDE8EA">Fail</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Fsp3</td>
+        <td style="font-weight:600">0.000</td>
+        <td style="color:#94A3B8">&ge; 0.25</td>
+        <td><span class="badge" style="color:#9B2335;background:#FDE8EA">Fail</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">GI Absorption</td>
+        <td style="font-weight:600">Low</td>
+        <td style="color:#94A3B8">High</td>
+        <td><span class="badge" style="color:#9B2335;background:#FDE8EA">Fail</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">BBB Penetrant</td>
+        <td style="font-weight:600">0.000</td>
+        <td style="color:#94A3B8">—</td>
+        <td><span style="color:#94A3B8">—</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">P-gp Substrate</td>
+        <td style="font-weight:600">Unlikely</td>
+        <td style="color:#94A3B8">Unlikely</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Aqueous Solubility</td>
+        <td style="font-weight:600">Poorly Soluble</td>
+        <td style="color:#94A3B8">—</td>
+        <td><span style="color:#94A3B8">—</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">LogSw ESOL</td>
+        <td style="font-weight:600">-5.501</td>
+        <td style="color:#94A3B8">&gt; &minus;4</td>
+        <td><span class="badge" style="color:#9B2335;background:#FDE8EA">Fail</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Lipinski Violations</td>
+        <td style="font-weight:600">0.000</td>
+        <td style="color:#94A3B8">&le; 1</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Veber Oral Bioavailability</td>
+        <td style="font-weight:600">0.000</td>
+        <td style="color:#94A3B8">Pass</td>
+        <td><span class="badge" style="color:#9B2335;background:#FDE8EA">Fail</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight:500">Ghose Filter</td>
+        <td style="font-weight:600">1.000</td>
+        <td style="color:#94A3B8">Pass</td>
+        <td><span class="badge" style="color:#1B6B45;background:#E6F5EE">Pass</span></td>
+      </tr></tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="stitle">ML Scoring Components</div>
+  <table>
+    <thead><tr><th>Component</th><th>Value</th></tr></thead>
+    <tbody><tr><td style="font-weight:500">DTSS Score</td><td style="font-weight:600">0.5482</td></tr><tr><td style="font-weight:500">Binding Category</td><td style="font-weight:600">Moderate (0.50–0.65)</td></tr><tr><td style="font-weight:500">DG Normalised</td><td style="font-weight:600">0.6840</td></tr><tr><td style="font-weight:500">ADMET Score</td><td style="font-weight:600">0.4487</td></tr><tr><td style="font-weight:500">ML Confidence</td><td style="font-weight:600">0.5000</td></tr><tr><td style="font-weight:500">Pocket Druggability</td><td style="font-weight:600">0.7940</td></tr><tr><td style="font-weight:500">Literature Prior Score</td><td style="font-weight:600">0.0000</td></tr><tr><td style="font-weight:500">ML Applicability Domain</td><td style="font-weight:600">OUT_OF_DOMAIN</td></tr><tr><td style="font-weight:500">ChEMBL pChEMBL</td><td style="font-weight:600">Not in database</td></tr></tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="stitle">Computational Methods</div>
+  <table>
+    <thead><tr><th>Stage</th><th>Method / Software</th><th>Parameters</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:500">Target Preparation</td><td>Biopython 1.81 + pdbfixer + OpenBabel 3.1</td><td>pH 7.4; chain A; Gasteiger charges</td></tr>
+      <tr><td style="font-weight:500">Pocket Detection</td><td>fpocket 4.0 (Le Guilloux et al., 2009)</td><td>Alpha sphere 3.0&ndash;7.5 A; composite druggability score</td></tr>
+      <tr><td style="font-weight:500">Ligand Preparation</td><td>RDKit ETKDG v3 + MMFF94</td><td>3D conformer; torsion minimisation; Gasteiger charges</td></tr>
+      <tr><td style="font-weight:500">Molecular Docking</td><td>AutoDock Vina 1.2 (Eberhardt et al., 2021)</td><td>Exhaustiveness = 32; poses = 9; multi-pocket mode</td></tr>
+      <tr><td style="font-weight:500">Interaction Analysis</td><td>ProLIF + geometry-based cutoffs</td><td>H-bond &le; 3.5 A; hydrophobic &le; 4.5 A</td></tr>
+      <tr><td style="font-weight:500">ADMET Profiling</td><td>RDKit 2023.09 descriptors</td><td>Lipinski Ro5; Veber; Ghose; BBB; GI absorption; ESOL</td></tr>
+      <tr><td style="font-weight:500">ML Scoring</td><td>Random Forest + DTSS composite</td><td>Morgan FP-512 + 12 descriptors; LOTO-CV; applicability domain</td></tr>
+      <tr><td style="font-weight:500">Literature Prior</td><td>ChEMBL 33 REST API</td><td>IC&#8325;&#8320; / Kd / Ki &rarr; pChEMBL &rarr; literature_score</td></tr>
+      <tr><td style="font-weight:500">Pocket Classification</td><td>Schmidtke &amp; Barril, JCTC 2010</td><td>Volume; apolar SASA; composite druggability; docking rank</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="stitle">About SAIDock</div>
+  <div class="agrid">
+    <div class="ablock">
+      <h4>Overview</h4>
+      <p>SAIDock is an automated multi-stage pipeline for structure-based
+      drug-target interaction assessment. It integrates pocket detection,
+      molecular docking, ADMET profiling, ML scoring, and literature
+      validation into a single reproducible workflow. The DTSS ranks
+      compound-target pairs beyond raw docking affinity alone.</p>
+    </div>
+    <div class="ablock">
+      <h4>Key Capabilities</h4>
+      <ul>
+        <li>Automated multi-pocket detection and druggability classification</li>
+        <li>AutoDock Vina docking across all detected pockets</li>
+        <li>19-parameter ADMET profiling via RDKit descriptors</li>
+        <li>Random Forest ML scoring with applicability domain</li>
+        <li>Real-time ChEMBL literature prior integration</li>
+        <li>DTSS composite scoring for lead prioritisation</li>
+      </ul>
+    </div>
+    <div class="ablock">
+      <h4>Developed By</h4>
+      <p>Department of Bioinformatics<br>
+      Sri Sathya Sai Institute of Higher Learning (SSSIHL)<br>
+      Puttaparthi, Andhra Pradesh, India &mdash; Est. 1981<br><br>
+      Part of the SAI-Net Research Framework for neurodegenerative
+      disease computational research.</p>
+    </div>
+    <div class="ablock">
+      <h4>Citation</h4>
+      <p>For academic research use only. Not intended for clinical
+      diagnosis or therapeutic decision-making.<br><br>
+      If using SAIDock in published work, please cite:<br>
+      <em>Gunanathan K. et al., SAIDock: Automated Drug-Target
+      Suitability Assessment (2026), SSSIHL, Puttaparthi.</em></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <strong>SAIDock v1.0</strong>
+  &nbsp;&middot;&nbsp; Sri Sathya Sai Institute of Higher Learning, Puttaparthi
+  &nbsp;&middot;&nbsp; 2026-03-11 16:31
+  &nbsp;&middot;&nbsp; SAI-Net Research Framework
+  &nbsp;&middot;&nbsp; <em>For academic research use only</em>
+</div>
+
+</div>
+</body>
+</html>

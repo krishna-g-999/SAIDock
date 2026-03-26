@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   103:
+HEADER 0  - Pocket Score                      : -0.0329
+HEADER 1  - Drug Score                        : 0.0006
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.7652
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4265
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 8.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.1429
+HEADER 9  - Pocket volume (Monte Carlo)       : 206.4677
+HEADER 10 - Pocket volume (convex hull)       : 7.2804
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 9.0000
+HEADER 13 - Number of apolar alpha sphere     :    10
+HEADER 14 - Proportion of apolar alpha sphere : 0.5000
+ATOM  10318  OD1 ASP A1311      74.401 114.916 100.779  0.42  4.29           O 0
+ATOM  10306    O GLN A1310      72.661 116.528 103.704  0.69  2.14           O 0
+ATOM  10645   CE MET A1354      76.106 115.423 107.861  0.00  0.00           C 0
+ATOM  10073  NH2 ARG A1281      79.048 114.307 103.550  0.22  9.84           N 0
+ATOM  10310  OE1 GLN A1310      70.009 111.841 104.192  0.00  0.00           O 0
+ATOM  10601  OD1 ASN A1348      70.632 111.100 106.965  0.65  6.43           O 0
+ATOM  10341   OG SER A1314      76.635 117.787 105.556  0.48  1.07           O 0
+ATOM  10307   CB GLN A1310      70.344 114.529 103.852  0.00  0.00           C 0
+ATOM  10644   SD MET A1354      74.859 116.606 108.365  0.00  0.00           S 0
+ATOM  10610  CD2 LEU A1349      69.959 117.302 109.113  0.00  0.00           C 0
+ATOM  10643   CG MET A1354      74.248 115.813 109.853  0.00  0.00           C 0
+ATOM  10602  ND2 ASN A1348      71.048 111.180 109.165  0.35  9.84           N 0
+ATOM  10600   CG ASN A1348      70.273 111.383 108.104  0.00  0.00           C 0
+ATOM  10598    O ASN A1348      70.318 113.207 110.750  0.00  0.00           O 0
+ATOM  10308   CG GLN A1310      69.080 114.023 104.496  0.00  0.00           C 0
+TER
+END

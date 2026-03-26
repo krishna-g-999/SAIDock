@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : -0.0211
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.1240
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6363
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -18.6000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.4000
+HEADER 9  - Pocket volume (Monte Carlo)       : 203.9814
+HEADER 10 - Pocket volume (convex hull)       : 1.3731
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   2800  NE2 GLN A 369     -19.231  13.569   8.306  0.00  0.00           N 0
+ATOM   2825   CZ ARG A 372     -20.356  14.641   3.406  0.00  0.00           C 0
+ATOM   2824   NE ARG A 372     -20.880  15.639   4.107  0.93  2.19           N 0
+ATOM   2475  NH2 ARG A 329     -14.724  18.645   2.159  0.00  0.00           N 0
+ATOM   2827  NH2 ARG A 372     -19.813  14.896   2.219  0.70  1.09           N 0
+ATOM   2470   CG ARG A 329     -16.766  15.167   0.296  0.00  0.00           C 0
+ATOM   2799  OE1 GLN A 369     -18.883  12.223   6.534  0.00  0.00           O 0
+ATOM   2775  OD2 ASP A 366     -18.324  10.763   3.565  0.00  0.00           O 0
+ATOM   2826  NH1 ARG A 372     -20.355  13.397   3.863  0.53  1.09           N 0
+ATOM   2453    O GLY A 327     -19.872  17.397   1.439  0.00  0.00           O 0
+ATOM   2451   CA GLY A 327     -19.862  19.752   1.851  0.00  0.00           C 0
+ATOM   2473   CZ ARG A 329     -15.307  17.999   1.153  0.00  0.00           C 0
+ATOM   2472   NE ARG A 329     -14.969  16.740   0.909  0.00  0.00           N 0
+TER
+END

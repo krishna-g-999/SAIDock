@@ -1,0 +1,46 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   101:
+HEADER 0  - Pocket Score                      : -0.0317
+HEADER 1  - Drug Score                        : 0.0067
+HEADER 2  - Number of alpha spheres           :    36
+HEADER 3  - Mean alpha-sphere radius          : 3.9222
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4432
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 18.3636
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 3.3636
+HEADER 9  - Pocket volume (Monte Carlo)       : 338.8242
+HEADER 10 - Pocket volume (convex hull)       : 27.6247
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 18.9000
+HEADER 13 - Number of apolar alpha sphere     :    20
+HEADER 14 - Proportion of apolar alpha sphere : 0.5556
+ATOM  16624   CG PRO A2119     114.796 116.974 179.469  0.00  0.00           C 0
+ATOM  16623   CB PRO A2119     114.059 117.844 178.501  0.00  0.00           C 0
+ATOM  16620   CA PRO A2119     114.162 117.107 177.158  0.00  0.00           C 0
+ATOM  16599  CD2 LEU A2115     112.343 112.536 182.184  0.00  0.00           C 0
+ATOM  16950   OG SER A2162     107.303 119.430 179.437  0.57  6.43           O 0
+ATOM  16651   OG SER A2122     110.791 117.186 174.504  0.69  5.36           O 0
+ATOM  16977  OD2 ASP A2165     108.429 119.885 176.152  0.57  3.21           O 0
+ATOM  16931    O GLN A2160     105.097 115.093 178.885  0.48  6.43           O 0
+ATOM  16945    N SER A2162     105.078 118.651 177.747  0.00  0.00           N 0
+ATOM  16650   CB SER A2122     110.703 116.023 173.700  0.00  0.00           C 0
+ATOM  16944  CD2 LEU A2161     105.610 116.019 174.053  0.00  0.00           C 0
+ATOM  16588    O PRO A2114     113.092 111.313 177.418  0.53  2.14           O 0
+ATOM  16938   CA LEU A2161     104.308 116.601 176.720  0.00  0.00           C 0
+ATOM  16554  CG2 ILE A2110     107.913 113.310 172.862  0.00  0.00           C 0
+ATOM  16933   CG GLN A2160     105.653 111.975 178.187  0.00  0.00           C 0
+ATOM  16618    O GLY A2118     114.918 115.115 175.439  0.43  1.07           O 0
+ATOM  16589   CB PRO A2114     109.782 111.120 178.301  0.00  0.00           C 0
+ATOM  16936  NE2 GLN A2160     106.642 111.984 180.394  0.76  8.75           N 0
+ATOM  16587    C PRO A2114     112.233 110.703 178.056  0.00  0.00           C 0
+ATOM  16551    O ILE A2110     107.381 110.927 175.008  0.71  1.07           O 0
+ATOM  16549   CA ILE A2110     108.648 110.910 172.956  0.00  0.00           C 0
+ATOM  16613  CG1 VAL A2117     114.592 111.553 174.367  0.00  0.00           C 0
+ATOM  16553  CG1 ILE A2110     109.458 112.452 171.155  0.00  0.00           C 0
+ATOM  16586   CA PRO A2114     110.866 110.437 177.459  0.00  0.00           C 0
+TER
+END

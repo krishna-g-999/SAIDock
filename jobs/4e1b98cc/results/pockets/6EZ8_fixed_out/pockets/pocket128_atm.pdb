@@ -1,0 +1,46 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   128:
+HEADER 0  - Pocket Score                      : -0.0559
+HEADER 1  - Drug Score                        : 0.0011
+HEADER 2  - Number of alpha spheres           :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.9363
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5746
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 37.7500
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.8750
+HEADER 9  - Pocket volume (Monte Carlo)       : 419.5475
+HEADER 10 - Pocket volume (convex hull)       : 40.9808
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 13.4667
+HEADER 13 - Number of apolar alpha sphere     :    15
+HEADER 14 - Proportion of apolar alpha sphere : 0.5357
+ATOM  10965  CG2 ILE A1395      68.591 133.642 119.669  0.00  0.00           C 0
+ATOM  10974  CD2 LEU A1396      67.544 131.879 115.349  0.00  0.00           C 0
+ATOM  10995  NH1 ARG A1399      68.400 136.249 116.102  0.80  7.66           N 0
+ATOM  10718  OE2 GLU A1363      71.549 134.352 112.634  0.00  0.00           O 0
+ATOM  10692   CG GLN A1360      74.347 128.359 111.711  0.00  0.00           C 0
+ATOM  10695  NE2 GLN A1360      76.548 128.087 112.676  0.72  7.66           N 0
+ATOM  10717  OE1 GLU A1363      71.877 132.964 110.964  0.61  7.50           O 0
+ATOM  10943   CE MET A1392      72.891 126.387 117.368  0.00  0.00           C 0
+ATOM  10683   CB LEU A1359      70.013 126.459 113.988  0.00  0.00           C 0
+ATOM  10942   SD MET A1392      73.126 127.900 118.274  0.00  0.00           S 0
+ATOM  10963   CB ILE A1395      68.204 132.305 120.273  0.00  0.00           C 0
+ATOM  10941   CG MET A1392      71.446 128.278 118.796  0.00  0.00           C 0
+ATOM  10972   CG LEU A1396      67.164 130.541 115.936  0.00  0.00           C 0
+ATOM  10939    O MET A1392      68.266 128.523 118.804  0.00  0.00           O 0
+ATOM  10716   CD GLU A1363      71.144 133.495 111.823  0.00  0.00           C 0
+ATOM  10715   CG GLU A1363      69.701 133.063 111.891  0.00  0.00           C 0
+ATOM  10404  NE2 GLN A1322      77.816 132.527 104.817  0.72  8.75           N 0
+ATOM  10694  OE1 GLN A1360      76.348 128.014 110.442  0.23  9.64           O 0
+ATOM  10690    O GLN A1360      71.769 129.943 108.502  0.53  8.57           O 0
+ATOM  10682    O LEU A1359      69.870 128.939 112.097  0.67  1.07           O 0
+ATOM  10691   CB GLN A1360      73.627 128.448 110.382  0.00  0.00           C 0
+ATOM  10693   CD GLN A1360      75.839 128.138 111.555  0.00  0.00           C 0
+ATOM  10973  CD1 LEU A1396      67.629 129.419 115.039  0.00  0.00           C 0
+ATOM  10681    C LEU A1359      70.372 127.827 111.926  0.00  0.00           C 0
+TER
+END

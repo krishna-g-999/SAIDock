@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    60:
+HEADER 0  - Pocket Score                      : 0.0223
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 4.0020
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4920
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 29.8750
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 3.8750
+HEADER 9  - Pocket volume (Monte Carlo)       : 327.1402
+HEADER 10 - Pocket volume (convex hull)       : 21.0262
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 3.0000
+HEADER 13 - Number of apolar alpha sphere     :     4
+HEADER 14 - Proportion of apolar alpha sphere : 0.2105
+ATOM  13458    O GLY A1716      89.850 101.453 127.605  0.00  0.00           O 0
+ATOM   4091   OH TYR A 525      88.093 100.461 121.740  0.36  9.64           O 0
+ATOM   4127   NZ LYS A 530      92.110 106.354 120.759  0.00  0.00           N 0
+ATOM  13169  NE2 GLN A1677      92.275 101.315 121.002  0.53  8.75           N 0
+ATOM   4126   CE LYS A 530      91.668 105.578 119.570  0.00  0.00           C 0
+ATOM   4103    N LEU A 528      85.771 103.780 118.798  0.55  1.09           N 0
+ATOM   4106    O LEU A 528      88.141 102.644 117.856  0.48  1.07           O 0
+ATOM  13454   OG SER A1715      96.264 103.191 126.492  0.00  0.00           O 0
+ATOM  13452    O SER A1715      93.058 103.937 127.730  0.31  7.50           O 0
+ATOM   4109  CD1 LEU A 528      86.392 107.944 117.249  0.00  0.00           C 0
+ATOM   4107   CB LEU A 528      86.691 105.480 117.286  0.00  0.00           C 0
+ATOM   4125   CD LYS A 530      91.502 106.480 118.367  0.00  0.00           C 0
+ATOM  13456   CA GLY A1716      92.181 101.431 127.075  0.00  0.00           C 0
+ATOM  13145    O VAL A1674      88.119  98.627 125.131  0.58  2.14           O 0
+ATOM  13152    O ALA A1675      91.349  96.832 124.289  0.67  5.36           O 0
+ATOM   4108   CG LEU A 528      85.670 106.611 117.342  0.00  0.00           C 0
+TER
+END

@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   131:
+HEADER 0  - Pocket Score                      : -0.0626
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0182
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5828
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 9.6250
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 288.2899
+HEADER 10 - Pocket volume (convex hull)       : 10.6124
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 2.0000
+HEADER 13 - Number of apolar alpha sphere     :     3
+HEADER 14 - Proportion of apolar alpha sphere : 0.1875
+ATOM  12811  CD1 LEU A1629      74.705 104.969 137.241  0.00  0.00           C 0
+ATOM  12412  NH2 ARG A1579      73.047 106.473 139.714  0.00  0.00           N 0
+ATOM  12798  CD2 LEU A1627      74.254 106.371 132.430  0.00  0.00           C 0
+ATOM  12797  CD1 LEU A1627      72.005 105.665 131.754  0.00  0.00           C 0
+ATOM  12810   CG LEU A1629      76.013 105.644 136.814  0.00  0.00           C 0
+ATOM  12409   NE ARG A1579      72.739 104.410 140.704  0.69  3.28           N 0
+ATOM  12378    O PRO A1575      70.106 100.750 138.593  0.55  1.07           O 0
+ATOM  11810   OG SER A1499      67.232 105.452 140.309  0.00  0.00           O 0
+ATOM  12410   CZ ARG A1579      72.469 105.710 140.628  0.00  0.00           C 0
+ATOM  12819  OD1 ASP A1630      72.805 102.617 135.038  0.81  4.29           O 0
+ATOM  12820  OD2 ASP A1630      71.789 102.635 133.092  0.65  4.29           O 0
+ATOM  12359  OE1 GLN A1572      66.429 103.435 133.502  0.42  6.43           O 0
+ATOM  12388  CG2 THR A1576      66.290 102.367 137.918  0.00  0.00           C 0
+ATOM  12379   CB PRO A1575      70.529 100.285 135.640  0.00  0.00           C 0
+TER
+END

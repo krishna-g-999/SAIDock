@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    22:
+HEADER 0  - Pocket Score                      : -0.0258
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 3.9128
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6819
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 25.0000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 5.3333
+HEADER 9  - Pocket volume (Monte Carlo)       : 196.4379
+HEADER 10 - Pocket volume (convex hull)       : 4.6062
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 1.0000
+HEADER 13 - Number of apolar alpha sphere     :     2
+HEADER 14 - Proportion of apolar alpha sphere : 0.1053
+ATOM   2814  OXT GLN A 351      22.706  16.920 -24.460  0.67  1.07           O 0
+ATOM   2800    O ILE A 350      18.537  15.314 -25.196  0.26  5.36           O 0
+ATOM   2806   CA GLN A 351      21.897  16.423 -25.180  0.00  0.00           C 0
+ATOM   2805    N GLN A 351      20.719  15.033 -25.257  0.68  2.19           N 0
+ATOM   2813    O GLN A 351      23.707  17.445 -23.807  0.61  8.57           O 0
+ATOM   2789    O ARG A 349      20.802  11.924 -22.855  0.00  0.00           O 0
+ATOM   2812    C GLN A 351      23.549  16.938 -25.013  0.00  0.00           C 0
+ATOM   2808   CG GLN A 351      20.139  17.990 -26.057  0.00  0.00           C 0
+ATOM   2796  NH2 ARG A 349      24.180  11.952 -18.456  0.00  0.00           N 0
+ATOM   2795  NH1 ARG A 349      22.737  13.468 -17.530  0.00  0.00           N 0
+ATOM   2790   CB ARG A 349      20.012  11.734 -20.216  0.00  0.00           C 0
+ATOM   2791   CG ARG A 349      19.773  12.345 -18.839  0.00  0.00           C 0
+ATOM   2794   CZ ARG A 349      22.958  12.270 -18.057  0.00  0.00           C 0
+ATOM   2788    C ARG A 349      19.623  12.283 -22.667  0.00  0.00           C 0
+ATOM   2799    C ILE A 350      19.554  14.579 -25.188  0.00  0.00           C 0
+ATOM   2797    N ILE A 350      18.870  12.839 -23.628  0.42  2.19           N 0
+ATOM   2787   CA ARG A 349      18.998  12.198 -21.260  0.00  0.00           C 0
+TER
+END

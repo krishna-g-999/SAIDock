@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : 0.0243
+HEADER 1  - Drug Score                        : 0.0133
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.8451
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5441
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 8.8750
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.3750
+HEADER 9  - Pocket volume (Monte Carlo)       : 242.7991
+HEADER 10 - Pocket volume (convex hull)       : 7.0852
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.5333
+ATOM    279    N THR A  39       1.616 -14.936  21.783  0.66  1.09           N 0
+ATOM    270    O GLY A  37       1.132 -11.372  19.578  0.52  6.43           O 0
+ATOM   1052  CD1 LEU A 144       5.414 -14.550  17.230  0.00  0.00           C 0
+ATOM    285  CG2 THR A  39       0.292 -17.213  20.242  0.00  0.00           C 0
+ATOM     85   CG PRO A  13      -0.218 -10.158  16.290  0.00  0.00           C 0
+ATOM     86   CD PRO A  13       0.365 -10.231  14.974  0.00  0.00           C 0
+ATOM     93  CG2 VAL A  14       4.024 -10.927  17.815  0.00  0.00           C 0
+ATOM   1053  CD2 LEU A 144       5.751 -14.842  14.792  0.00  0.00           C 0
+ATOM     77   CA GLY A  12       1.685  -9.348  12.528  0.00  0.00           C 0
+ATOM   1038    O ARG A 143       8.871 -13.158  12.415  0.39  8.57           O 0
+ATOM   1049    O LEU A 144       6.937 -10.330  14.108  0.45  4.29           O 0
+ATOM     72   CB ASP A  11       4.458  -9.677   8.797  0.00  0.00           C 0
+ATOM     76    N GLY A  12       2.879  -9.018  11.749  0.00  0.00           N 0
+ATOM     68    N ASP A  11       5.360  -8.474  10.728  0.00  0.00           N 0
+ATOM   1050   CB LEU A 144       6.806 -12.854  15.959  0.00  0.00           C 0
+ATOM   1047   CA LEU A 144       7.568 -12.542  14.694  0.00  0.00           C 0
+TER
+END

@@ -1,0 +1,884 @@
+[
+  {
+    "pocket_id": 1,
+    "engine": "fpocket",
+    "druggability_score": 0.999,
+    "n_spheres": 325.0,
+    "total_sasa": 469.363,
+    "apolar_sasa": 242.476,
+    "volume": 1832.985,
+    "hydrophobicity": 31.009,
+    "center": [
+      -18.446625,
+      59.04628124999998,
+      46.12248125000001
+    ],
+    "box_size": [
+      28.6,
+      35.0,
+      30.5
+    ],
+    "composite_score": 0.9995
+  },
+  {
+    "pocket_id": 7,
+    "engine": "fpocket",
+    "druggability_score": 0.635,
+    "n_spheres": 43.0,
+    "total_sasa": 139.143,
+    "apolar_sasa": 79.703,
+    "volume": 619.192,
+    "hydrophobicity": 29.706,
+    "center": [
+      -3.862717948717949,
+      57.48741025641027,
+      52.96615384615383
+    ],
+    "box_size": [
+      20.0,
+      25.4,
+      26.7
+    ],
+    "composite_score": 0.7413
+  },
+  {
+    "pocket_id": 44,
+    "engine": "fpocket",
+    "druggability_score": 0.457,
+    "n_spheres": 72.0,
+    "total_sasa": 296.264,
+    "apolar_sasa": 176.314,
+    "volume": 1042.006,
+    "hydrophobicity": 26.516,
+    "center": [
+      -9.017363636363637,
+      56.87597727272726,
+      19.81836363636364
+    ],
+    "box_size": [
+      27.9,
+      24.2,
+      23.5
+    ],
+    "composite_score": 0.7285
+  },
+  {
+    "pocket_id": 11,
+    "engine": "fpocket",
+    "druggability_score": 0.116,
+    "n_spheres": 62.0,
+    "total_sasa": 166.32,
+    "apolar_sasa": 70.517,
+    "volume": 458.012,
+    "hydrophobicity": 16.545,
+    "center": [
+      -14.686230769230766,
+      56.49556410256411,
+      35.308282051282056
+    ],
+    "box_size": [
+      28.9,
+      22.4,
+      20.4
+    ],
+    "composite_score": 0.4496
+  },
+  {
+    "pocket_id": 40,
+    "engine": "fpocket",
+    "druggability_score": 0.014,
+    "n_spheres": 56.0,
+    "total_sasa": 187.851,
+    "apolar_sasa": 92.987,
+    "volume": 638.419,
+    "hydrophobicity": 10.875,
+    "center": [
+      -29.340675000000005,
+      61.22217500000001,
+      58.72637500000002
+    ],
+    "box_size": [
+      22.8,
+      24.1,
+      24.7
+    ],
+    "composite_score": 0.4347
+  },
+  {
+    "pocket_id": 42,
+    "engine": "fpocket",
+    "druggability_score": 0.006,
+    "n_spheres": 36.0,
+    "total_sasa": 167.136,
+    "apolar_sasa": 91.78,
+    "volume": 566.491,
+    "hydrophobicity": 14.0,
+    "center": [
+      -30.024562500000002,
+      41.34315624999999,
+      24.403500000000005
+    ],
+    "box_size": [
+      28.1,
+      20.0,
+      20.6
+    ],
+    "composite_score": 0.4163
+  },
+  {
+    "pocket_id": 18,
+    "engine": "fpocket",
+    "druggability_score": 0.027,
+    "n_spheres": 29.0,
+    "total_sasa": 96.484,
+    "apolar_sasa": 54.343,
+    "volume": 349.155,
+    "hydrophobicity": 19.0,
+    "center": [
+      -4.652080000000001,
+      84.8258,
+      37.65264
+    ],
+    "box_size": [
+      20.0,
+      23.5,
+      20.4
+    ],
+    "composite_score": 0.38
+  },
+  {
+    "pocket_id": 12,
+    "engine": "fpocket",
+    "druggability_score": 0.003,
+    "n_spheres": 30.0,
+    "total_sasa": 97.7,
+    "apolar_sasa": 47.098,
+    "volume": 346.619,
+    "hydrophobicity": 7.0,
+    "center": [
+      -20.17771428571428,
+      64.77525,
+      65.3564642857143
+    ],
+    "box_size": [
+      23.8,
+      22.5,
+      20.0
+    ],
+    "composite_score": 0.3708
+  },
+  {
+    "pocket_id": 20,
+    "engine": "fpocket",
+    "druggability_score": 0.005,
+    "n_spheres": 28.0,
+    "total_sasa": 101.163,
+    "apolar_sasa": 60.381,
+    "volume": 337.34,
+    "hydrophobicity": 5.778,
+    "center": [
+      -33.68057142857143,
+      51.370571428571424,
+      64.2632857142857
+    ],
+    "box_size": [
+      22.1,
+      20.6,
+      20.0
+    ],
+    "composite_score": 0.3633
+  },
+  {
+    "pocket_id": 28,
+    "engine": "fpocket",
+    "druggability_score": 0.013,
+    "n_spheres": 28.0,
+    "total_sasa": 93.465,
+    "apolar_sasa": 59.807,
+    "volume": 288.436,
+    "hydrophobicity": 13.867,
+    "center": [
+      7.6181,
+      39.57925,
+      52.75480000000001
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.2
+    ],
+    "composite_score": 0.3575
+  },
+  {
+    "pocket_id": 16,
+    "engine": "fpocket",
+    "druggability_score": 0.005,
+    "n_spheres": 33.0,
+    "total_sasa": 78.278,
+    "apolar_sasa": 35.021,
+    "volume": 264.658,
+    "hydrophobicity": 15.0,
+    "center": [
+      -11.29281818181818,
+      85.45213636363636,
+      42.90281818181819
+    ],
+    "box_size": [
+      21.4,
+      20.2,
+      20.0
+    ],
+    "composite_score": 0.3554
+  },
+  {
+    "pocket_id": 33,
+    "engine": "fpocket",
+    "druggability_score": 0.002,
+    "n_spheres": 26.0,
+    "total_sasa": 90.789,
+    "apolar_sasa": 41.059,
+    "volume": 313.748,
+    "hydrophobicity": 12.0,
+    "center": [
+      -21.322944444444445,
+      59.772611111111104,
+      22.94627777777778
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3504
+  },
+  {
+    "pocket_id": 25,
+    "engine": "fpocket",
+    "druggability_score": 0.003,
+    "n_spheres": 23.0,
+    "total_sasa": 79.875,
+    "apolar_sasa": 41.059,
+    "volume": 335.174,
+    "hydrophobicity": 12.0,
+    "center": [
+      -32.29085714285715,
+      69.9602380952381,
+      16.99314285714286
+    ],
+    "box_size": [
+      23.2,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3452
+  },
+  {
+    "pocket_id": 21,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 34.0,
+    "total_sasa": 109.095,
+    "apolar_sasa": 53.136,
+    "volume": 408.238,
+    "hydrophobicity": 4.0,
+    "center": [
+      -13.104642857142855,
+      28.540357142857136,
+      31.082464285714288
+    ],
+    "box_size": [
+      25.1,
+      21.1,
+      20.0
+    ],
+    "composite_score": 0.3416
+  },
+  {
+    "pocket_id": 2,
+    "engine": "fpocket",
+    "druggability_score": 0.014,
+    "n_spheres": 38.0,
+    "total_sasa": 32.187,
+    "apolar_sasa": 26.785,
+    "volume": 169.17,
+    "hydrophobicity": 15.0,
+    "center": [
+      -7.660541666666666,
+      53.687625,
+      44.00345833333333
+    ],
+    "box_size": [
+      20.0,
+      20.2,
+      20.2
+    ],
+    "composite_score": 0.3408
+  },
+  {
+    "pocket_id": 30,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 23.0,
+    "total_sasa": 81.292,
+    "apolar_sasa": 45.89,
+    "volume": 300.202,
+    "hydrophobicity": 6.0,
+    "center": [
+      -29.169777777777774,
+      28.225277777777773,
+      44.02572222222223
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.5
+    ],
+    "composite_score": 0.3367
+  },
+  {
+    "pocket_id": 23,
+    "engine": "fpocket",
+    "druggability_score": 0.009,
+    "n_spheres": 21.0,
+    "total_sasa": 73.604,
+    "apolar_sasa": 53.136,
+    "volume": 296.336,
+    "hydrophobicity": 15.0,
+    "center": [
+      -12.352941176470587,
+      70.54711764705883,
+      66.10441176470589
+    ],
+    "box_size": [
+      20.0,
+      20.1,
+      20.0
+    ],
+    "composite_score": 0.3338
+  },
+  {
+    "pocket_id": 6,
+    "engine": "fpocket",
+    "druggability_score": 0.003,
+    "n_spheres": 26.0,
+    "total_sasa": 62.872,
+    "apolar_sasa": 32.606,
+    "volume": 223.458,
+    "hydrophobicity": 10.0,
+    "center": [
+      -14.398349999999999,
+      33.12050000000001,
+      44.37689999999999
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      21.3
+    ],
+    "composite_score": 0.3329
+  },
+  {
+    "pocket_id": 29,
+    "engine": "fpocket",
+    "druggability_score": 0.002,
+    "n_spheres": 21.0,
+    "total_sasa": 90.995,
+    "apolar_sasa": 43.475,
+    "volume": 308.697,
+    "hydrophobicity": 9.0,
+    "center": [
+      15.22640909090909,
+      37.525454545454544,
+      60.05018181818182
+    ],
+    "box_size": [
+      20.7,
+      20.0,
+      21.4
+    ],
+    "composite_score": 0.3327
+  },
+  {
+    "pocket_id": 35,
+    "engine": "fpocket",
+    "druggability_score": 0.002,
+    "n_spheres": 26.0,
+    "total_sasa": 72.803,
+    "apolar_sasa": 32.606,
+    "volume": 213.671,
+    "hydrophobicity": 10.0,
+    "center": [
+      -34.23858823529412,
+      72.80035294117648,
+      41.27511764705882
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3304
+  },
+  {
+    "pocket_id": 9,
+    "engine": "fpocket",
+    "druggability_score": 0.001,
+    "n_spheres": 22.0,
+    "total_sasa": 61.831,
+    "apolar_sasa": 24.153,
+    "volume": 276.393,
+    "hydrophobicity": 10.0,
+    "center": [
+      -36.497049999999994,
+      76.18979999999999,
+      21.689950000000003
+    ],
+    "box_size": [
+      20.1,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3291
+  },
+  {
+    "pocket_id": 22,
+    "engine": "fpocket",
+    "druggability_score": 0.001,
+    "n_spheres": 19.0,
+    "total_sasa": 95.248,
+    "apolar_sasa": 50.72,
+    "volume": 309.754,
+    "hydrophobicity": 6.25,
+    "center": [
+      -16.240166666666667,
+      80.98455555555557,
+      68.24155555555555
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3258
+  },
+  {
+    "pocket_id": 32,
+    "engine": "fpocket",
+    "druggability_score": 0.001,
+    "n_spheres": 20.0,
+    "total_sasa": 80.287,
+    "apolar_sasa": 45.89,
+    "volume": 272.424,
+    "hydrophobicity": 11.0,
+    "center": [
+      -43.07794444444444,
+      32.906111111111116,
+      35.39188888888888
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3217
+  },
+  {
+    "pocket_id": 13,
+    "engine": "fpocket",
+    "druggability_score": 0.002,
+    "n_spheres": 19.0,
+    "total_sasa": 66.296,
+    "apolar_sasa": 36.229,
+    "volume": 270.146,
+    "hydrophobicity": 8.0,
+    "center": [
+      4.25445,
+      65.06190000000001,
+      35.5656
+    ],
+    "box_size": [
+      20.0,
+      21.0,
+      20.0
+    ],
+    "composite_score": 0.3184
+  },
+  {
+    "pocket_id": 8,
+    "engine": "fpocket",
+    "druggability_score": 0.002,
+    "n_spheres": 17.0,
+    "total_sasa": 84.345,
+    "apolar_sasa": 43.475,
+    "volume": 288.218,
+    "hydrophobicity": 8.0,
+    "center": [
+      -38.927117647058814,
+      36.63058823529411,
+      50.98770588235294
+    ],
+    "box_size": [
+      20.0,
+      22.3,
+      22.6
+    ],
+    "composite_score": 0.3153
+  },
+  {
+    "pocket_id": 19,
+    "engine": "fpocket",
+    "druggability_score": 0.017,
+    "n_spheres": 21.0,
+    "total_sasa": 56.218,
+    "apolar_sasa": 42.267,
+    "volume": 182.383,
+    "hydrophobicity": 17.0,
+    "center": [
+      -12.610749999999998,
+      91.4195625,
+      27.908687500000003
+    ],
+    "box_size": [
+      20.9,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.315
+  },
+  {
+    "pocket_id": 15,
+    "engine": "fpocket",
+    "druggability_score": 0.018,
+    "n_spheres": 18.0,
+    "total_sasa": 74.719,
+    "apolar_sasa": 64.004,
+    "volume": 229.29,
+    "hydrophobicity": 13.0,
+    "center": [
+      -12.744999999999997,
+      89.02588235294118,
+      8.015058823529412
+    ],
+    "box_size": [
+      20.0,
+      20.4,
+      20.0
+    ],
+    "composite_score": 0.3149
+  },
+  {
+    "pocket_id": 14,
+    "engine": "fpocket",
+    "druggability_score": 0.001,
+    "n_spheres": 23.0,
+    "total_sasa": 53.211,
+    "apolar_sasa": 22.945,
+    "volume": 141.048,
+    "hydrophobicity": 6.0,
+    "center": [
+      -46.65927777777777,
+      42.381888888888895,
+      31.238555555555553
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3054
+  },
+  {
+    "pocket_id": 10,
+    "engine": "fpocket",
+    "druggability_score": 0.002,
+    "n_spheres": 18.0,
+    "total_sasa": 60.114,
+    "apolar_sasa": 37.436,
+    "volume": 219.068,
+    "hydrophobicity": 8.0,
+    "center": [
+      -21.883894736842105,
+      45.76984210526316,
+      62.51536842105264
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3048
+  },
+  {
+    "pocket_id": 5,
+    "engine": "fpocket",
+    "druggability_score": 0.001,
+    "n_spheres": 18.0,
+    "total_sasa": 54.444,
+    "apolar_sasa": 25.36,
+    "volume": 209.19,
+    "hydrophobicity": 7.0,
+    "center": [
+      -21.580214285714284,
+      26.301142857142857,
+      40.37592857142857
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.3023
+  },
+  {
+    "pocket_id": 34,
+    "engine": "fpocket",
+    "druggability_score": 0.001,
+    "n_spheres": 17.0,
+    "total_sasa": 85.604,
+    "apolar_sasa": 36.229,
+    "volume": 208.84,
+    "hydrophobicity": 5.0,
+    "center": [
+      -1.0551874999999997,
+      36.318625,
+      37.71093749999999
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.4
+    ],
+    "composite_score": 0.2989
+  },
+  {
+    "pocket_id": 41,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 15.0,
+    "total_sasa": 76.04,
+    "apolar_sasa": 32.606,
+    "volume": 227.224,
+    "hydrophobicity": 5.0,
+    "center": [
+      -28.088,
+      78.85245454545453,
+      16.74572727272727
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.2954
+  },
+  {
+    "pocket_id": 37,
+    "engine": "fpocket",
+    "druggability_score": 0.001,
+    "n_spheres": 15.0,
+    "total_sasa": 79.179,
+    "apolar_sasa": 51.928,
+    "volume": 183.47,
+    "hydrophobicity": 10.0,
+    "center": [
+      1.5994285714285716,
+      71.68928571428572,
+      24.051928571428572
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.2872
+  },
+  {
+    "pocket_id": 31,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 20.0,
+    "total_sasa": 91.904,
+    "apolar_sasa": 51.928,
+    "volume": 290.917,
+    "hydrophobicity": 4.0,
+    "center": [
+      -0.04138095238095237,
+      62.29490476190476,
+      25.620666666666672
+    ],
+    "box_size": [
+      20.0,
+      21.4,
+      21.0
+    ],
+    "composite_score": 0.2849
+  },
+  {
+    "pocket_id": 26,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 19.0,
+    "total_sasa": 77.712,
+    "apolar_sasa": 19.322,
+    "volume": 240.195,
+    "hydrophobicity": 4.0,
+    "center": [
+      1.4729999999999996,
+      43.91753333333333,
+      28.923666666666673
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      21.3
+    ],
+    "composite_score": 0.2714
+  },
+  {
+    "pocket_id": 38,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 25.0,
+    "total_sasa": 117.31,
+    "apolar_sasa": 41.059,
+    "volume": 334.319,
+    "hydrophobicity": 3.0,
+    "center": [
+      -28.362904761904765,
+      64.91914285714286,
+      17.82847619047619
+    ],
+    "box_size": [
+      24.8,
+      20.0,
+      20.5
+    ],
+    "composite_score": 0.2702
+  },
+  {
+    "pocket_id": 43,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 24.0,
+    "total_sasa": 204.001,
+    "apolar_sasa": 44.682,
+    "volume": 710.807,
+    "hydrophobicity": 0.667,
+    "center": [
+      -24.13774074074074,
+      54.60566666666665,
+      31.735592592592596
+    ],
+    "box_size": [
+      26.7,
+      23.2,
+      21.3
+    ],
+    "composite_score": 0.2488
+  },
+  {
+    "pocket_id": 4,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 17.0,
+    "total_sasa": 77.025,
+    "apolar_sasa": 44.682,
+    "volume": 304.72,
+    "hydrophobicity": 2.857,
+    "center": [
+      -12.580823529411767,
+      30.432882352941178,
+      38.836176470588235
+    ],
+    "box_size": [
+      20.0,
+      21.1,
+      20.0
+    ],
+    "composite_score": 0.2319
+  },
+  {
+    "pocket_id": 36,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 15.0,
+    "total_sasa": 64.61,
+    "apolar_sasa": 30.191,
+    "volume": 187.592,
+    "hydrophobicity": 3.0,
+    "center": [
+      -30.112083333333327,
+      25.582916666666666,
+      37.599833333333336
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.2075
+  },
+  {
+    "pocket_id": 24,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 22.0,
+    "total_sasa": 104.968,
+    "apolar_sasa": 43.475,
+    "volume": 363.002,
+    "hydrophobicity": 0.0,
+    "center": [
+      -44.92331578947368,
+      40.72552631578949,
+      26.435157894736847
+    ],
+    "box_size": [
+      20.0,
+      20.5,
+      20.0
+    ],
+    "composite_score": 0.1659
+  },
+  {
+    "pocket_id": 39,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 21.0,
+    "total_sasa": 96.63,
+    "apolar_sasa": 10.869,
+    "volume": 240.891,
+    "hydrophobicity": 1.0,
+    "center": [
+      -42.23347058823529,
+      45.386,
+      51.03582352941176
+    ],
+    "box_size": [
+      20.0,
+      20.0,
+      21.3
+    ],
+    "composite_score": 0.1582
+  },
+  {
+    "pocket_id": 17,
+    "engine": "fpocket",
+    "druggability_score": 0.0,
+    "n_spheres": 18.0,
+    "total_sasa": 88.817,
+    "apolar_sasa": 13.284,
+    "volume": 258.158,
+    "hydrophobicity": 0.0,
+    "center": [
+      -23.4111875,
+      82.19950000000001,
+      50.015750000000004
+    ],
+    "box_size": [
+      22.3,
+      20.0,
+      20.0
+    ],
+    "composite_score": 0.1316
+  }
+]

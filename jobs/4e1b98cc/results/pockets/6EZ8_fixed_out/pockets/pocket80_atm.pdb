@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    80:
+HEADER 0  - Pocket Score                      : -0.0070
+HEADER 1  - Drug Score                        : 0.0019
+HEADER 2  - Number of alpha spheres           :    29
+HEADER 3  - Mean alpha-sphere radius          : 4.0398
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6047
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 51.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 5.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 245.4250
+HEADER 10 - Pocket volume (convex hull)       : 10.0066
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 19.0000
+HEADER 13 - Number of apolar alpha sphere     :    20
+HEADER 14 - Proportion of apolar alpha sphere : 0.6897
+ATOM   7973  NE2 GLN A1020     112.378 137.326  81.892  0.00  0.00           N 0
+ATOM   8358  CG1 ILE A1067     108.752 137.012  79.231  0.00  0.00           C 0
+ATOM   7970   CG GLN A1020     113.606 138.635  80.281  0.00  0.00           C 0
+ATOM   8359  CG2 ILE A1067     110.605 137.844  77.864  0.00  0.00           C 0
+ATOM   7994   CG HIS A1023     112.012 145.057  77.502  0.00  0.00           C 0
+ATOM   7996  CD2 HIS A1023     111.593 145.529  78.699  0.00  0.00           C 0
+ATOM   7993   CB HIS A1023     113.204 144.236  77.131  0.00  0.00           C 0
+ATOM   7966   CA GLN A1020     115.054 140.127  78.797  0.00  0.00           C 0
+ATOM   7968    O GLN A1020     116.066 142.153  79.563  0.25  6.43           O 0
+ATOM   7969   CB GLN A1020     114.889 139.420  80.139  0.00  0.00           C 0
+ATOM   7960    O LEU A1019     114.193 140.397  76.242  0.00  0.00           O 0
+ATOM   8354   CA ILE A1067     108.228 137.780  76.930  0.00  0.00           C 0
+ATOM   6706    O LEU A 864     103.849 142.009  78.825  0.23  8.57           O 0
+ATOM   8347    O GLU A1066     105.598 138.725  76.784  0.55  1.07           O 0
+ATOM   8062  CZ2 TRP A1030     109.937 141.983  74.459  0.00  0.00           C 0
+ATOM   7995  ND1 HIS A1023     111.076 145.468  76.579  0.00  0.00           N 0
+ATOM   7998  NE2 HIS A1023     110.424 146.216  78.477  0.41  2.19           N 0
+ATOM   7997  CE1 HIS A1023     110.134 146.164  77.189  0.00  0.00           C 0
+ATOM   8356    O ILE A1067     109.367 138.924  75.162  0.00  0.00           O 0
+ATOM   8064  CH2 TRP A1030     109.042 142.995  74.268  0.00  0.00           C 0
+TER
+END

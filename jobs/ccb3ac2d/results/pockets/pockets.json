@@ -1,0 +1,21 @@
+[
+  {
+    "pocket_id": 1,
+    "engine": "fpocket",
+    "druggability_score": 0.228,
+    "n_spheres": 18.0,
+    "volume": 3.8,
+    "hydrophobicity": 9.0,
+    "center": [
+      -4.0680000000000005,
+      -10.978588235294119,
+      -1.6396470588235292
+    ],
+    "box_size": [
+      20.0,
+      20.2,
+      20.0
+    ],
+    "composite_score": 0.3748
+  }
+]

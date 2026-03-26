@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : 0.1131
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0775
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5913
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 27.3750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 5.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 312.8441
+HEADER 10 - Pocket volume (convex hull)       : 10.9900
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   1286    O PRO A 169     -15.551  -6.762   0.550  0.00  0.00           O 0
+ATOM   1314   CB ASN A 172     -12.223  -9.530   1.154  0.00  0.00           C 0
+ATOM   1270   OH TYR A 167     -11.535  -6.529  -1.225  0.00  0.00           O 0
+ATOM    889  NH2 ARG A 119     -10.321  -1.698   3.639  0.00  0.00           N 0
+ATOM    886   NE ARG A 119     -10.574  -1.218   1.402  0.24  2.19           N 0
+ATOM    887   CZ ARG A 119     -10.617  -0.837   2.674  0.00  0.00           C 0
+ATOM    774   OH TYR A 103     -12.925  -1.722  -1.802  0.44  3.21           O 0
+ATOM    992  CG1 VAL A 130      -8.422  -4.527   0.087  0.00  0.00           C 0
+ATOM    751  ND1 HIS A 101     -13.316   2.645   1.248  0.00  0.00           N 0
+ATOM    885   CD ARG A 119     -10.882  -0.345   0.273  0.00  0.00           C 0
+ATOM    888  NH1 ARG A 119     -10.956   0.407   2.982  0.45  1.09           N 0
+ATOM    982    O LEU A 129      -5.797  -5.221   2.360  0.00  0.00           O 0
+ATOM   1317  ND2 ASN A 172      -9.973  -9.845   2.000  0.00  0.00           N 0
+ATOM    988   CA VAL A 130      -6.890  -6.514   0.166  0.00  0.00           C 0
+ATOM   1315   CG ASN A 172     -10.718  -9.367   1.010  0.00  0.00           C 0
+TER
+END

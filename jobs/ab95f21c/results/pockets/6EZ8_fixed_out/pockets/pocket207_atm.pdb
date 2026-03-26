@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   207:
+HEADER 0  - Pocket Score                      : -0.2189
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    25
+HEADER 3  - Mean alpha-sphere radius          : 4.0264
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4296
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -9.8000
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 4.3000
+HEADER 9  - Pocket volume (Monte Carlo)       : 292.4427
+HEADER 10 - Pocket volume (convex hull)       : 15.5479
+HEADER 11 - Charge Score                      :     3
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   4194  OD1 ASN A 538      99.410 101.651 119.427  0.00  0.00           O 0
+ATOM  13168  OE1 GLN A1677      93.120 100.025 119.380  0.84  5.36           O 0
+ATOM  13439  NH1 ARG A1713      96.784  95.997 123.509  0.46  4.37           N 0
+ATOM  13169  NE2 GLN A1677      92.275 101.315 121.002  0.53  8.75           N 0
+ATOM  13454   OG SER A1715      96.264 103.191 126.492  0.00  0.00           O 0
+ATOM  13424    O LYS A1712      99.296 101.112 127.577  0.48  5.36           O 0
+ATOM  13433    O ARG A1713      96.043  98.683 128.209  0.47  4.29           O 0
+ATOM   4195  ND2 ASN A 538     101.262 101.084 120.553  0.55  9.84           N 0
+ATOM   3755  NH1 ARG A 485      99.506  95.617 118.703  0.31  9.84           N 0
+ATOM   4193   CG ASN A 538     100.479 101.051 119.484  0.00  0.00           C 0
+ATOM  13456   CA GLY A1716      92.181 101.431 127.075  0.00  0.00           C 0
+ATOM  13167   CD GLN A1677      92.305 100.207 120.276  0.00  0.00           C 0
+ATOM  13188  OE1 GLU A1680      94.348  95.516 120.983  0.52  1.07           O 0
+ATOM  13152    O ALA A1675      91.349  96.832 124.289  0.67  5.36           O 0
+ATOM  13455    N GLY A1716      93.401 101.716 127.811  0.63  1.09           N 0
+ATOM  13436   CD ARG A1713      97.781  96.132 126.148  0.00  0.00           C 0
+ATOM  13189  OE2 GLU A1680      95.718  96.449 119.551  0.60  6.43           O 0
+ATOM   4159   CG ARG A 534      96.514 100.132 116.836  0.00  0.00           C 0
+ATOM  13431   CA ARG A1713      98.441  98.553 128.206  0.00  0.00           C 0
+TER
+END

@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   183:
+HEADER 0  - Pocket Score                      : -0.1350
+HEADER 1  - Drug Score                        : 0.0049
+HEADER 2  - Number of alpha spheres           :    63
+HEADER 3  - Mean alpha-sphere radius          : 3.9612
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4710
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 32.0000
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Amino Acid based volume Score     : 4.1667
+HEADER 9  - Pocket volume (Monte Carlo)       : 476.8893
+HEADER 10 - Pocket volume (convex hull)       : 96.0750
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 22.5833
+HEADER 13 - Number of apolar alpha sphere     :    24
+HEADER 14 - Proportion of apolar alpha sphere : 0.3810
+ATOM  11903   CA SER A1513      76.459 102.099 163.109  0.00  0.00           C 0
+ATOM  14960  OE2 GLU A1906      81.526 102.272 164.956  0.24  5.36           O 0
+ATOM  11905    O SER A1513      77.792 102.485 165.048  0.45  5.36           O 0
+ATOM  12491   CB LYS A1590      79.389  96.176 159.920  0.00  0.00           C 0
+ATOM  11906   CB SER A1513      77.283 102.680 161.963  0.00  0.00           C 0
+ATOM  14952    N GLU A1906      86.402 102.509 163.079  0.67  3.28           N 0
+ATOM  14838    O ALA A1890      85.587 100.083 157.484  0.47  6.43           O 0
+ATOM  14942    N HIS A1905      86.851 100.054 161.909  0.62  1.09           N 0
+ATOM  14957   CG GLU A1906      83.800 102.825 164.563  0.00  0.00           C 0
+ATOM  14946   CB HIS A1905      87.677 101.601 160.213  0.00  0.00           C 0
+ATOM  12493   CD LYS A1590      79.553  98.385 158.702  0.00  0.00           C 0
+ATOM  14959  OE1 GLU A1906      81.947 104.159 163.919  0.50  9.64           O 0
+ATOM  14956   CB GLU A1906      84.641 103.943 163.974  0.00  0.00           C 0
+ATOM  14839   CB ALA A1890      85.988 102.992 157.212  0.00  0.00           C 0
+ATOM  14817    O TYR A1888      81.644 102.011 154.309  0.64  2.14           O 0
+ATOM  14835    N ALA A1890      85.148 101.922 155.175  0.47  2.19           N 0
+ATOM  14676  NE2 GLN A1870      82.520 105.862 158.106  0.00  0.00           N 0
+ATOM  11907   OG SER A1513      77.039 104.067 161.825  0.65  9.64           O 0
+ATOM  14675  OE1 GLN A1870      82.595 107.935 158.966  0.00  0.00           O 0
+ATOM  12494   CE LYS A1590      80.953  98.303 158.113  0.00  0.00           C 0
+ATOM  11876   CG MET A1509      75.172 101.353 157.361  0.00  0.00           C 0
+ATOM  12472  CG1 VAL A1587      75.740  97.749 156.901  0.00  0.00           C 0
+ATOM  11900  CG2 ILE A1512      72.563  99.167 162.676  0.00  0.00           C 0
+ATOM  12503  CD2 LEU A1591      73.085  96.190 159.174  0.00  0.00           C 0
+ATOM  12490    O LYS A1590      76.874  95.974 161.147  0.00  0.00           O 0
+ATOM  11874    O MET A1509      74.173 102.711 160.143  0.53  1.07           O 0
+ATOM  11902    N SER A1513      75.039 102.161 162.786  0.00  0.00           N 0
+ATOM  11897    O ILE A1512      74.421 100.955 164.587  0.33  9.64           O 0
+ATOM  12492   CG LYS A1590      78.868  97.024 158.773  0.00  0.00           C 0
+ATOM  14940   CB SER A1904      84.626  98.525 163.261  0.00  0.00           C 0
+ATOM  14941   OG SER A1904      84.560  99.225 164.489  0.43  4.29           O 0
+ATOM  14958   CD GLU A1906      82.319 103.105 164.472  0.00  0.00           C 0
+ATOM  11878   CE MET A1509      77.865 101.646 158.032  0.00  0.00           C 0
+TER
+END

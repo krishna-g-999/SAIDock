@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   168:
+HEADER 0  - Pocket Score                      : -0.1074
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    22
+HEADER 3  - Mean alpha-sphere radius          : 4.0359
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5371
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -19.8571
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Amino Acid based volume Score     : 4.1429
+HEADER 9  - Pocket volume (Monte Carlo)       : 224.7295
+HEADER 10 - Pocket volume (convex hull)       : 1.0312
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 4.0000
+HEADER 13 - Number of apolar alpha sphere     :     5
+HEADER 14 - Proportion of apolar alpha sphere : 0.2273
+ATOM   4126   CE LYS A 530      91.668 105.578 119.570  0.00  0.00           C 0
+ATOM  13168  OE1 GLN A1677      93.120 100.025 119.380  0.84  5.36           O 0
+ATOM   4158   CB ARG A 534      96.251 101.482 116.203  0.00  0.00           C 0
+ATOM  13169  NE2 GLN A1677      92.275 101.315 121.002  0.53  8.75           N 0
+ATOM   4123   CB LYS A 530      91.920 104.817 116.568  0.00  0.00           C 0
+ATOM   4148    O GLU A 533      98.559 104.811 117.071  0.56  2.14           O 0
+ATOM   4127   NZ LYS A 530      92.110 106.354 120.759  0.00  0.00           N 0
+ATOM   4149   CB GLU A 533      96.392 106.915 117.029  0.00  0.00           C 0
+ATOM   4194  OD1 ASN A 538      99.410 101.651 119.427  0.00  0.00           O 0
+ATOM   4159   CG ARG A 534      96.514 100.132 116.836  0.00  0.00           C 0
+ATOM  13454   OG SER A1715      96.264 103.191 126.492  0.00  0.00           O 0
+ATOM   4187  ND2 ASN A 537     100.170 107.084 118.837  0.00  0.00           N 0
+ATOM   4122    O LYS A 530      93.487 102.895 115.230  0.00  0.00           O 0
+ATOM   4154    N ARG A 534      96.995 103.786 115.821  0.71  1.09           N 0
+ATOM   4155   CA ARG A 534      97.447 102.442 116.154  0.00  0.00           C 0
+ATOM   4147    C GLU A 533      97.604 104.875 116.295  0.00  0.00           C 0
+TER
+END

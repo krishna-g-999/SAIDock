@@ -1,0 +1,288 @@
+[
+  {
+    "pocket_id": 15,
+    "n_spheres": 28,
+    "center": [
+      -22.43609050675344,
+      18.972021445678582,
+      -34.71936468214624
+    ],
+    "volume": 3340.8,
+    "radius_mean": 3.054,
+    "hydrophobicity": 0.727,
+    "polar_fraction": 0.273,
+    "n_atoms_lining": 99,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.9186,
+    "composite_score": 0.7817,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 1,
+    "n_spheres": 18,
+    "center": [
+      -23.018199486496933,
+      14.73651250845392,
+      -0.8754486982261106
+    ],
+    "volume": 2301.3,
+    "radius_mean": 3.123,
+    "hydrophobicity": 0.667,
+    "polar_fraction": 0.333,
+    "n_atoms_lining": 69,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.8699,
+    "composite_score": 0.7216,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 32,
+    "n_spheres": 17,
+    "center": [
+      -3.996410989837965,
+      -4.779319038032482,
+      -39.574874747841285
+    ],
+    "volume": 2805.52,
+    "radius_mean": 3.374,
+    "hydrophobicity": 0.558,
+    "polar_fraction": 0.442,
+    "n_atoms_lining": 43,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.8749,
+    "composite_score": 0.7164,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 9,
+    "n_spheres": 9,
+    "center": [
+      -7.191868478605269,
+      5.944965328879894,
+      -47.12568453642766
+    ],
+    "volume": 1208.96,
+    "radius_mean": 3.175,
+    "hydrophobicity": 0.692,
+    "polar_fraction": 0.308,
+    "n_atoms_lining": 39,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7987,
+    "composite_score": 0.657,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 8,
+    "n_spheres": 8,
+    "center": [
+      -43.02710018848773,
+      13.5650567863313,
+      -11.484299974017697
+    ],
+    "volume": 8491.81,
+    "radius_mean": 5.915,
+    "hydrophobicity": 0.667,
+    "polar_fraction": 0.333,
+    "n_atoms_lining": 15,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.8032,
+    "composite_score": 0.6549,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 31,
+    "n_spheres": 7,
+    "center": [
+      -24.424660777133347,
+      -16.07156476720405,
+      -36.69013908919111
+    ],
+    "volume": 4438.02,
+    "radius_mean": 5.131,
+    "hydrophobicity": 0.7,
+    "polar_fraction": 0.3,
+    "n_atoms_lining": 20,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7867,
+    "composite_score": 0.6447,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 16,
+    "n_spheres": 6,
+    "center": [
+      -23.52461669592321,
+      -24.856679507054803,
+      -8.711422162289866
+    ],
+    "volume": 1459.64,
+    "radius_mean": 3.823,
+    "hydrophobicity": 0.538,
+    "polar_fraction": 0.462,
+    "n_atoms_lining": 13,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7965,
+    "composite_score": 0.6398,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 17,
+    "n_spheres": 6,
+    "center": [
+      -34.74356249098028,
+      33.99743107931558,
+      -3.2953550933480393
+    ],
+    "volume": 2332.56,
+    "radius_mean": 4.332,
+    "hydrophobicity": 0.714,
+    "polar_fraction": 0.286,
+    "n_atoms_lining": 14,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7758,
+    "composite_score": 0.6365,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 6,
+    "n_spheres": 7,
+    "center": [
+      -26.8650201453742,
+      7.889252986390794,
+      -32.71874542666061
+    ],
+    "volume": 927.65,
+    "radius_mean": 3.162,
+    "hydrophobicity": 0.711,
+    "polar_fraction": 0.289,
+    "n_atoms_lining": 38,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7688,
+    "composite_score": 0.6217,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 20,
+    "n_spheres": 7,
+    "center": [
+      -33.253767343269644,
+      -14.975154078510624,
+      -6.835085418327827
+    ],
+    "volume": 939.27,
+    "radius_mean": 3.173,
+    "hydrophobicity": 0.778,
+    "polar_fraction": 0.222,
+    "n_atoms_lining": 27,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7495,
+    "composite_score": 0.6171,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 5,
+    "n_spheres": 6,
+    "center": [
+      -16.23771922979785,
+      22.745014128646005,
+      -28.169585228807563
+    ],
+    "volume": 751.44,
+    "radius_mean": 3.102,
+    "hydrophobicity": 0.575,
+    "polar_fraction": 0.425,
+    "n_atoms_lining": 40,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7718,
+    "composite_score": 0.5792,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 19,
+    "n_spheres": 6,
+    "center": [
+      -12.694703344115728,
+      1.2797823834185094,
+      -34.23614479867528
+    ],
+    "volume": 737.18,
+    "radius_mean": 3.084,
+    "hydrophobicity": 0.724,
+    "polar_fraction": 0.276,
+    "n_atoms_lining": 29,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.7374,
+    "composite_score": 0.5651,
+    "engine": "PolarPocket"
+  },
+  {
+    "pocket_id": 7,
+    "n_spheres": 6,
+    "center": [
+      -8.633564842884406,
+      9.107397389045287,
+      -41.98821371203682
+    ],
+    "volume": 764.99,
+    "radius_mean": 3.122,
+    "hydrophobicity": 0.917,
+    "polar_fraction": 0.083,
+    "n_atoms_lining": 24,
+    "box_size": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "druggability_score": 0.6837,
+    "composite_score": 0.5515,
+    "engine": "PolarPocket"
+  }
+]

@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   111:
+HEADER 0  - Pocket Score                      : -0.0388
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 3.8616
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6664
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 4.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 233.9499
+HEADER 10 - Pocket volume (convex hull)       : 5.6233
+HEADER 11 - Charge Score                      :     3
+HEADER 12 - Local hydrophobic density Score   : 6.0000
+HEADER 13 - Number of apolar alpha sphere     :     7
+HEADER 14 - Proportion of apolar alpha sphere : 0.4118
+ATOM  10926   CA ARG A1391      69.014 126.511 124.125  0.00  0.00           C 0
+ATOM  10922    C ALA A1390      67.624 124.588 123.604  0.00  0.00           C 0
+ATOM  11297  CE1 HIS A1437      64.369 124.536 126.226  0.00  0.00           C 0
+ATOM  10923    O ALA A1390      66.608 125.267 123.733  0.00  0.00           O 0
+ATOM  10897    O ARG A1387      71.532 123.567 126.089  0.60  4.29           O 0
+ATOM  10930   CG ARG A1391      70.641 128.054 125.459  0.00  0.00           C 0
+ATOM  10929   CB ARG A1391      70.257 126.639 125.020  0.00  0.00           C 0
+ATOM  10934  NH1 ARG A1391      70.692 129.561 128.656  0.59  8.75           N 0
+ATOM  10904  NH2 ARG A1387      66.492 120.875 127.549  0.69  1.09           N 0
+ATOM  10924   CB ALA A1390      67.060 122.282 124.390  0.00  0.00           C 0
+ATOM  10925    N ARG A1391      68.841 125.118 123.725  0.00  0.00           N 0
+ATOM  11281    O ARG A1436      62.922 126.390 130.732  0.39  9.64           O 0
+ATOM  11288  NH2 ARG A1436      66.280 120.838 130.633  0.50  7.66           N 0
+ATOM  11295  ND1 HIS A1437      63.942 125.733 126.586  0.00  0.00           N 0
+ATOM  11285   NE ARG A1436      64.279 121.716 131.344  0.00  0.00           N 0
+ATOM  10910  CG1 VAL A1388      74.683 124.551 124.957  0.00  0.00           C 0
+ATOM  10931   CD ARG A1391      69.522 128.705 126.242  0.00  0.00           C 0
+ATOM  10958  OD2 ASP A1394      65.111 127.409 125.252  0.56  4.29           O 0
+TER
+END

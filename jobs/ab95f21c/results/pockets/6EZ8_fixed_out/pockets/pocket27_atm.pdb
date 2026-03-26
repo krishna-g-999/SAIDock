@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    27:
+HEADER 0  - Pocket Score                      : 0.0828
+HEADER 1  - Drug Score                        : 0.0398
+HEADER 2  - Number of alpha spheres           :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.6609
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3848
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 70.0833
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.9167
+HEADER 9  - Pocket volume (Monte Carlo)       : 210.3833
+HEADER 10 - Pocket volume (convex hull)       : 23.5556
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 27.0000
+HEADER 13 - Number of apolar alpha sphere     :    28
+HEADER 14 - Proportion of apolar alpha sphere : 0.9032
+ATOM   6984  CG2 VAL A 898     140.487 131.439  89.428  0.00  0.00           C 0
+ATOM   7016    O VAL A 902     144.498 134.047  92.169  0.66  2.14           O 0
+ATOM   7052  CD1 LEU A 906     145.325 127.610  92.006  0.00  0.00           C 0
+ATOM   7034  CD1 TYR A 904     145.839 130.730  87.261  0.00  0.00           C 0
+ATOM   7416  OE2 GLU A 949     142.461 135.502  88.121  0.64  5.36           O 0
+ATOM   7029   CA TYR A 904     147.625 132.519  89.312  0.00  0.00           C 0
+ATOM   7023    O ASN A 903     147.530 132.838  92.093  0.59  2.14           O 0
+ATOM   7036  CE1 TYR A 904     145.603 129.574  86.548  0.00  0.00           C 0
+ATOM   7107  CD2 PHE A 913     143.825 123.012  86.731  0.00  0.00           C 0
+ATOM   7358   CZ PHE A 942     140.892 126.486  86.248  0.00  0.00           C 0
+ATOM   7039   OH TYR A 904     146.306 127.990  84.916  0.73  1.07           O 0
+ATOM   6973    O LEU A 897     141.637 132.841  92.926  0.00  0.00           O 0
+ATOM   6951    O LEU A 894     139.050 128.703  90.576  0.55  1.07           O 0
+ATOM   6955  CD2 LEU A 894     142.116 125.623  91.816  0.00  0.00           C 0
+ATOM   6954  CD1 LEU A 894     141.497 123.853  90.222  0.00  0.00           C 0
+ATOM   6800  CD1 LEU A 875     146.601 122.856  91.616  0.00  0.00           C 0
+ATOM   7356  CE1 PHE A 942     139.984 126.997  87.152  0.00  0.00           C 0
+ATOM   7050   CB LEU A 906     147.733 127.118  91.544  0.00  0.00           C 0
+ATOM   7059   CG LEU A 907     149.064 125.595  87.463  0.00  0.00           C 0
+ATOM   7060  CD1 LEU A 907     148.267 125.636  86.184  0.00  0.00           C 0
+ATOM   7104   CB PHE A 913     146.282 122.548  86.575  0.00  0.00           C 0
+ATOM   6974   CB LEU A 897     141.473 130.035  93.938  0.00  0.00           C 0
+TER
+END

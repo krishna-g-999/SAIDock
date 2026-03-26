@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    23:
+HEADER 0  - Pocket Score                      : 0.0952
+HEADER 1  - Drug Score                        : 0.0008
+HEADER 2  - Number of alpha spheres           :    25
+HEADER 3  - Mean alpha-sphere radius          : 3.7526
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4997
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 47.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 219.3927
+HEADER 10 - Pocket volume (convex hull)       : 5.9269
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.3200
+ATOM  14346   CB ALA A1827      97.712  79.942 156.779  0.00  0.00           C 0
+ATOM  15235    N GLY A1942      91.907  77.060 159.262  0.00  0.00           N 0
+ATOM  15261  CD1 ILE A1945      96.942  79.286 160.458  0.00  0.00           C 0
+ATOM  14345    O ALA A1827      96.589  81.989 158.600  0.41  9.64           O 0
+ATOM  14387   CB ALA A1833      92.499  82.484 156.191  0.00  0.00           C 0
+ATOM  14070  CH2 TRP A1791      93.952  77.824 153.595  0.00  0.00           C 0
+ATOM  14386    O ALA A1833      92.705  80.961 153.929  0.00  0.00           O 0
+ATOM  15239    N VAL A1943      93.769  75.269 158.452  0.00  0.00           N 0
+ATOM  14343   CA ALA A1827      96.968  81.216 156.376  0.00  0.00           C 0
+ATOM  14379    O VAL A1832      89.791  81.778 154.719  0.60  4.29           O 0
+ATOM  15243   CB VAL A1943      95.836  75.334 157.171  0.00  0.00           C 0
+ATOM  14069  CZ3 TRP A1791      93.167  77.049 152.743  0.00  0.00           C 0
+ATOM  14074    O THR A1792      90.385  76.575 150.870  0.62  6.43           O 0
+ATOM  14088   CB ARG A1794      91.495  72.980 154.765  0.00  0.00           C 0
+ATOM  14084    N ARG A1794      90.253  73.361 152.691  0.79  5.47           N 0
+ATOM  15245  CG2 VAL A1943      95.110  75.219 155.853  0.00  0.00           C 0
+TER
+END

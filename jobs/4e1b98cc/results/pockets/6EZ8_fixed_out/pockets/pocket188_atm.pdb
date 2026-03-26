@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   188:
+HEADER 0  - Pocket Score                      : -0.1425
+HEADER 1  - Drug Score                        : 0.0005
+HEADER 2  - Number of alpha spheres           :    24
+HEADER 3  - Mean alpha-sphere radius          : 4.1919
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5442
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 38.2500
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 246.6060
+HEADER 10 - Pocket volume (convex hull)       : 9.8483
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 10.0000
+HEADER 13 - Number of apolar alpha sphere     :    11
+HEADER 14 - Proportion of apolar alpha sphere : 0.4583
+ATOM  17637  CD1 ILE A2249      70.568 133.850 163.101  0.00  0.00           C 0
+ATOM  17601    O MET A2245      74.351 134.242 165.547  0.47  3.21           O 0
+ATOM  17634   CB ILE A2249      72.357 134.707 161.523  0.00  0.00           C 0
+ATOM  17939  CZ3 TRP A2286      71.510 136.969 168.780  0.00  0.00           C 0
+ATOM  17937  CE3 TRP A2286      70.397 136.245 168.408  0.00  0.00           C 0
+ATOM  17609    O ASN A2246      76.864 136.479 164.070  0.32  2.14           O 0
+ATOM  17612  OD1 ASN A2246      76.464 138.804 165.710  0.00  0.00           O 0
+ATOM  17639   CA GLY A2250      75.807 137.239 159.865  0.00  0.00           C 0
+ATOM  17638    N GLY A2250      75.057 136.203 160.557  0.00  0.00           N 0
+ATOM  17607   CA ASN A2246      76.208 136.109 166.350  0.00  0.00           C 0
+ATOM  17991  ND2 ASN A2293      70.053 140.738 160.721  0.75  7.66           N 0
+ATOM  17636  CG2 ILE A2249      71.360 135.412 160.631  0.00  0.00           C 0
+ATOM  17960   CB LEU A2289      67.525 140.148 166.012  0.00  0.00           C 0
+ATOM  17958    C LEU A2289      66.657 139.921 163.674  0.00  0.00           C 0
+ATOM  17964    N SER A2290      66.526 138.671 163.244  0.62  2.19           N 0
+ATOM  17962  CD1 LEU A2289      68.646 140.403 168.237  0.00  0.00           C 0
+ATOM  17930    O TRP A2286      66.598 135.712 165.768  0.52  2.14           O 0
+ATOM  17968   CB SER A2290      67.240 136.798 161.854  0.00  0.00           C 0
+TER
+END

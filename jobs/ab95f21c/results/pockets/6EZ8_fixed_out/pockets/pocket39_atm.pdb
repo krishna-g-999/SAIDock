@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    39:
+HEADER 0  - Pocket Score                      : 0.0477
+HEADER 1  - Drug Score                        : 0.0016
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.5920
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3760
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 90.5000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Amino Acid based volume Score     : 5.3750
+HEADER 9  - Pocket volume (Monte Carlo)       : 93.1506
+HEADER 10 - Pocket volume (convex hull)       : 0.9519
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 14.0000
+HEADER 13 - Number of apolar alpha sphere     :    15
+HEADER 14 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1124   SD MET A 142     135.793  93.774  78.496  0.00  0.00           S 0
+ATOM    948  CD1 LEU A 119     138.800  89.742  79.661  0.00  0.00           C 0
+ATOM    928  CD2 LEU A 116     138.543  90.569  75.292  0.00  0.00           C 0
+ATOM    917   CB LEU A 115     142.306  91.859  78.869  0.00  0.00           C 0
+ATOM    893    O LEU A 112     142.020  94.232  75.612  0.00  0.00           O 0
+ATOM   1141   CB PHE A 145     137.939  97.447  80.126  0.00  0.00           C 0
+ATOM   1116  CG2 ILE A 141     137.924  93.836  82.613  0.00  0.00           C 0
+ATOM    895   CG LEU A 112     139.678  96.569  75.626  0.00  0.00           C 0
+ATOM    891   CA LEU A 112     142.077  96.415  76.591  0.00  0.00           C 0
+ATOM   1142   CG PHE A 145     139.157  97.794  80.924  0.00  0.00           C 0
+ATOM    881    O TYR A 111     143.722  95.575  78.514  0.55  2.14           O 0
+ATOM    918   CG LEU A 115     142.715  92.196  80.303  0.00  0.00           C 0
+ATOM   1144  CD2 PHE A 145     139.369  97.237  82.172  0.00  0.00           C 0
+TER
+END

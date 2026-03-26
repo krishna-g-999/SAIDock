@@ -1,0 +1,197 @@
+{
+  "outdir": "/home/krishnasalini-rs/SAIDock/web/jobs/dfdc190d/results",
+  "receptor_pdb": "/home/krishnasalini-rs/SAIDock/web/jobs/dfdc190d/results/target/5HDN_fixed.pdb",
+  "receptor_pdbqt": "/home/krishnasalini-rs/SAIDock/web/jobs/dfdc190d/results/target/5HDN_receptor.pdbqt",
+  "target_id": "5HDN",
+  "n_residues": 101,
+  "pockets": [
+    {
+      "pocket_id": 3,
+      "n_spheres": 9,
+      "center": [
+        28.172922347111566,
+        -9.814716142673408,
+        14.868579852911491
+      ],
+      "volume": 7744.52,
+      "radius_mean": 5.588,
+      "hydrophobicity": 0.6,
+      "polar_fraction": 0.4,
+      "n_atoms_lining": 15,
+      "box_size": [
+        20.0,
+        20.0,
+        20.0
+      ],
+      "druggability_score": 0.83,
+      "composite_score": 0.669,
+      "engine": "PolarPocket"
+    }
+  ],
+  "ligand_pdbqt": "/home/krishnasalini-rs/SAIDock/web/jobs/dfdc190d/results/ligand/compound_ligand.pdbqt",
+  "ligand_smiles": "CC1(C)C(=O)N(COP(=O)(O)O)c2c(ccc(Nc3c(cnc(Nc4cc(c(c(c4)OC)OC)OC)n3)F)n2)O1",
+  "ligand_name": "Compound_MW580",
+  "ligand_mw": 580.4660000000002,
+  "docking_results": [
+    {
+      "best_score": -6.348,
+      "mean_top3": -6.267,
+      "all_scores": [
+        -6.348,
+        -6.228,
+        -6.225,
+        -6.187,
+        -5.934,
+        -5.581,
+        -5.401,
+        -5.298,
+        -5.207
+      ],
+      "n_poses": 9,
+      "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/dfdc190d/results/docking/pocket3_poses.pdbqt",
+      "pocket_id": 3,
+      "has_clash": false,
+      "pocket_drugg_score": 0.669,
+      "center": [
+        28.172922347111566,
+        -9.814716142673408,
+        14.868579852911491
+      ],
+      "engine": "AutoDock Vina"
+    }
+  ],
+  "interactions": {
+    "hbonds": 8,
+    "hydrophobic": 9,
+    "interactions": [
+      {
+        "residue": "ASP79",
+        "type": "HBond",
+        "distance": 2.86
+      },
+      {
+        "residue": "GLU76",
+        "type": "HBond",
+        "distance": 3.19
+      },
+      {
+        "residue": "ARG77",
+        "type": "HBond",
+        "distance": 3.07
+      },
+      {
+        "residue": "VAL73",
+        "type": "HBond",
+        "distance": 3.01
+      },
+      {
+        "residue": "GLU72",
+        "type": "HBond",
+        "distance": 3.37
+      },
+      {
+        "residue": "ASP19",
+        "type": "HBond",
+        "distance": 3.15
+      },
+      {
+        "residue": "HIS70",
+        "type": "HBond",
+        "distance": 3.44
+      },
+      {
+        "residue": "LYS74",
+        "type": "HBond",
+        "distance": 3.43
+      },
+      {
+        "residue": "VAL73",
+        "type": "Hydrophobic",
+        "distance": 4.35
+      },
+      {
+        "residue": "LYS74",
+        "type": "Hydrophobic",
+        "distance": 4.26
+      },
+      {
+        "residue": "PRO75",
+        "type": "Hydrophobic",
+        "distance": 3.49
+      },
+      {
+        "residue": "GLU72",
+        "type": "Hydrophobic",
+        "distance": 4.5
+      },
+      {
+        "residue": "ASP79",
+        "type": "Hydrophobic",
+        "distance": 4.37
+      },
+      {
+        "residue": "PHE34",
+        "type": "Hydrophobic",
+        "distance": 4.36
+      },
+      {
+        "residue": "ARG77",
+        "type": "Hydrophobic",
+        "distance": 4.08
+      },
+      {
+        "residue": "GLU76",
+        "type": "Hydrophobic",
+        "distance": 3.71
+      },
+      {
+        "residue": "HIS70",
+        "type": "Hydrophobic",
+        "distance": 3.87
+      }
+    ],
+    "method": "distance_fallback"
+  },
+  "admet": {
+    "compound": "compound",
+    "MW": 580.47,
+    "LogP": 3.095,
+    "HBD": 4,
+    "HBA": 12,
+    "TPSA": 186.72,
+    "RotBonds": 10,
+    "HeavyAtoms": 40,
+    "MolRefractivity": 139.08,
+    "AromaticRings": 3,
+    "QED": 0.256,
+    "FractionCSP3": 0.304,
+    "Lipinski_violations": 2,
+    "Lipinski_pass": false,
+    "Veber_pass": false,
+    "Ghose_pass": false,
+    "BBB_penetrant": false,
+    "GI_absorption": "Low",
+    "Pgp_substrate": "Likely",
+    "Solubility_class": "Poorly Soluble",
+    "LogSw_estimated": -6.949
+  },
+  "ml_results": {
+    "DTSS": 0.3648,
+    "binding_category": "Weak (0.35\u20130.50)",
+    "dg_norm": 0.372,
+    "admet_score": 0.1712,
+    "ml_confidence": 0.5,
+    "pocket_druggability": 0.669,
+    "literature_score": 0.0,
+    "best_docking_score": -6.348,
+    "model_loaded": false,
+    "components": {
+      "DG_norm (\u00d70.35)": 0.1302,
+      "ADMET_score (\u00d70.20)": 0.0342,
+      "ML_confidence (\u00d70.20)": 0.1,
+      "Pocket_druggability (\u00d70.15)": 0.1004,
+      "Literature_score (\u00d70.10)": 0.0
+    }
+  },
+  "compound_name": "Compound_MW580"
+}

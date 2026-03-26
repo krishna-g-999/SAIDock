@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   178:
+HEADER 0  - Pocket Score                      : -0.1294
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of V. Vertices             :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.9538
+HEADER 4  - Mean alpha-sphere SA              : 0.4288
+HEADER 5  - Mean B-factor                     : 0.0000
+HEADER 6  - Hydrophobicity Score              : 5.5000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1667
+HEADER 9  - Real volume (approximation)       : 280.4651
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     0
+HEADER 13 - Proportion of apolar alpha sphere : 0.0000
+ATOM      1    O STP   178     126.712 103.863  75.363    0.00     3.94
+ATOM      2    O STP   178     126.686 104.467  74.301    0.00     3.63
+ATOM      3    O STP   178     129.917 105.108  73.968    0.00     3.96
+ATOM      4    O STP   178     129.091 105.755  72.635    0.00     3.99
+ATOM      5    O STP   178     130.033 106.009  73.322    0.00     3.88
+ATOM      6    O STP   178     129.903 106.213  73.026    0.00     3.91
+ATOM      7    O STP   178     129.843 106.228  72.956    0.00     3.92
+ATOM      8    O STP   178     129.881 106.309  73.011    0.00     3.87
+ATOM      9    O STP   178     127.788 105.579  72.625    0.00     3.77
+ATOM     10    O STP   178     127.925 105.634  72.562    0.00     3.80
+ATOM     11    O STP   178     125.538 104.997  72.306    0.00     4.19
+ATOM     12    O STP   178     129.968 105.033  74.008    0.00     3.94
+ATOM     13    O STP   178     129.913 105.068  74.037    0.00     3.96
+ATOM     14    O STP   178     127.230 103.678  75.813    0.00     4.04
+ATOM     15    O STP   178     124.954 103.663  73.490    0.00     3.98
+ATOM     16    O STP   178     124.940 103.925  73.587    0.00     4.14
+ATOM     17    O STP   178     124.385 104.273  72.464    0.00     4.62
+ATOM     18    O STP   178     130.195 104.516  73.934    0.00     3.62
+TER
+END

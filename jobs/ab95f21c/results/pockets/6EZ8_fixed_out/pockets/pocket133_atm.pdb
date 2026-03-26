@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   133:
+HEADER 0  - Pocket Score                      : -0.0660
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.7893
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4784
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 17.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 3.4286
+HEADER 9  - Pocket volume (Monte Carlo)       : 202.7415
+HEADER 10 - Pocket volume (convex hull)       : 6.7703
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.4444
+ATOM  12088  OE1 GLN A1538      59.267  90.742 134.301  0.57  1.07           O 0
+ATOM  12064  CG2 THR A1535      62.135  91.685 137.840  0.00  0.00           C 0
+ATOM  12339  CD2 LEU A1570      61.500  93.776 133.876  0.00  0.00           C 0
+ATOM  12089  NE2 GLN A1538      57.172  90.979 135.070  0.00  0.00           N 0
+ATOM  12039  NH1 ARG A1531      56.889  94.926 141.158  0.00  0.00           N 0
+ATOM  12056    C GLY A1534      59.894  88.515 138.930  0.00  0.00           C 0
+ATOM  12055   CA GLY A1534      59.326  88.431 140.333  0.00  0.00           C 0
+ATOM  12036   CD ARG A1531      59.695  94.937 141.357  0.00  0.00           C 0
+ATOM  12058    N THR A1535      61.035  89.187 138.784  0.00  0.00           N 0
+ATOM  12028    O ALA A1530      59.824  90.759 144.534  0.00  6.43           O 0
+ATOM  12031   CA ARG A1531      61.014  92.966 143.422  0.00  0.00           C 0
+ATOM  12366   OG SER A1573      63.366  96.973 137.752  0.92  6.43           O 0
+ATOM  12033    O ARG A1531      61.941  91.923 141.463  0.50  1.07           O 0
+ATOM  12057    O GLY A1534      59.316  87.985 137.979  0.72  2.14           O 0
+TER
+END

@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   166:
+HEADER 0  - Pocket Score                      : -0.1057
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    21
+HEADER 3  - Mean alpha-sphere radius          : 3.9509
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5622
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 52.8333
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 5.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 330.6235
+HEADER 10 - Pocket volume (convex hull)       : 23.6028
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 7.7778
+HEADER 13 - Number of apolar alpha sphere     :     9
+HEADER 14 - Proportion of apolar alpha sphere : 0.4286
+ATOM   7422  CG1 ILE A 950     142.420 128.043  77.693  0.00  0.00           C 0
+ATOM   7091  OE1 GLN A 911     149.497 127.628  79.119  0.56  8.57           O 0
+ATOM   7417    N ILE A 950     143.051 130.870  78.350  0.00  0.00           N 0
+ATOM   7117  CG2 ILE A 914     146.479 125.826  81.331  0.00  0.00           C 0
+ATOM   7039   OH TYR A 904     146.306 127.990  84.916  0.73  1.07           O 0
+ATOM   7088   CB GLN A 911     150.169 126.380  81.483  0.00  0.00           C 0
+ATOM   7389  CD2 LEU A 946     142.212 129.793  83.204  0.00  0.00           C 0
+ATOM   7037  CE2 TYR A 904     147.700 129.854  85.424  0.00  0.00           C 0
+ATOM   7116  CG1 ILE A 914     144.023 126.005  81.564  0.00  0.00           C 0
+ATOM   7038   CZ TYR A 904     146.537 129.140  85.632  0.00  0.00           C 0
+ATOM   7388  CD1 LEU A 946     142.341 131.561  84.954  0.00  0.00           C 0
+ATOM   7415  OE1 GLU A 949     143.566 134.760  86.375  0.76  2.14           O 0
+ATOM   7385    O LEU A 946     140.886 134.317  82.890  0.50  5.36           O 0
+ATOM   7411    O GLU A 949     143.882 137.158  82.305  0.00  0.00           O 0
+ATOM   7035  CD2 TYR A 904     147.927 131.011  86.144  0.00  0.00           C 0
+ATOM   7032   CB TYR A 904     147.247 132.729  87.854  0.00  0.00           C 0
+ATOM   7387   CG LEU A 946     141.784 131.191  83.600  0.00  0.00           C 0
+ATOM   7033   CG TYR A 904     147.006 131.462  87.077  0.00  0.00           C 0
+TER
+END

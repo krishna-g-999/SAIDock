@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 0.1319
+HEADER 1  - Drug Score                        : 0.0081
+HEADER 2  - Number of alpha spheres           :    22
+HEADER 3  - Mean alpha-sphere radius          : 3.5309
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3592
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 74.4000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Amino Acid based volume Score     : 4.3000
+HEADER 9  - Pocket volume (Monte Carlo)       : 128.8773
+HEADER 10 - Pocket volume (convex hull)       : 5.2503
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 21.0000
+HEADER 13 - Number of apolar alpha sphere     :    22
+HEADER 14 - Proportion of apolar alpha sphere : 1.0000
+ATOM  12622    O VAL A1606      72.467  84.256 140.985  0.50  2.14           O 0
+ATOM  12651  CG1 VAL A1609      75.829  87.988 140.071  0.00  0.00           C 0
+ATOM  12971  CG2 VAL A1651      77.197  81.561 142.967  0.00  0.00           C 0
+ATOM  13058  CD1 LEU A1663      78.029  84.871 138.005  0.00  0.00           C 0
+ATOM  12659  CG2 VAL A1610      73.557  83.855 137.658  0.00  0.00           C 0
+ATOM  12624  CG1 VAL A1606      73.463  81.855 142.889  0.00  0.00           C 0
+ATOM  12893   CB ALA A1641      76.810  87.439 144.856  0.00  0.00           C 0
+ATOM  12625  CG2 VAL A1606      73.038  82.555 145.219  0.00  0.00           C 0
+ATOM  12620   CA VAL A1606      72.131  83.942 143.352  0.00  0.00           C 0
+ATOM  12650   CB VAL A1609      74.452  87.709 140.594  0.00  0.00           C 0
+ATOM  12652  CG2 VAL A1609      74.276  88.374 141.943  0.00  0.00           C 0
+ATOM  12901  CD2 LEU A1642      80.726  84.824 142.582  0.00  0.00           C 0
+ATOM  12970  CG1 VAL A1651      78.371  80.728 140.963  0.00  0.00           C 0
+ATOM  13029   CB HIS A1659      73.839  80.159 137.000  0.00  0.00           C 0
+ATOM  13028    O HIS A1659      76.411  81.744 136.408  0.00  0.00           O 0
+ATOM  12933    O LEU A1647      76.839  82.287 146.204  0.00  0.00           O 0
+ATOM  13007  CD2 PHE A1656      73.160  78.263 141.508  0.00  0.00           C 0
+TER
+END

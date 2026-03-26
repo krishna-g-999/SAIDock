@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   122:
+HEADER 0  - Pocket Score                      : -0.0476
+HEADER 1  - Drug Score                        : 0.0031
+HEADER 2  - Number of alpha spheres           :    26
+HEADER 3  - Mean alpha-sphere radius          : 3.9155
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5585
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -26.6250
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Amino Acid based volume Score     : 4.3750
+HEADER 9  - Pocket volume (Monte Carlo)       : 295.6371
+HEADER 10 - Pocket volume (convex hull)       : 15.8412
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 16.0000
+HEADER 13 - Number of apolar alpha sphere     :    17
+HEADER 14 - Proportion of apolar alpha sphere : 0.6538
+ATOM  17497   CB GLN A2233      78.320 118.269 166.957  0.00  0.00           C 0
+ATOM  17800   CD LYS A2269      72.746 118.280 162.340  0.00  0.00           C 0
+ATOM  17462    O ARG A2229      78.417 117.954 162.337  0.65  6.43           O 0
+ATOM  17802   NZ LYS A2269      73.524 116.443 160.854  0.46  9.84           N 0
+ATOM  17798   CB LYS A2269      71.940 120.200 163.756  0.00  0.00           C 0
+ATOM  17836  CG2 THR A2273      71.277 119.756 169.648  0.00  0.00           C 0
+ATOM  17493    N GLN A2233      77.551 120.356 166.002  0.71  2.19           N 0
+ATOM  17528  OD2 ASP A2236      75.419 121.159 173.084  0.58  6.43           O 0
+ATOM  14598   NZ LYS A1860      79.303 116.782 173.824  0.48  5.47           N 0
+ATOM  17498   CG GLN A2233      78.775 117.352 168.086  0.00  0.00           C 0
+ATOM  17535  OD1 ASP A2237      79.470 119.453 173.410  0.61  1.07           O 0
+ATOM  17526   CG ASP A2236      75.308 122.133 172.309  0.00  0.00           C 0
+ATOM  17525   CB ASP A2236      76.346 122.319 171.224  0.00  0.00           C 0
+ATOM  17797    O LYS A2269      71.178 121.355 166.463  0.66  6.43           O 0
+ATOM  17488    C PRO A2232      76.871 121.499 165.996  0.00  0.00           C 0
+ATOM  17489    O PRO A2232      76.645 122.141 167.024  0.43  4.29           O 0
+ATOM  17494   CA GLN A2233      77.967 119.731 167.255  0.00  0.00           C 0
+ATOM  17496    O GLN A2233      79.303 120.435 169.126  0.00  0.00           O 0
+ATOM  17490   CB PRO A2232      75.460 121.060 163.945  0.00  0.00           C 0
+ATOM  17491   CG PRO A2232      76.237 120.416 162.862  0.00  0.00           C 0
+TER
+END

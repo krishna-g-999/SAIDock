@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 0.1908
+HEADER 1  - Drug Score                        : 0.0012
+HEADER 2  - Number of alpha spheres           :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.5843
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3901
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 58.0000
+HEADER 7  - Polarity Score                    :     0
+HEADER 8  - Amino Acid based volume Score     : 3.8000
+HEADER 9  - Pocket volume (Monte Carlo)       : 126.8307
+HEADER 10 - Pocket volume (convex hull)       : 2.7796
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 8.0000
+HEADER 13 - Number of apolar alpha sphere     :     9
+HEADER 14 - Proportion of apolar alpha sphere : 0.2903
+ATOM  16834   CA ALA A2148     103.965 112.741 159.664  0.00  0.00           C 0
+ATOM  16837   CB ALA A2148     105.096 113.622 159.134  0.00  0.00           C 0
+ATOM  16498   CB CYS A2103     109.247 111.073 160.334  0.00  0.00           C 0
+ATOM  16833    N ALA A2148     103.306 112.053 158.562  0.00  0.00           N 0
+ATOM  16830    O CYS A2147     102.555 110.431 159.905  0.83  1.07           O 0
+ATOM  16497    O CYS A2103     108.383 109.806 162.911  0.00  0.00           O 0
+ATOM  16526  CE2 PHE A2107     105.149 111.625 163.567  0.00  0.00           C 0
+ATOM  16467    O VAL A2099     110.640 110.002 156.547  0.59  2.14           O 0
+ATOM  16499   SG CYS A2103     110.287 112.259 159.462  0.00  0.00           S 0
+ATOM  16476   CG LEU A2100     106.307 107.540 155.229  0.00  0.00           C 0
+ATOM  16831   CB CYS A2147     102.732 109.246 156.925  0.00  0.00           C 0
+ATOM  16800    O ILE A2144     104.456 113.219 155.043  0.00  0.00           O 0
+ATOM  16803  CG2 ILE A2144     107.277 113.088 153.605  0.00  0.00           C 0
+ATOM  16719   SD MET A2132     108.222 115.799 156.304  0.00  0.00           S 0
+ATOM  16472   CA LEU A2100     108.813 108.187 155.741  0.00  0.00           C 0
+ATOM  16496    C CYS A2103     109.007 109.250 162.010  0.00  0.00           C 0
+ATOM  15023   CB PRO A1914     103.632 107.019 161.577  0.00  0.00           C 0
+ATOM  16500    N ALA A2104     108.867 107.953 161.753  0.00  0.00           N 0
+ATOM  16474    O LEU A2100     108.331 107.441 157.960  0.57  1.07           O 0
+ATOM  16829    C CYS A2147     102.631 110.929 158.782  0.00  0.00           C 0
+ATOM  15022    O PRO A1914     104.260 106.192 158.817  0.55  1.07           O 0
+TER
+END

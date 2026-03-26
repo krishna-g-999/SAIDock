@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.5497,
+  "binding_category": "Moderate (0.50\u20130.65)",
+  "dg_norm": 0.6762,
+  "admet_score": 0.4487,
+  "ml_confidence": 0.3636,
+  "pocket_druggability": 0.7952,
+  "literature_score": 0.0,
+  "best_docking_score": -9.086,
+  "model_loaded": true,
+  "rna_displacement_score": 0.5,
+  "rna_mode": false,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.2367,
+    "ADMET_score (\u00d70.20)": 0.0897,
+    "ML_confidence (\u00d70.20)": 0.0727,
+    "Pocket_druggability (\u00d70.15)": 0.1193,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.05
+  },
+  "domain": "OUT_OF_DOMAIN",
+  "compound_name": "Ellagic_Acid",
+  "target_id": "4ACC"
+}

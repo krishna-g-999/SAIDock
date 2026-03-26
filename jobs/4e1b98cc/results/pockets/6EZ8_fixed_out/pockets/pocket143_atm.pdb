@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   143:
+HEADER 0  - Pocket Score                      : -0.0843
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 4.1736
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5664
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 0.4000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.6000
+HEADER 9  - Pocket volume (Monte Carlo)       : 298.0282
+HEADER 10 - Pocket volume (convex hull)       : 8.0214
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.4444
+ATOM  13372  NE2 GLN A1704     104.310  89.695 132.742  0.00  0.00           N 0
+ATOM  13965    O LYS A1780     105.627  82.392 136.934  0.43  5.36           O 0
+ATOM  13371  OE1 GLN A1704     102.535  88.334 132.965  0.66  8.57           O 0
+ATOM  13976   CG GLU A1781     104.686  81.574 132.978  0.00  0.00           C 0
+ATOM  13979  OE2 GLU A1781     104.983  82.156 130.686  0.70  4.29           O 0
+ATOM  13940   CG GLU A1777     111.509  80.737 130.366  0.00  0.00           C 0
+ATOM  13939   CB GLU A1777     110.419  79.773 130.764  0.00  0.00           C 0
+ATOM  13941   CD GLU A1777     111.673  80.813 128.863  0.00  0.00           C 0
+ATOM  13942  OE1 GLU A1777     110.999  80.037 128.154  0.56  4.29           O 0
+ATOM  13701  CD1 LEU A1747     106.693  78.520 129.540  0.00  0.00           C 0
+ATOM  13936   CA GLU A1777     110.162  79.661 132.264  0.00  0.00           C 0
+ATOM  13938    O GLU A1777     107.794  79.504 132.524  0.78  1.07           O 0
+ATOM  13702  CD2 LEU A1747     105.447  78.411 127.383  0.00  0.00           C 0
+ATOM  13966   CB LYS A1780     108.550  82.323 135.961  0.00  0.00           C 0
+ATOM  13968   CD LYS A1780     110.750  83.524 135.764  0.00  0.00           C 0
+ATOM  13969   CE LYS A1780     110.318  84.911 136.179  0.00  0.00           C 0
+TER
+END

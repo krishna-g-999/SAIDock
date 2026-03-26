@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    97:
+HEADER 0  - Pocket Score                      : -0.0282
+HEADER 1  - Drug Score                        : 0.0010
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.0217
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.7072
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -26.5000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 5.5000
+HEADER 9  - Pocket volume (Monte Carlo)       : 143.0135
+HEADER 10 - Pocket volume (convex hull)       : 0.5710
+HEADER 11 - Charge Score                      :     3
+HEADER 12 - Local hydrophobic density Score   : 12.0000
+HEADER 13 - Number of apolar alpha sphere     :    13
+HEADER 14 - Proportion of apolar alpha sphere : 0.7647
+ATOM   3416   CD ARG A 440      89.692  87.719 107.023  0.00  0.00           C 0
+ATOM   3390    O PRO A 437      89.963  83.299 103.202  0.58  4.29           O 0
+ATOM   3391   CB PRO A 437      87.254  84.676 102.776  0.00  0.00           C 0
+ATOM   3388   CA PRO A 437      88.680  85.196 102.570  0.00  0.00           C 0
+ATOM   3422   CA LYS A 441      93.589  82.963 105.757  0.00  0.00           C 0
+ATOM   3415   CG ARG A 440      91.149  87.468 106.681  0.00  0.00           C 0
+ATOM   3453   NZ LYS A 444      91.470  85.455 111.534  0.00  0.00           N 0
+ATOM   3425   CB LYS A 441      92.815  81.777 105.193  0.00  0.00           C 0
+ATOM   3451   CD LYS A 444      93.646  84.490 110.874  0.00  0.00           C 0
+ATOM   3421    N LYS A 441      93.232  84.168 105.021  0.68  1.09           N 0
+ATOM   3426   CG LYS A 441      93.079  80.460 105.868  0.00  0.00           C 0
+ATOM   3413    O ARG A 440      93.658  85.506 106.777  0.00  0.00           O 0
+ATOM   3414   CB ARG A 440      91.300  86.924 105.267  0.00  0.00           C 0
+ATOM   3412    C ARG A 440      93.237  85.357 105.624  0.00  0.00           C 0
+TER
+END

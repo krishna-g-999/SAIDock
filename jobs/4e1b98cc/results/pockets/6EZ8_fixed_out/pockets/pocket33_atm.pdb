@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    33:
+HEADER 0  - Pocket Score                      : 0.0616
+HEADER 1  - Drug Score                        : 0.0037
+HEADER 2  - Number of alpha spheres           :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.6908
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4667
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 15.4545
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 4.0909
+HEADER 9  - Pocket volume (Monte Carlo)       : 324.2237
+HEADER 10 - Pocket volume (convex hull)       : 25.3966
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 12.7143
+HEADER 13 - Number of apolar alpha sphere     :    14
+HEADER 14 - Proportion of apolar alpha sphere : 0.5000
+ATOM  16813  CE1 TYR A2145     100.821 118.983 154.634  0.00  0.00           C 0
+ATOM  17082  CG1 VAL A2179      96.838 123.806 152.386  0.00  0.00           C 0
+ATOM  17121   CB ARG A2184      96.981 119.365 151.214  0.00  0.00           C 0
+ATOM  16816   OH TYR A2145      98.800 119.806 155.587  0.00  0.00           O 0
+ATOM  17127  NH2 ARG A2184     101.308 118.928 149.981  0.76  2.19           N 0
+ATOM  16738    O GLY A2135     103.546 122.924 151.326  0.38  5.36           O 0
+ATOM  17083  CG2 VAL A2179      98.463 125.201 151.032  0.00  0.00           C 0
+ATOM  16745    N GLU A2137     102.677 121.815 147.389  0.00  0.00           N 0
+ATOM  16749   CB GLU A2137     100.740 120.775 146.300  0.00  0.00           C 0
+ATOM  16740   CA SER A2136     104.144 123.270 148.668  0.00  0.00           C 0
+ATOM  16739    N SER A2136     105.117 123.198 149.746  0.00  0.00           N 0
+ATOM  16743   CB SER A2136     104.771 123.913 147.433  0.00  0.00           C 0
+ATOM  16732    O SER A2134     105.072 125.272 153.457  0.37  8.57           O 0
+ATOM  17061  NH2 ARG A2176     100.859 125.844 153.598  0.42  3.28           N 0
+ATOM  16724    O LEU A2133     102.450 121.809 155.227  0.00  0.00           O 0
+ATOM  17122   CG ARG A2184      97.836 118.709 150.154  0.00  0.00           C 0
+ATOM  17098   CB SER A2181      95.754 120.879 147.959  0.00  0.00           C 0
+ATOM  17099   OG SER A2181      96.457 121.382 146.838  0.00  0.00           O 0
+ATOM  16737    C GLY A2135     104.727 123.050 151.008  0.00  0.00           C 0
+ATOM  17092  CE1 HIS A2180      97.835 124.750 146.088  0.00  0.00           C 0
+ATOM  16750   CG GLU A2137     100.910 121.336 144.899  0.00  0.00           C 0
+TER
+END

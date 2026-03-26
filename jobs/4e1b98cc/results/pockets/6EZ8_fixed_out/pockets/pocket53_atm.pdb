@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    53:
+HEADER 0  - Pocket Score                      : 0.0324
+HEADER 1  - Drug Score                        : 0.0005
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 3.7347
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4940
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 31.8571
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 257.0428
+HEADER 10 - Pocket volume (convex hull)       : 8.3074
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 5.0000
+HEADER 13 - Number of apolar alpha sphere     :     6
+HEADER 14 - Proportion of apolar alpha sphere : 0.3529
+ATOM  16607  OD2 ASP A2116     114.698 104.959 178.908  0.79  4.29           O 0
+ATOM  16240   CG LYS A2070     118.488 102.634 179.372  0.00  0.00           C 0
+ATOM  16221  OD1 ASP A2067     117.714 100.600 183.523  0.44  6.43           O 0
+ATOM  16202    O LEU A2065     116.197  98.400 180.453  0.55  3.21           O 0
+ATOM  16242   CE LYS A2070     118.552 104.117 181.397  0.00  0.00           C 0
+ATOM  16606  OD1 ASP A2116     115.878 106.212 180.270  0.39  5.36           O 0
+ATOM  16243   NZ LYS A2070     118.431 105.507 181.926  0.00  4.37           N 0
+ATOM  16239   CB LYS A2070     118.193 102.485 177.885  0.00  0.00           C 0
+ATOM  16203   CB LEU A2065     115.528  98.453 177.181  0.00  0.00           C 0
+ATOM  16582  CE2 TYR A2113     111.685 102.031 175.575  0.00  0.00           C 0
+ATOM  16268  CD1 ILE A2073     116.639 103.847 174.784  0.00  0.00           C 0
+ATOM  16199    N LEU A2065     114.070  97.693 178.965  0.70  2.19           N 0
+ATOM  16192   CA LEU A2064     111.982  96.982 179.910  0.00  0.00           C 0
+ATOM  16195   CB LEU A2064     111.487  96.866 181.362  0.00  0.00           C 0
+ATOM  16581  CE1 TYR A2113     110.338 102.527 177.492  0.00  0.00           C 0
+ATOM  16583   CZ TYR A2113     110.914 101.610 176.639  0.00  0.00           C 0
+ATOM  16584   OH TYR A2113     110.720 100.268 176.853  0.80  6.43           O 0
+TER
+END

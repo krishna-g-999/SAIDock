@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   200:
+HEADER 0  - Pocket Score                      : -0.1731
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of V. Vertices             :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.9939
+HEADER 4  - Mean alpha-sphere SA              : 0.4545
+HEADER 5  - Mean B-factor                     : 0.0000
+HEADER 6  - Hydrophobicity Score              : 37.4000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 2.8000
+HEADER 9  - Real volume (approximation)       : 99.7559
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 11.0000
+HEADER 12 - Number of apolar alpha sphere     :    12
+HEADER 13 - Proportion of apolar alpha sphere : 0.8000
+ATOM      1    C STP   200      59.063 128.613  93.747    0.00     3.99
+ATOM      2    C STP   200      59.054 128.560  93.806    0.00     3.96
+ATOM      3    C STP   200      58.972 128.781  93.521    0.00     4.13
+ATOM      4    C STP   200      58.772 128.593  93.667    0.00     4.04
+ATOM      5    C STP   200      60.696 128.382  93.450    0.00     3.64
+ATOM      6    C STP   200      60.663 128.409  92.976    0.00     3.61
+ATOM      7    C STP   200      60.365 128.651  93.237    0.00     3.83
+ATOM      8    C STP   200      59.044 128.895  93.378    0.00     4.20
+ATOM      9    C STP   200      59.327 128.891  93.408    0.00     4.14
+ATOM     10    C STP   200      59.428 128.879  93.404    0.00     4.11
+ATOM     11    C STP   200      60.343 128.950  93.198    0.00     3.77
+ATOM     12    O STP   200      59.056 128.948  93.369    0.00     4.18
+ATOM     13    O STP   200      59.394 128.965  93.406    0.00     4.10
+ATOM     14    O STP   200      59.365 128.933  93.403    0.00     4.12
+ATOM     15    C STP   200      59.405 128.932  93.402    0.00     4.11
+TER
+END

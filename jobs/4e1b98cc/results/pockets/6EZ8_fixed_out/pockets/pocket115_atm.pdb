@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   115:
+HEADER 0  - Pocket Score                      : -0.0418
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.8054
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5886
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -11.6250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 2.7500
+HEADER 9  - Pocket volume (Monte Carlo)       : 198.0725
+HEADER 10 - Pocket volume (convex hull)       : 2.8623
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 4.0000
+HEADER 13 - Number of apolar alpha sphere     :     5
+HEADER 14 - Proportion of apolar alpha sphere : 0.2500
+ATOM   4471    O GLY A 573      90.462 123.001 105.640  0.37  2.14           O 0
+ATOM   4485   CB ALA A 575      87.046 120.900 107.390  0.00  0.00           C 0
+ATOM   6526   CD PRO A 841      88.984 127.003 103.857  0.00  0.00           C 0
+ATOM   6525   CG PRO A 841      89.954 125.900 104.118  0.00  0.00           C 0
+ATOM   6528   CA GLY A 842      86.110 123.356 101.482  0.00  0.00           C 0
+ATOM  10362  ND1 HIS A1317      82.479 124.279 105.122  0.76  3.28           N 0
+ATOM   6520    N PRO A 841      88.434 126.661 102.536  0.41  4.37           N 0
+ATOM  10359    O HIS A1317      81.824 126.914 103.786  0.08  7.50           O 0
+ATOM  10374  OE2 GLU A1318      83.218 124.542 102.315  0.21  2.14           O 0
+ATOM   6527    N GLY A 842      87.140 124.358 101.314  0.00  0.00           N 0
+ATOM   6523    O PRO A 841      88.721 123.273 102.490  0.40  1.07           O 0
+ATOM  10364  CE1 HIS A1317      82.700 122.985 104.975  0.00  0.00           C 0
+ATOM   4461    C GLN A 572      92.824 124.974 107.862  0.00  0.00           C 0
+ATOM   4460   CA GLN A 572      92.735 124.857 109.375  0.00  0.00           C 0
+ATOM   4454    O ASP A 571      91.285 122.578 109.998  0.54  4.29           O 0
+ATOM   4462    O GLN A 572      92.783 126.068 107.294  0.64  4.29           O 0
+ATOM   6522    C PRO A 841      88.314 124.282 101.929  0.00  0.00           C 0
+TER
+END

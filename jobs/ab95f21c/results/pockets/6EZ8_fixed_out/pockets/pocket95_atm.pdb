@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    95:
+HEADER 0  - Pocket Score                      : -0.0268
+HEADER 1  - Drug Score                        : 0.0006
+HEADER 2  - Number of alpha spheres           :    25
+HEADER 3  - Mean alpha-sphere radius          : 3.9182
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4598
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 13.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.5714
+HEADER 9  - Pocket volume (Monte Carlo)       : 214.8456
+HEADER 10 - Pocket volume (convex hull)       : 4.8012
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 16.0000
+HEADER 13 - Number of apolar alpha sphere     :    17
+HEADER 14 - Proportion of apolar alpha sphere : 0.6800
+ATOM  16477  CD1 LEU A2100     105.414 107.739 154.027  0.00  0.00           C 0
+ATOM  15050   CB GLU A1917     100.664 104.580 152.052  0.00  0.00           C 0
+ATOM  15046    N GLU A1917     101.349 103.981 154.311  0.00  0.00           N 0
+ATOM  16795  CG2 ILE A2143     103.102 107.950 151.006  0.00  0.00           C 0
+ATOM  16444  NE2 GLN A2096     105.693 107.665 148.774  0.82  5.47           N 0
+ATOM  16443  OE1 GLN A2096     107.372 107.073 147.415  0.00  0.00           O 0
+ATOM  16452  OE1 GLN A2097     109.237 101.694 150.586  0.00  0.00           O 0
+ATOM  15053  OE1 GLU A1917     100.996 104.180 149.401  0.32  9.64           O 0
+ATOM  16441   CG GLN A2096     107.944 108.152 149.451  0.00  0.00           C 0
+ATOM  16449   CB GLN A2097     110.101 104.119 151.508  0.00  0.00           C 0
+ATOM  16450   CG GLN A2097     109.411 103.157 152.462  0.00  0.00           C 0
+ATOM  16451   CD GLN A2097     108.982 101.886 151.775  0.00  0.00           C 0
+ATOM  15106   CE LYS A1924     105.006 100.406 152.960  0.00  0.00           C 0
+ATOM  15029    O GLU A1915     105.015 103.053 156.300  0.32  1.07           O 0
+ATOM  16478  CD2 LEU A2100     105.921 106.239 155.901  0.00  0.00           C 0
+ATOM  16442   CD GLN A2096     106.975 107.581 148.461  0.00  0.00           C 0
+ATOM  16446   CA GLN A2097     110.504 105.476 152.089  0.00  0.00           C 0
+TER
+END

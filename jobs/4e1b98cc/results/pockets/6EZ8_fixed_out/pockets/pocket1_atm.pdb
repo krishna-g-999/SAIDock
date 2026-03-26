@@ -1,0 +1,91 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     1:
+HEADER 0  - Pocket Score                      : 0.3300
+HEADER 1  - Drug Score                        : 0.7471
+HEADER 2  - Number of alpha spheres           :   100
+HEADER 3  - Mean alpha-sphere radius          : 3.8703
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4825
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 36.3214
+HEADER 7  - Polarity Score                    :    12
+HEADER 8  - Amino Acid based volume Score     : 4.4286
+HEADER 9  - Pocket volume (Monte Carlo)       : 1050.5496
+HEADER 10 - Pocket volume (convex hull)       : 631.6381
+HEADER 11 - Charge Score                      :     3
+HEADER 12 - Local hydrophobic density Score   : 27.2836
+HEADER 13 - Number of apolar alpha sphere     :    67
+HEADER 14 - Proportion of apolar alpha sphere : 0.6700
+ATOM  15194  CD2 LEU A1935      98.365  91.452 174.050  0.00  0.00           C 0
+ATOM  14464  OE1 GLN A1844      97.636  92.652 166.557  0.39  8.57           O 0
+ATOM  15193  CD1 LEU A1935      97.012  89.942 172.579  0.00  0.00           C 0
+ATOM  14886    O SER A1896      93.128  91.476 169.794  0.80  9.64           O 0
+ATOM  17215  CD2 TYR A2197      88.615 117.916 170.200  0.00  0.00           C 0
+ATOM  17183   CB LEU A2193      89.768 118.864 166.794  0.00  0.00           C 0
+ATOM  17193  CG2 THR A2194      93.306 116.146 168.055  0.00  0.00           C 0
+ATOM  14633   CB ARG A1865      88.380 112.954 165.221  0.00  0.00           C 0
+ATOM  14635   CD ARG A1865      90.922 112.780 165.021  0.00  0.00           C 0
+ATOM  17185  CD1 LEU A2193      88.202 118.016 165.034  0.00  0.00           C 0
+ATOM  15164   CB SER A1932      99.999  91.057 168.352  0.00  0.00           C 0
+ATOM  15154   CB HIS A1931     101.925  94.554 171.435  0.00  0.00           C 0
+ATOM  15153    O HIS A1931     101.287  91.449 172.244  0.54  2.14           O 0
+ATOM  15152    C HIS A1931     101.811  92.075 171.320  0.00  0.00           C 0
+ATOM  14469    O PRO A1845     100.018  97.294 167.913  0.54  4.29           O 0
+ATOM  14471   CG PRO A1845      97.110  97.918 166.575  0.00  0.00           C 0
+ATOM  14879    O PRO A1895      92.730  92.766 166.548  0.59  1.07           O 0
+ATOM  15165   OG SER A1932      99.076  90.055 167.972  0.85  1.07           O 0
+ATOM  15161   CA SER A1932     100.646  90.721 169.688  0.00  0.00           C 0
+ATOM  14935  CD1 ILE A1903      90.659  95.221 167.651  0.00  0.00           C 0
+ATOM  14507   CD PRO A1849      95.826  99.874 172.975  0.00  0.00           C 0
+ATOM  15156  ND1 HIS A1931     102.485  96.080 173.362  0.61  4.37           N 0
+ATOM  14506   CG PRO A1849      94.525 100.018 173.708  0.00  0.00           C 0
+ATOM  14966   CG LYS A1907      86.858 100.103 168.929  0.00  0.00           C 0
+ATOM  14934  CG2 ILE A1903      89.005  97.247 166.150  0.00  0.00           C 0
+ATOM  14967   CD LYS A1907      86.359  98.692 169.155  0.00  0.00           C 0
+ATOM  14964    O LYS A1907      89.327 102.178 168.393  0.00  0.00           O 0
+ATOM  14497   CG LYS A1848     100.162  99.957 174.272  0.00  0.00           C 0
+ATOM  17212   CB TYR A2197      90.189 117.853 172.181  0.00  0.00           C 0
+ATOM  14603   CB LEU A1861      87.538 113.153 172.268  0.00  0.00           C 0
+ATOM  17217  CE2 TYR A2197      87.424 118.316 169.609  0.00  0.00           C 0
+ATOM  14602    O LEU A1861      86.657 112.631 169.288  0.61  5.36           O 0
+ATOM  16911  CD1 LEU A2157      94.258 111.825 170.653  0.00  0.00           C 0
+ATOM  14537  CD2 LEU A1853      89.116 109.498 172.865  0.00  0.00           C 0
+ATOM  15160    N SER A1932     101.624  91.740 170.044  0.00  0.00           N 0
+ATOM  14874  CG1 VAL A1894      94.032  95.448 164.929  0.00  0.00           C 0
+ATOM  14986    N LEU A1910      93.268 105.927 166.206  0.52  3.28           N 0
+ATOM  14982   CB LEU A1909      90.260 106.536 166.593  0.00  0.00           C 0
+ATOM  14536  CD1 LEU A1853      89.612 107.125 172.281  0.00  0.00           C 0
+ATOM  14514  CD1 LEU A1850      94.495 108.168 171.412  0.00  0.00           C 0
+ATOM  14999   CG GLN A1911      94.502 101.581 167.741  0.00  0.00           C 0
+ATOM  14511    O LEU A1850      93.510 104.816 176.047  0.47  7.50           O 0
+ATOM  14545  OD2 ASP A1854      88.612 103.977 177.829  0.00  0.00           O 0
+ATOM  14534   CB LEU A1853      89.279 107.777 174.674  0.00  0.00           C 0
+ATOM  14544  OD1 ASP A1854      86.799 104.654 176.791  0.00  0.00           O 0
+ATOM  14499   CE LYS A1848     101.612  99.062 176.118  0.00  0.00           C 0
+ATOM  14493   CA LYS A1848      98.630 100.911 172.460  0.00  0.00           C 0
+ATOM  14487    O ASN A1847      98.731 100.558 169.705  0.00  0.00           O 0
+ATOM  14629    N ARG A1865      86.009 113.448 165.516  0.00  0.00           N 0
+ATOM  14625   CB ILE A1864      84.399 115.585 167.101  0.00  0.00           C 0
+ATOM  16912  CD2 LEU A2157      93.892 113.595 172.377  0.00  0.00           C 0
+ATOM  14605  CD1 LEU A1861      89.127 113.692 174.154  0.00  0.00           C 0
+ATOM  14985  CD2 LEU A1909      89.578 108.783 167.427  0.00  0.00           C 0
+ATOM  14978    N LEU A1909      90.859 104.226 166.125  0.61  1.09           N 0
+ATOM  15002  NE2 GLN A1911      95.897 100.641 169.474  0.75  6.56           N 0
+ATOM  14472   CD PRO A1845      97.386  96.830 165.594  0.00  0.00           C 0
+ATOM  15155   CG HIS A1931     102.579  95.762 172.024  0.00  0.00           C 0
+ATOM  14893   CB LEU A1897      94.819  88.753 169.816  0.00  0.00           C 0
+ATOM  14992  CD1 LEU A1910      94.640 110.000 167.121  0.00  0.00           C 0
+ATOM  14512   CB LEU A1850      94.433 106.834 173.499  0.00  0.00           C 0
+ATOM  14508    N LEU A1850      94.645 104.405 173.561  0.53  4.37           N 0
+ATOM  15001  OE1 GLN A1911      95.351 102.815 169.590  0.70  3.21           O 0
+ATOM  14492    N LYS A1848      99.690 101.362 171.578  0.00  0.00           N 0
+ATOM  14974   CB LEU A1908      91.692 100.664 165.424  0.00  0.00           C 0
+ATOM  14971   CA LEU A1908      91.070 101.794 166.251  0.00  0.00           C 0
+ATOM  14505   CB PRO A1849      93.886 101.218 173.132  0.00  0.00           C 0
+ATOM  15000   CD GLN A1911      95.291 101.730 169.016  0.00  0.00           C 0
+ATOM  14513   CG LEU A1850      95.216 107.122 172.228  0.00  0.00           C 0
+ATOM  14502   CA PRO A1849      95.042 102.162 172.779  0.00  0.00           C 0
+TER
+END

@@ -1,0 +1,112 @@
+{
+  "hbonds": 9,
+  "hydrophobic": 12,
+  "interactions": [
+    {
+      "residue": "PHE65",
+      "type": "HBond",
+      "distance": 3.0
+    },
+    {
+      "residue": "VAL57",
+      "type": "HBond",
+      "distance": 2.77
+    },
+    {
+      "residue": "ASN61",
+      "type": "HBond",
+      "distance": 3.01
+    },
+    {
+      "residue": "VAL68",
+      "type": "HBond",
+      "distance": 3.47
+    },
+    {
+      "residue": "HIS70",
+      "type": "HBond",
+      "distance": 3.34
+    },
+    {
+      "residue": "ASP79",
+      "type": "HBond",
+      "distance": 3.03
+    },
+    {
+      "residue": "GLU81",
+      "type": "HBond",
+      "distance": 3.23
+    },
+    {
+      "residue": "LYS67",
+      "type": "HBond",
+      "distance": 3.02
+    },
+    {
+      "residue": "THR80",
+      "type": "HBond",
+      "distance": 2.91
+    },
+    {
+      "residue": "ARG66",
+      "type": "Hydrophobic",
+      "distance": 4.49
+    },
+    {
+      "residue": "PHE82",
+      "type": "Hydrophobic",
+      "distance": 4.22
+    },
+    {
+      "residue": "PHE65",
+      "type": "Hydrophobic",
+      "distance": 4.1
+    },
+    {
+      "residue": "LYS67",
+      "type": "Hydrophobic",
+      "distance": 4.14
+    },
+    {
+      "residue": "VAL57",
+      "type": "Hydrophobic",
+      "distance": 3.7
+    },
+    {
+      "residue": "LEU60",
+      "type": "Hydrophobic",
+      "distance": 4.29
+    },
+    {
+      "residue": "ASN61",
+      "type": "Hydrophobic",
+      "distance": 4.44
+    },
+    {
+      "residue": "VAL69",
+      "type": "Hydrophobic",
+      "distance": 3.91
+    },
+    {
+      "residue": "ASP79",
+      "type": "Hydrophobic",
+      "distance": 4.2
+    },
+    {
+      "residue": "THR80",
+      "type": "Hydrophobic",
+      "distance": 4.07
+    },
+    {
+      "residue": "GLU81",
+      "type": "Hydrophobic",
+      "distance": 4.2
+    },
+    {
+      "residue": "VAL68",
+      "type": "Hydrophobic",
+      "distance": 4.19
+    }
+  ],
+  "method": "distance_fallback"
+}

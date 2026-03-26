@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    89:
+HEADER 0  - Pocket Score                      : -0.0206
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0525
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6802
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 38.5714
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 185.7748
+HEADER 10 - Pocket volume (convex hull)       : 2.3758
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 9.0000
+HEADER 13 - Number of apolar alpha sphere     :    10
+HEADER 14 - Proportion of apolar alpha sphere : 0.6250
+ATOM  18048  CG2 VAL A2300      63.108 141.281 144.138  0.00  0.00           C 0
+ATOM  18026   NE ARG A2297      64.164 145.602 148.053  0.38  4.37           N 0
+ATOM  18025   CD ARG A2297      65.166 144.832 147.322  0.00  0.00           C 0
+ATOM  18028  NH1 ARG A2297      62.712 145.710 146.276  0.00  0.00           N 0
+ATOM  17995    O PHE A2294      64.816 141.901 153.370  0.57  7.50           O 0
+ATOM  18029  NH2 ARG A2297      62.150 146.695 148.271  0.00  0.00           N 0
+ATOM  18006    O THR A2295      64.439 145.518 152.873  0.33  5.36           O 0
+ATOM  18027   CZ ARG A2297      63.008 146.001 147.535  0.00  0.00           C 0
+ATOM  18047  CG1 VAL A2300      61.220 139.702 144.612  0.00  0.00           C 0
+ATOM  18043   CA VAL A2300      63.631 138.969 144.964  0.00  0.00           C 0
+ATOM  18023   CB ARG A2297      65.854 143.401 149.267  0.00  0.00           C 0
+ATOM  18033    O ALA A2298      66.848 140.945 147.182  0.76  2.14           O 0
+ATOM  18066   CB ALA A2303      65.143 138.194 149.271  0.00  0.00           C 0
+ATOM  18045    O VAL A2300      62.528 136.992 145.779  0.00  0.00           O 0
+ATOM  18073  CG2 THR A2304      60.744 136.342 148.785  0.00  0.00           C 0
+TER
+END

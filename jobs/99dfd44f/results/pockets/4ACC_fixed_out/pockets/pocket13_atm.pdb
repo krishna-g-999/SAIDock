@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 0.0625
+HEADER 1  - Drug Score                        : 0.0042
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.9878
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.7358
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 79.3750
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Amino Acid based volume Score     : 5.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 370.8126
+HEADER 10 - Pocket volume (convex hull)       : 21.5955
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 16.0000
+HEADER 13 - Number of apolar alpha sphere     :    17
+HEADER 14 - Proportion of apolar alpha sphere : 0.8500
+ATOM   2033  CE2 TYR A 254      24.080 -14.431  19.610  0.00  0.00           C 0
+ATOM   2061  CE2 PHE A 257      24.996 -18.093  20.856  0.00  0.00           C 0
+ATOM   2058  CD1 PHE A 257      23.364 -19.601  22.512  0.00  0.00           C 0
+ATOM   2059  CD2 PHE A 257      23.704 -18.452  20.445  0.00  0.00           C 0
+ATOM   2057   CG PHE A 257      22.878 -19.210  21.267  0.00  0.00           C 0
+ATOM   1586  CE1 PHE A 195      20.330 -14.601  16.198  0.00  0.00           C 0
+ATOM   2031  CD2 TYR A 254      23.903 -15.421  18.645  0.00  0.00           C 0
+ATOM   2080  CE1 PHE A 259      18.064 -16.948  17.491  0.00  0.00           C 0
+ATOM   2062   CZ PHE A 257      25.467 -18.500  22.086  0.00  0.00           C 0
+ATOM   2060  CE1 PHE A 257      24.661 -19.255  22.916  0.00  0.00           C 0
+ATOM   2056   CB PHE A 257      21.473 -19.571  20.832  0.00  0.00           C 0
+ATOM   2035   OH TYR A 254      25.517 -12.994  20.852  0.54  6.43           O 0
+ATOM   1854  CD2 LEU A 232      17.706 -12.077  17.506  0.00  0.00           C 0
+ATOM   1584  CD1 PHE A 195      21.553 -13.955  16.324  0.00  0.00           C 0
+ATOM   1573    O ILE A 194      22.516  -9.476  18.106  0.23  8.57           O 0
+ATOM   1823    N VAL A 229      16.104  -9.342  21.269  0.00  0.00           N 0
+ATOM   1576  CG2 ILE A 194      19.381  -8.903  17.396  0.00  0.00           C 0
+ATOM   1821    C GLY A 228      16.386  -8.720  20.100  0.00  0.00           C 0
+ATOM   1820   CA GLY A 228      17.291  -7.509  20.180  0.00  0.00           C 0
+ATOM   1819    N GLY A 228      16.967  -6.686  21.335  0.00  0.00           N 0
+ATOM   1829  CG2 VAL A 229      15.964 -10.502  23.825  0.00  0.00           C 0
+ATOM   1828  CG1 VAL A 229      15.206 -12.630  22.765  0.00  0.00           C 0
+ATOM   1824   CA VAL A 229      15.207 -10.504  21.373  0.00  0.00           C 0
+TER
+END

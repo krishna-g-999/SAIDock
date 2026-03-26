@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   194:
+HEADER 0  - Pocket Score                      : -0.1582
+HEADER 1  - Drug Score                        : 0.0007
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 4.3570
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.7183
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 53.7500
+HEADER 7  - Polarity Score                    :     0
+HEADER 8  - Amino Acid based volume Score     : 3.5000
+HEADER 9  - Pocket volume (Monte Carlo)       : 175.3625
+HEADER 10 - Pocket volume (convex hull)       : 0.8433
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 12.0000
+HEADER 13 - Number of apolar alpha sphere     :    13
+HEADER 14 - Proportion of apolar alpha sphere : 0.8667
+ATOM  17546  CE2 PHE A2238      86.257 123.873 170.846  0.00  0.00           C 0
+ATOM  17207   CE MET A2196      88.965 125.938 169.761  0.00  0.00           C 0
+ATOM  17544  CD2 PHE A2238      85.307 124.752 171.279  0.00  0.00           C 0
+ATOM  17547   CZ PHE A2238      86.564 122.776 171.602  0.00  0.00           C 0
+ATOM  17543  CD1 PHE A2238      84.963 123.436 173.233  0.00  0.00           C 0
+ATOM  17545  CE1 PHE A2238      85.916 122.552 172.802  0.00  0.00           C 0
+ATOM  17542   CG PHE A2238      84.647 124.546 172.474  0.00  0.00           C 0
+ATOM  17272   CB ALA A2205      88.064 130.149 172.319  0.00  0.00           C 0
+ATOM  17203    O MET A2196      90.060 121.630 173.739  0.67  2.14           O 0
+ATOM  17204   CB MET A2196      90.435 123.054 171.002  0.00  0.00           C 0
+ATOM  17229    C GLY A2199      91.491 122.728 176.817  0.00  0.00           C 0
+ATOM  17201   CA MET A2196      91.446 122.461 171.983  0.00  0.00           C 0
+ATOM  17230    O GLY A2199      90.583 121.904 176.718  0.69  7.50           O 0
+TER
+END

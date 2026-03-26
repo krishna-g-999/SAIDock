@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.5228,
+  "binding_category": "Moderate (0.50\u20130.65)",
+  "dg_norm": 0.4864,
+  "admet_score": 0.8644,
+  "ml_confidence": 0.3499,
+  "pocket_druggability": 0.7315,
+  "literature_score": 0.0,
+  "best_docking_score": -7.378,
+  "model_loaded": true,
+  "rna_displacement_score": 0.5,
+  "rna_mode": false,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.1702,
+    "ADMET_score (\u00d70.20)": 0.1729,
+    "ML_confidence (\u00d70.20)": 0.07,
+    "Pocket_druggability (\u00d70.15)": 0.1097,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.05
+  },
+  "domain": "OUT_OF_DOMAIN",
+  "compound_name": "Caffeic_Acid",
+  "target_id": "4XMB"
+}

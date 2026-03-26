@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : -0.0175
+HEADER 1  - Drug Score                        : 0.0178
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.7470
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4557
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 29.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.5714
+HEADER 9  - Pocket volume (Monte Carlo)       : 229.2902
+HEADER 10 - Pocket volume (convex hull)       : 4.7038
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 13.0000
+HEADER 13 - Number of apolar alpha sphere     :    14
+HEADER 14 - Proportion of apolar alpha sphere : 0.7778
+ATOM   4077   CB GLU A 263     -10.522  90.497   6.157  0.00  0.00           C 0
+ATOM   4127  CD2 LEU A 267     -12.979  93.110  12.026  0.00  0.00           C 0
+ATOM   4099   CB LYS A 265      -9.008  92.911  10.991  0.00  0.00           C 0
+ATOM   4103   CD LYS A 265      -8.964  95.136  10.063  0.00  0.00           C 0
+ATOM   4280    O SER A 278     -14.536  86.670   8.928  0.80  1.07           O 0
+ATOM   4078   CG GLU A 263     -11.472  90.417   4.975  0.00  0.00           C 0
+ATOM   4281   CB SER A 278     -16.711  88.631   9.144  0.00  0.00           C 0
+ATOM   4073    N GLU A 263     -10.619  88.118   6.725  0.00  0.00           N 0
+ATOM   4126  CD1 LEU A 267     -14.645  91.502  11.089  0.00  0.00           C 0
+ATOM   4038   CB PHE A 261     -11.480  87.385  11.011  0.00  0.00           C 0
+ATOM   4058   CB ILE A 262     -12.623  85.840   5.715  0.00  0.00           C 0
+ATOM   4278   CA SER A 278     -16.733  87.341   8.327  0.00  0.00           C 0
+ATOM   4061  CD1 ILE A 262     -14.885  84.721   5.336  0.00  0.00           C 0
+ATOM   4080  OE1 GLU A 263     -11.132  89.111   3.012  0.77  5.36           O 0
+ATOM   4060  CG2 ILE A 262     -12.170  85.904   4.265  0.00  0.00           C 0
+ATOM   4269    O GLU A 277     -17.676  85.714   6.336  0.87  6.43           O 0
+ATOM   4098    O LYS A 265     -10.510  90.432  12.156  0.73  2.14           O 0
+TER
+END

@@ -1,0 +1,444 @@
+{
+  "outdir": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results",
+  "receptor_pdb": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/target/6EZ8_fixed.pdb",
+  "receptor_pdbqt": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/target/6EZ8_receptor.pdbqt",
+  "target_id": "6EZ8",
+  "n_residues": 2353,
+  "pockets": [
+    {
+      "pocket_id": 1,
+      "engine": "fpocket",
+      "druggability_score": 0.747,
+      "n_spheres": 100.0,
+      "total_sasa": 300.506,
+      "apolar_sasa": 210.127,
+      "volume": 1041.479,
+      "hydrophobicity": 27.284,
+      "center": [
+        93.77957971014497,
+        102.93382608695647,
+        170.04968115942026
+      ],
+      "box_size": [
+        28.2,
+        35.0,
+        22.9
+      ],
+      "composite_score": 0.8735
+    },
+    {
+      "pocket_id": 21,
+      "engine": "fpocket",
+      "druggability_score": 0.752,
+      "n_spheres": 68.0,
+      "total_sasa": 110.557,
+      "apolar_sasa": 106.271,
+      "volume": 360.805,
+      "hydrophobicity": 56.068,
+      "center": [
+        144.16613888888887,
+        94.56758333333333,
+        85.52169444444444
+      ],
+      "box_size": [
+        21.3,
+        23.0,
+        21.8
+      ],
+      "composite_score": 0.7482
+    },
+    {
+      "pocket_id": 44,
+      "engine": "fpocket",
+      "druggability_score": 0.391,
+      "n_spheres": 94.0,
+      "total_sasa": 252.68,
+      "apolar_sasa": 167.128,
+      "volume": 732.013,
+      "hydrophobicity": 34.926,
+      "center": [
+        79.11470909090909,
+        106.73494545454545,
+        151.53687272727274
+      ],
+      "box_size": [
+        27.2,
+        31.0,
+        21.2
+      ],
+      "composite_score": 0.6419
+    },
+    {
+      "pocket_id": 66,
+      "engine": "fpocket",
+      "druggability_score": 0.427,
+      "n_spheres": 54.0,
+      "total_sasa": 180.286,
+      "apolar_sasa": 133.947,
+      "volume": 613.95,
+      "hydrophobicity": 36.408,
+      "center": [
+        145.86755555555555,
+        130.76291666666665,
+        97.32625
+      ],
+      "box_size": [
+        26.0,
+        23.7,
+        20.0
+      ],
+      "composite_score": 0.6363
+    },
+    {
+      "pocket_id": 2,
+      "engine": "fpocket",
+      "druggability_score": 0.318,
+      "n_spheres": 95.0,
+      "total_sasa": 194.534,
+      "apolar_sasa": 111.102,
+      "volume": 644.061,
+      "hydrophobicity": 27.488,
+      "center": [
+        141.0206226415094,
+        109.87396226415093,
+        81.37960377358492
+      ],
+      "box_size": [
+        26.7,
+        26.1,
+        26.3
+      ],
+      "composite_score": 0.5878
+    }
+  ],
+  "ligand_pdbqt": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/ligand/compound_ligand.pdbqt",
+  "ligand_smiles": "C1=C2C3=C(C(=C1O)O)OC(=O)C4=CC(=C(C(=C43)OC2=O)O)O",
+  "ligand_name": "Ellagic_Acid",
+  "ligand_mw": 302.19399999999996,
+  "docking_results": [
+    {
+      "best_score": -7.443,
+      "mean_top3": -7.35,
+      "all_scores": [
+        -7.443,
+        -7.44,
+        -7.168,
+        -7.079,
+        -6.265,
+        -6.248,
+        -5.773,
+        -5.745,
+        -5.729
+      ],
+      "n_poses": 9,
+      "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/docking/pocket2_poses.pdbqt",
+      "pocket_id": 2,
+      "has_clash": false,
+      "pocket_drugg_score": 0.5878,
+      "center": [
+        141.0206226415094,
+        109.87396226415093,
+        81.37960377358492
+      ],
+      "engine": "AutoDock Vina"
+    },
+    {
+      "best_score": -6.826,
+      "mean_top3": -6.742,
+      "all_scores": [
+        -6.826,
+        -6.702,
+        -6.697,
+        -6.6,
+        -6.555,
+        -6.485,
+        -6.469,
+        -6.323,
+        -6.322
+      ],
+      "n_poses": 9,
+      "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/docking/pocket1_poses.pdbqt",
+      "pocket_id": 1,
+      "has_clash": false,
+      "pocket_drugg_score": 0.8735,
+      "center": [
+        93.77957971014497,
+        102.93382608695647,
+        170.04968115942026
+      ],
+      "engine": "AutoDock Vina"
+    },
+    {
+      "best_score": -6.752,
+      "mean_top3": -6.749,
+      "all_scores": [
+        -6.752,
+        -6.751,
+        -6.744,
+        -6.735,
+        -6.656,
+        -6.651,
+        -6.418,
+        -6.414,
+        -6.377
+      ],
+      "n_poses": 9,
+      "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/docking/pocket44_poses.pdbqt",
+      "pocket_id": 44,
+      "has_clash": false,
+      "pocket_drugg_score": 0.6419,
+      "center": [
+        79.11470909090909,
+        106.73494545454545,
+        151.53687272727274
+      ],
+      "engine": "AutoDock Vina"
+    },
+    {
+      "best_score": -5.692,
+      "mean_top3": -5.58,
+      "all_scores": [
+        -5.692,
+        -5.674,
+        -5.374,
+        -5.363,
+        -5.134,
+        -5.123,
+        -5.078,
+        -5.003,
+        -4.975
+      ],
+      "n_poses": 9,
+      "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/docking/pocket21_poses.pdbqt",
+      "pocket_id": 21,
+      "has_clash": false,
+      "pocket_drugg_score": 0.7482,
+      "center": [
+        144.16613888888887,
+        94.56758333333333,
+        85.52169444444444
+      ],
+      "engine": "AutoDock Vina"
+    },
+    {
+      "best_score": -5.66,
+      "mean_top3": -5.611,
+      "all_scores": [
+        -5.66,
+        -5.638,
+        -5.536,
+        -5.526,
+        -5.346,
+        -5.342,
+        -5.31,
+        -5.307,
+        -5.231
+      ],
+      "n_poses": 9,
+      "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/ab95f21c/results/docking/pocket66_poses.pdbqt",
+      "pocket_id": 66,
+      "has_clash": false,
+      "pocket_drugg_score": 0.6363,
+      "center": [
+        145.86755555555555,
+        130.76291666666665,
+        97.32625
+      ],
+      "engine": "AutoDock Vina"
+    }
+  ],
+  "interactions": {
+    "hbonds": 14,
+    "hydrophobic": 15,
+    "interactions": [
+      {
+        "residue": "LYS107",
+        "type": "HBond",
+        "distance": 3.42
+      },
+      {
+        "residue": "ASP66",
+        "type": "HBond",
+        "distance": 2.74
+      },
+      {
+        "residue": "SER67",
+        "type": "HBond",
+        "distance": 3.12
+      },
+      {
+        "residue": "MET65",
+        "type": "HBond",
+        "distance": 3.11
+      },
+      {
+        "residue": "LEU102",
+        "type": "HBond",
+        "distance": 3.17
+      },
+      {
+        "residue": "THR880",
+        "type": "HBond",
+        "distance": 3.36
+      },
+      {
+        "residue": "ARG104",
+        "type": "HBond",
+        "distance": 3.26
+      },
+      {
+        "residue": "VAL912",
+        "type": "HBond",
+        "distance": 3.17
+      },
+      {
+        "residue": "GLN106",
+        "type": "HBond",
+        "distance": 3.35
+      },
+      {
+        "residue": "LYS919",
+        "type": "HBond",
+        "distance": 2.89
+      },
+      {
+        "residue": "ASN23",
+        "type": "HBond",
+        "distance": 3.01
+      },
+      {
+        "residue": "LEU875",
+        "type": "HBond",
+        "distance": 3.35
+      },
+      {
+        "residue": "THR879",
+        "type": "HBond",
+        "distance": 2.95
+      },
+      {
+        "residue": "LEU906",
+        "type": "HBond",
+        "distance": 2.95
+      },
+      {
+        "residue": "THR880",
+        "type": "Hydrophobic",
+        "distance": 4.49
+      },
+      {
+        "residue": "PRO70",
+        "type": "Hydrophobic",
+        "distance": 3.77
+      },
+      {
+        "residue": "ARG104",
+        "type": "Hydrophobic",
+        "distance": 3.84
+      },
+      {
+        "residue": "LYS107",
+        "type": "Hydrophobic",
+        "distance": 4.33
+      },
+      {
+        "residue": "LEU69",
+        "type": "Hydrophobic",
+        "distance": 4.46
+      },
+      {
+        "residue": "SER67",
+        "type": "Hydrophobic",
+        "distance": 4.44
+      },
+      {
+        "residue": "ASP66",
+        "type": "Hydrophobic",
+        "distance": 4.46
+      },
+      {
+        "residue": "THR879",
+        "type": "Hydrophobic",
+        "distance": 3.96
+      },
+      {
+        "residue": "VAL912",
+        "type": "Hydrophobic",
+        "distance": 4.05
+      },
+      {
+        "residue": "PHE916",
+        "type": "Hydrophobic",
+        "distance": 4.03
+      },
+      {
+        "residue": "GLN106",
+        "type": "Hydrophobic",
+        "distance": 4.23
+      },
+      {
+        "residue": "LYS876",
+        "type": "Hydrophobic",
+        "distance": 3.49
+      },
+      {
+        "residue": "LEU875",
+        "type": "Hydrophobic",
+        "distance": 4.12
+      },
+      {
+        "residue": "LEU907",
+        "type": "Hydrophobic",
+        "distance": 3.9
+      },
+      {
+        "residue": "ILE872",
+        "type": "Hydrophobic",
+        "distance": 4.42
+      }
+    ],
+    "method": "distance_fallback"
+  },
+  "admet": {
+    "compound": "compound",
+    "MW": 302.19,
+    "LogP": 1.313,
+    "HBD": 4,
+    "HBA": 8,
+    "TPSA": 141.34,
+    "RotBonds": 0,
+    "HeavyAtoms": 22,
+    "MolRefractivity": 73.88,
+    "AromaticRings": 4,
+    "QED": 0.216,
+    "FractionCSP3": 0.0,
+    "Lipinski_violations": 0,
+    "Lipinski_pass": true,
+    "Veber_pass": false,
+    "Ghose_pass": true,
+    "BBB_penetrant": false,
+    "GI_absorption": "Low",
+    "Pgp_substrate": "Unlikely",
+    "Solubility_class": "Poorly Soluble",
+    "LogSw_estimated": -5.501
+  },
+  "ml_results": {
+    "DTSS": 0.5632,
+    "binding_category": "Moderate (0.50\u20130.65)",
+    "dg_norm": 0.4937,
+    "admet_score": 0.4487,
+    "ml_confidence": 0.6376,
+    "pocket_druggability": 0.5878,
+    "literature_score": 0.9933,
+    "best_docking_score": -7.443,
+    "model_loaded": true,
+    "components": {
+      "DG_norm (\u00d70.35)": 0.1728,
+      "ADMET_score (\u00d70.20)": 0.0897,
+      "ML_confidence (\u00d70.20)": 0.1275,
+      "Pocket_druggability (\u00d70.15)": 0.0882,
+      "Literature_score (\u00d70.10)": 0.0993
+    }
+  },
+  "compound_name": "Ellagic_Acid"
+}

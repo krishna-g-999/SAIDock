@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   125:
+HEADER 0  - Pocket Score                      : -0.0489
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 4.1461
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6003
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -6.2500
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 3.8750
+HEADER 9  - Pocket volume (Monte Carlo)       : 361.5545
+HEADER 10 - Pocket volume (convex hull)       : 12.5756
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   9848    C ASN A1256      71.701 124.617  78.299  0.00  0.00           C 0
+ATOM  10143   OH TYR A1290      71.274 127.494  82.919  0.48  4.29           O 0
+ATOM   9850   CB ASN A1256      71.198 127.056  77.917  0.00  0.00           C 0
+ATOM   9849    O ASN A1256      70.720 124.365  77.591  0.53  8.57           O 0
+ATOM  10224  NE2 HIS A1300      66.810 125.104  84.517  0.51  9.84           N 0
+ATOM   9867    O THR A1258      68.407 120.312  82.079  0.00  0.00           O 0
+ATOM  10213  OE1 GLU A1299      61.898 124.462  83.322  0.13  5.36           O 0
+ATOM  10223  CE1 HIS A1300      67.039 123.839  84.819  0.00  0.00           C 0
+ATOM   9864    N THR A1258      70.822 121.898  80.895  0.61  2.19           N 0
+ATOM   9868   CB THR A1258      69.971 122.414  83.130  0.00  0.00           C 0
+ATOM  10199  OD2 ASP A1297      66.042 129.816  83.412  0.40  6.43           O 0
+ATOM   9869  OG1 THR A1258      70.796 123.582  83.097  0.00  0.00           O 0
+ATOM  10173  ND2 ASN A1294      70.460 131.111  84.100  0.00  0.00           N 0
+ATOM  10190  CE1 HIS A1296      65.861 133.281  83.439  0.00  0.00           C 0
+ATOM  10191  NE2 HIS A1296      66.969 133.866  83.858  0.00  0.00           N 0
+ATOM   9853  ND2 ASN A1256      71.379 129.407  77.392  0.00  0.00           N 0
+ATOM   9851   CG ASN A1256      71.536 128.472  78.320  0.00  0.00           C 0
+ATOM   9852  OD1 ASN A1256      71.938 128.724  79.455  0.15  5.36           O 0
+TER
+END

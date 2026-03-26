@@ -1,0 +1,56 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    52:
+HEADER 0  - Pocket Score                      : 0.0333
+HEADER 1  - Drug Score                        : 0.0121
+HEADER 2  - Number of alpha spheres           :    52
+HEADER 3  - Mean alpha-sphere radius          : 3.7815
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4854
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 56.8333
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.5833
+HEADER 9  - Pocket volume (Monte Carlo)       : 500.6709
+HEADER 10 - Pocket volume (convex hull)       : 106.5318
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 21.9231
+HEADER 13 - Number of apolar alpha sphere     :    26
+HEADER 14 - Proportion of apolar alpha sphere : 0.5000
+ATOM  15397    O LEU A1961     126.379  74.890 156.406  0.00  0.00           O 0
+ATOM  15375    O TRP A1959     123.772  77.125 153.575  0.35  3.21           O 0
+ATOM  15389    O ILE A1960     125.873  78.002 156.485  0.00  0.00           O 0
+ATOM  15402    N THR A1962     126.220  76.502 149.856  0.40  7.66           N 0
+ATOM  15407  OG1 THR A1962     124.427  78.421 150.979  0.53  3.21           O 0
+ATOM  15387   CA ILE A1960     123.517  78.281 156.080  0.00  0.00           C 0
+ATOM  15442  CG1 ILE A1967     125.171  82.215 150.819  0.00  0.00           C 0
+ATOM  15405    O THR A1962     126.650  79.140 149.076  0.23  5.36           O 0
+ATOM  15432    O LEU A1966     120.717  81.497 149.861  0.52  1.07           O 0
+ATOM  15376   CB TRP A1959     120.785  76.181 153.087  0.00  0.00           C 0
+ATOM  15395   CA LEU A1961     125.552  76.025 158.354  0.00  0.00           C 0
+ATOM  15719  CG1 VAL A2000     131.673  81.152 157.847  0.00  0.00           C 0
+ATOM  15401  CD2 LEU A1961     125.692  77.820 160.783  0.00  0.00           C 0
+ATOM  15725   CB HIS A2001     128.759  85.272 155.818  0.00  0.00           C 0
+ATOM  15722   CA HIS A2001     130.261  85.156 156.062  0.00  0.00           C 0
+ATOM  15721    N HIS A2001     130.517  84.450 157.304  0.00  0.00           N 0
+ATOM  15391  CG1 ILE A1960     121.697  80.015 156.302  0.00  0.00           C 0
+ATOM  15464   CB VAL A1970     118.215  81.152 152.537  0.00  0.00           C 0
+ATOM  15678    O GLU A1996     128.552  81.884 161.457  0.61  1.07           O 0
+ATOM  15718   CB VAL A2000     131.261  81.993 159.039  0.00  0.00           C 0
+ATOM  15720  CG2 VAL A2000     131.637  81.295 160.333  0.00  0.00           C 0
+ATOM  15689   CG LEU A1997     125.227  84.003 157.838  0.00  0.00           C 0
+ATOM  15687    O LEU A1997     128.696  84.630 159.020  0.00  0.00           O 0
+ATOM  15396    C LEU A1961     126.060  74.805 157.592  0.00  0.00           C 0
+ATOM  15465  CG1 VAL A1970     118.019  80.268 153.757  0.00  0.00           C 0
+ATOM  15392  CG2 ILE A1960     123.654  79.998 157.911  0.00  0.00           C 0
+ATOM  15690  CD1 LEU A1997     123.801  83.643 157.530  0.00  0.00           C 0
+ATOM  15444  CD1 ILE A1967     126.647  82.560 150.848  0.00  0.00           C 0
+ATOM  15443  CG2 ILE A1967     124.429  83.996 152.359  0.00  0.00           C 0
+ATOM  15685   CA LEU A1997     126.834  83.445 159.939  0.00  0.00           C 0
+ATOM  15438   CA ILE A1967     122.778  83.003 150.715  0.00  0.00           C 0
+ATOM  15727  ND1 HIS A2001     128.449  85.001 153.333  0.84  9.84           N 0
+ATOM  15717    O VAL A2000     132.694  84.153 156.838  0.37  4.29           O 0
+ATOM  15737   CD PRO A2002     131.738  86.286 153.778  0.00  0.00           C 0
+TER
+END

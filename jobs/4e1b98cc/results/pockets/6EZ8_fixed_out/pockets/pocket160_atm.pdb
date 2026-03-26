@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   160:
+HEADER 0  - Pocket Score                      : -0.1004
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0899
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.7044
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -26.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.5000
+HEADER 9  - Pocket volume (Monte Carlo)       : 170.9087
+HEADER 10 - Pocket volume (convex hull)       : 2.8968
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 3.0000
+HEADER 13 - Number of apolar alpha sphere     :     4
+HEADER 14 - Proportion of apolar alpha sphere : 0.2500
+ATOM  11143    O GLU A1419      44.254 124.782 115.703  0.72  6.43           O 0
+ATOM  11175   CA ARG A1423      47.338 122.411 118.679  0.00  0.00           C 0
+ATOM  11174    N ARG A1423      46.664 123.708 118.686  0.66  1.09           N 0
+ATOM  11184  NH2 ARG A1423      44.930 118.727 114.474  0.00  0.00           N 0
+ATOM  11169    O ASN A1422      46.248 123.605 120.889  0.65  3.21           O 0
+ATOM  11210  OE2 GLU A1426      43.836 120.754 123.015  0.00  0.00           O 0
+ATOM  11178   CB ARG A1423      47.465 121.902 117.241  0.00  0.00           C 0
+ATOM  11182   CZ ARG A1423      46.111 118.782 115.076  0.00  0.00           C 0
+ATOM  11181   NE ARG A1423      46.837 119.896 115.021  0.44  8.75           N 0
+ATOM  11209  OE1 GLU A1426      45.325 119.331 122.256  0.00  0.00           O 0
+ATOM  11179   CG ARG A1423      48.041 120.495 117.106  0.00  0.00           C 0
+ATOM  11183  NH1 ARG A1423      46.563 117.721 115.730  0.64  7.66           N 0
+ATOM  11168    C ASN A1422      46.181 124.212 119.822  0.00  0.00           C 0
+ATOM  11170   CB ASN A1422      44.034 125.504 119.849  0.00  0.00           C 0
+TER
+END

@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   118:
+HEADER 0  - Pocket Score                      : -0.0447
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.0737
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6495
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -0.8000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.6000
+HEADER 9  - Pocket volume (Monte Carlo)       : 215.3963
+HEADER 10 - Pocket volume (convex hull)       : 5.0089
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 6.0000
+HEADER 13 - Number of apolar alpha sphere     :     7
+HEADER 14 - Proportion of apolar alpha sphere : 0.4118
+ATOM   8995   CD GLU A1149      78.780 133.619  65.546  0.00  0.00           C 0
+ATOM   8997  OE2 GLU A1149      78.564 134.756  66.014  0.00  0.00           O 0
+ATOM   8987   CG PRO A1148      83.426 134.002  61.218  0.00  0.00           C 0
+ATOM   8981  CD2 LEU A1147      78.148 132.412  59.784  0.00  0.00           C 0
+ATOM   8994   CG GLU A1149      80.215 133.160  65.396  0.00  0.00           C 0
+ATOM   8996  OE1 GLU A1149      77.868 132.838  65.203  0.00  0.00           O 0
+ATOM   8988   CD PRO A1148      82.560 133.125  60.354  0.00  0.00           C 0
+ATOM   8978   CB LEU A1147      79.718 130.962  61.084  0.00  0.00           C 0
+ATOM   8797  NE2 GLN A1124      83.092 136.458  58.921  0.42  2.19           N 0
+ATOM   9466   NE ARG A1206      81.989 138.055  65.624  0.00  0.00           N 0
+ATOM   9467   CZ ARG A1206      82.625 138.407  64.513  0.00  0.00           C 0
+ATOM   9469  NH2 ARG A1206      82.506 139.638  64.037  0.00  0.00           N 0
+ATOM   9468  NH1 ARG A1206      83.383 137.525  63.876  0.64  4.37           N 0
+ATOM   9465   CD ARG A1206      82.071 136.727  66.216  0.00  0.00           C 0
+TER
+END

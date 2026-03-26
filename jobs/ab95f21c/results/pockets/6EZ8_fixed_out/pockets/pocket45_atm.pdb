@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    45:
+HEADER 0  - Pocket Score                      : 0.0414
+HEADER 1  - Drug Score                        : 0.0018
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.6351
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4456
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 75.0000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 4.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 87.7777
+HEADER 10 - Pocket volume (convex hull)       : 1.4434
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 17.0000
+HEADER 13 - Number of apolar alpha sphere     :    18
+HEADER 14 - Proportion of apolar alpha sphere : 1.0000
+ATOM  15553   CZ PHE A1981     110.202  80.362 162.439  0.00  0.00           C 0
+ATOM  15314   CB LEU A1952     110.070  76.431 157.419  0.00  0.00           C 0
+ATOM  15519  CG1 VAL A1977     106.806  80.983 158.510  0.00  0.00           C 0
+ATOM  15518   CB VAL A1977     107.632  82.163 158.033  0.00  0.00           C 0
+ATOM  15520  CG2 VAL A1977     107.793  82.087 156.538  0.00  0.00           C 0
+ATOM  15352  CE2 TYR A1956     112.682  78.350 155.175  0.00  0.00           C 0
+ATOM  15316  CD1 LEU A1952     108.346  77.500 155.985  0.00  0.00           C 0
+ATOM  15496   CG LEU A1974     114.166  82.055 159.269  0.00  0.00           C 0
+ATOM  15313    O LEU A1952     112.940  76.305 158.186  0.71  1.07           O 0
+ATOM  15350  CD2 TYR A1956     113.793  78.262 155.969  0.00  0.00           C 0
+ATOM  15325  CD2 LEU A1953     113.071  78.119 162.247  0.00  0.00           C 0
+ATOM  15492   CA LEU A1974     112.626  83.268 157.430  0.00  0.00           C 0
+ATOM  15494    O LEU A1974     111.518  84.146 159.353  0.00  0.00           O 0
+ATOM  15488    O SER A1973     110.672  83.259 155.496  0.59  1.07           O 0
+TER
+END

@@ -1,0 +1,65 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   142:
+HEADER 0  - Pocket Score                      : -0.0793
+HEADER 1  - Drug Score                        : 0.0097
+HEADER 2  - Number of alpha spheres           :    57
+HEADER 3  - Mean alpha-sphere radius          : 3.8748
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4909
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 12.6111
+HEADER 7  - Polarity Score                    :    14
+HEADER 8  - Amino Acid based volume Score     : 4.6667
+HEADER 9  - Pocket volume (Monte Carlo)       : 718.0569
+HEADER 10 - Pocket volume (convex hull)       : 208.2244
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 6.1538
+HEADER 13 - Number of apolar alpha sphere     :    13
+HEADER 14 - Proportion of apolar alpha sphere : 0.2281
+ATOM  15177   CB TRP A1934     103.580  88.702 174.602  0.00  0.00           C 0
+ATOM  15194  CD2 LEU A1935      98.365  91.452 174.050  0.00  0.00           C 0
+ATOM  15191   CB LEU A1935      98.398  88.990 174.474  0.00  0.00           C 0
+ATOM  15227  CG2 THR A1940     104.330  88.258 178.391  0.00  0.00           C 0
+ATOM  15183  CE3 TRP A1934     105.687  91.019 175.627  0.00  0.00           C 0
+ATOM  15153    O HIS A1931     101.287  91.449 172.244  0.54  2.14           O 0
+ATOM  15156  ND1 HIS A1931     102.485  96.080 173.362  0.61  4.37           N 0
+ATOM  15151   CA HIS A1931     102.718  93.262 171.603  0.00  0.00           C 0
+ATOM  16178   CA CYS A2062     108.030  96.339 174.860  0.00  0.00           C 0
+ATOM  15158  CE1 HIS A1931     103.133  97.207 173.591  0.00  0.00           C 0
+ATOM  16180    O CYS A2062     108.437  96.189 177.209  0.35  8.57           O 0
+ATOM  14500   NZ LYS A1848     102.044  99.196 177.537  0.00  0.00           N 0
+ATOM  14499   CE LYS A1848     101.612  99.062 176.118  0.00  0.00           C 0
+ATOM  15185  CZ3 TRP A1934     106.752  91.856 175.885  0.00  0.00           C 0
+ATOM  16182   SG CYS A2062     105.939  95.366 173.286  0.00  0.00           S 0
+ATOM  15176    O TRP A1934     101.398  86.615 175.315  0.50  8.57           O 0
+ATOM  15175    C TRP A1934     101.503  87.337 174.319  0.00  0.00           C 0
+ATOM  15159  NE2 HIS A1931     103.667  97.618 172.455  0.47  1.09           N 0
+ATOM  14497   CG LYS A1848     100.162  99.957 174.272  0.00  0.00           C 0
+ATOM  16539   OH TYR A2108     106.301 100.497 171.649  0.60  1.07           O 0
+ATOM  16571  OD1 ASN A2112     104.536 104.423 175.118  0.00  0.00           O 0
+ATOM  16568    O ASN A2112     108.127 105.909 177.828  0.62  8.57           O 0
+ATOM  16581  CE1 TYR A2113     110.338 102.527 177.492  0.00  0.00           C 0
+ATOM  16569   CB ASN A2112     106.907 104.666 175.030  0.00  0.00           C 0
+ATOM  16181   CB CYS A2062     107.266  95.093 174.432  0.00  0.00           C 0
+ATOM  14520   CB LYS A1851      95.412 107.073 178.775  0.00  0.00           C 0
+ATOM  16914   CA SER A2158      99.353 111.207 175.497  0.00  0.00           C 0
+ATOM  16926  OE1 GLU A2159      97.674 110.589 178.997  0.56  7.50           O 0
+ATOM  16917   CB SER A2158     100.655 110.636 174.948  0.00  0.00           C 0
+ATOM  16171    O GLU A2061     107.772  98.859 173.899  0.55  9.64           O 0
+ATOM  16572  ND2 ASN A2112     105.566 103.753 173.243  0.75  5.47           N 0
+ATOM  14492    N LYS A1848      99.690 101.362 171.578  0.00  0.00           N 0
+ATOM  14498   CD LYS A1848     100.575 100.096 175.727  0.00  0.00           C 0
+ATOM  16584   OH TYR A2113     110.720 100.268 176.853  0.80  6.43           O 0
+ATOM  14476    O ARG A1846     102.706  99.735 170.038  0.50  1.07           O 0
+ATOM  16564  OE2 GLU A2111     101.379 106.512 173.289  0.00  0.00           O 0
+ATOM  14515  CD2 LEU A1850      96.596 107.603 172.609  0.00  0.00           C 0
+ATOM  14496   CB LYS A1848      99.109 100.989 173.909  0.00  0.00           C 0
+ATOM  14504    O PRO A1849      95.915 103.048 174.840  0.39  6.43           O 0
+ATOM  14491  ND2 ASN A1847     102.546 104.109 168.795  0.41  5.47           N 0
+ATOM  14516    N LYS A1851      94.790 106.628 176.460  0.59  5.47           N 0
+ATOM  14509   CA LEU A1850      94.945 105.631 174.280  0.00  0.00           C 0
+ATOM  16570   CG ASN A2112     105.565 104.271 174.463  0.00  0.00           C 0
+TER
+END

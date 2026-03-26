@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   164:
+HEADER 0  - Pocket Score                      : -0.1032
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.9115
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4517
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -18.6000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 342.5647
+HEADER 10 - Pocket volume (convex hull)       : 8.1019
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0556
+ATOM   8417   CG PRO A1075     101.521 140.046  61.557  0.00  0.00           C 0
+ATOM   8106   NE ARG A1035     109.236 139.897  60.480  0.72  7.66           N 0
+ATOM   8108  NH1 ARG A1035     108.457 140.666  58.459  0.00  0.00           N 0
+ATOM   8107   CZ ARG A1035     109.093 140.883  59.602  0.00  0.00           C 0
+ATOM   8390    O SER A1072     104.852 137.432  65.438  0.57  5.36           O 0
+ATOM   8418   CD PRO A1075     101.702 140.098  63.032  0.00  0.00           C 0
+ATOM   8384    O SER A1071     104.670 141.525  65.220  0.57  8.57           O 0
+ATOM   8388   CA SER A1072     106.073 139.368  66.156  0.00  0.00           C 0
+ATOM   8105   CD ARG A1035     109.918 140.033  61.761  0.00  0.00           C 0
+ATOM   8109  NH2 ARG A1035     109.584 142.085  59.868  0.00  0.00           N 0
+ATOM   8104   CG ARG A1035     109.884 138.745  62.550  0.00  0.00           C 0
+ATOM   8386   OG SER A1071     107.208 143.310  67.129  0.80  5.36           O 0
+ATOM   8068    O LYS A1031     111.674 141.887  66.414  0.67  4.29           O 0
+ATOM   8069   CB LYS A1031     111.016 144.538  67.871  0.00  0.00           C 0
+ATOM   8385   CB SER A1071     105.918 143.859  66.944  0.00  0.00           C 0
+ATOM   8392   OG SER A1072     108.457 139.537  66.526  0.81  2.14           O 0
+TER
+END

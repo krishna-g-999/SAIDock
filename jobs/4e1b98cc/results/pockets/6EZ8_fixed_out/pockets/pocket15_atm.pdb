@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : 0.1179
+HEADER 1  - Drug Score                        : 0.0020
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.5084
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3366
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 72.0000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 4.6250
+HEADER 9  - Pocket volume (Monte Carlo)       : 100.4593
+HEADER 10 - Pocket volume (convex hull)       : 2.1221
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 13.0000
+HEADER 13 - Number of apolar alpha sphere     :    14
+HEADER 14 - Proportion of apolar alpha sphere : 0.9333
+ATOM  11229  CD1 LEU A1428      54.474 125.182 124.204  0.00  0.00           C 0
+ATOM  11326  CD2 LEU A1440      57.557 128.272 122.799  0.00  0.00           C 0
+ATOM  11259    O LEU A1433      59.079 124.085 127.647  0.00  0.00           O 0
+ATOM  11230  CD2 LEU A1428      55.730 123.039 124.003  0.00  0.00           C 0
+ATOM  11296  CD2 HIS A1437      62.180 124.535 126.108  0.00  0.00           C 0
+ATOM  11325  CD1 LEU A1440      59.914 128.174 122.076  0.00  0.00           C 0
+ATOM  11265   CA ALA A1434      56.673 124.913 128.614  0.00  0.00           C 0
+ATOM  11292    O HIS A1437      59.600 128.341 128.116  0.57  1.07           O 0
+ATOM  10861  CD1 LEU A1382      61.456 124.381 121.587  0.00  0.00           C 0
+ATOM  10827  CG2 VAL A1378      57.152 125.420 119.120  0.00  0.00           C 0
+ATOM  10826  CG1 VAL A1378      56.083 123.387 120.017  0.00  0.00           C 0
+ATOM  10862  CD2 LEU A1382      61.709 122.550 123.203  0.00  0.00           C 0
+ATOM  11293   CB HIS A1437      61.765 126.977 126.867  0.00  0.00           C 0
+ATOM  11331   CB TYR A1441      55.739 129.497 127.921  0.00  0.00           C 0
+TER
+END

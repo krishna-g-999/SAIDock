@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   204:
+HEADER 0  - Pocket Score                      : -0.1986
+HEADER 1  - Drug Score                        : 0.0022
+HEADER 2  - Number of alpha spheres           :    24
+HEADER 3  - Mean alpha-sphere radius          : 3.9564
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4327
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 51.6667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.8889
+HEADER 9  - Pocket volume (Monte Carlo)       : 296.7255
+HEADER 10 - Pocket volume (convex hull)       : 22.3874
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 17.0000
+HEADER 13 - Number of apolar alpha sphere     :    18
+HEADER 14 - Proportion of apolar alpha sphere : 0.7500
+ATOM  12192   CB PRO A1551      72.741  84.830 120.120  0.00  0.00           C 0
+ATOM  12757  NE2 HIS A1622      70.234  92.151 119.254  0.50  9.84           N 0
+ATOM  12282  ND2 ASN A1562      65.165  88.319 121.263  0.00  0.00           N 0
+ATOM  12716  NE1 TRP A1618      68.992  90.998 123.112  0.81  2.19           N 0
+ATOM  12190    C PRO A1551      71.686  82.566 119.706  0.00  0.00           C 0
+ATOM  12195    N ALA A1552      71.295  82.573 118.430  0.00  0.00           N 0
+ATOM  12199   CB ALA A1552      69.306  82.900 117.039  0.00  0.00           C 0
+ATOM  12242   CB TRP A1558      66.919  83.566 122.205  0.00  0.00           C 0
+ATOM  12756  CE1 HIS A1622      70.927  92.019 120.369  0.00  0.00           C 0
+ATOM  12193   CG PRO A1551      73.187  85.296 118.773  0.00  0.00           C 0
+ATOM  12746  CG2 ILE A1621      74.567  91.834 119.265  0.00  0.00           C 0
+ATOM  12747  CD1 ILE A1621      75.105  90.259 121.797  0.00  0.00           C 0
+ATOM  12245  CD2 TRP A1558      68.912  83.316 123.889  0.00  0.00           C 0
+ATOM  12243   CG TRP A1558      68.096  82.864 122.803  0.00  0.00           C 0
+ATOM  12714  CD1 TRP A1618      70.173  90.874 123.798  0.00  0.00           C 0
+ATOM  12152  CE1 PHE A1546      73.111  87.159 125.792  0.00  0.00           C 0
+ATOM  12154   CZ PHE A1546      74.265  87.727 125.296  0.00  0.00           C 0
+ATOM  12248  CE3 TRP A1558      68.909  84.456 124.696  0.00  0.00           C 0
+ATOM  12250  CZ3 TRP A1558      69.872  84.574 125.678  0.00  0.00           C 0
+ATOM  12273  CD1 LEU A1561      67.281  87.352 126.674  0.00  0.00           C 0
+ATOM  12281  OD1 ASN A1562      65.888  89.590 122.960  0.61  1.07           O 0
+TER
+END

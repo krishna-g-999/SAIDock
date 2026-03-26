@@ -1,0 +1,24 @@
+{
+  "DTSS": 0.3367,
+  "binding_category": "Poor (<0.35)",
+  "dg_norm": 0.1497,
+  "admet_score": 0.8644,
+  "ml_confidence": 0.4026,
+  "pocket_druggability": 0.3748,
+  "literature_score": 0.0,
+  "best_docking_score": -4.347,
+  "model_loaded": true,
+  "rna_displacement_score": 0.5,
+  "rna_mode": false,
+  "components": {
+    "DG_norm (\u00d70.35)": 0.0524,
+    "ADMET_score (\u00d70.20)": 0.1729,
+    "ML_confidence (\u00d70.20)": 0.0805,
+    "Pocket_druggability (\u00d70.15)": 0.0562,
+    "Literature_score (\u00d70.10)": 0.0,
+    "RNA_displacement (\u00d70.10 if TDP-43)": 0.05
+  },
+  "domain": "IN_DOMAIN",
+  "compound_name": "Caffeic_Acid",
+  "target_id": "6N37"
+}

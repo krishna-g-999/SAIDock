@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    78:
+HEADER 0  - Pocket Score                      : -0.0050
+HEADER 1  - Drug Score                        : 0.0020
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.5409
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4319
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 62.0000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 5.1667
+HEADER 9  - Pocket volume (Monte Carlo)       : 141.0836
+HEADER 10 - Pocket volume (convex hull)       : 0.8971
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 11.0000
+HEADER 13 - Number of apolar alpha sphere     :    12
+HEADER 14 - Proportion of apolar alpha sphere : 0.8000
+ATOM  17497   CB GLN A2233      78.320 118.269 166.957  0.00  0.00           C 0
+ATOM  14651  CD1 ILE A1867      80.272 113.847 162.083  0.00  0.00           C 0
+ATOM  17498   CG GLN A2233      78.775 117.352 168.086  0.00  0.00           C 0
+ATOM  14619  CG2 ILE A1863      79.939 111.678 167.380  0.00  0.00           C 0
+ATOM  17501  NE2 GLN A2233      80.994 117.869 167.337  0.77  4.37           N 0
+ATOM  14616    O ILE A1863      82.508 112.150 165.482  0.44  2.14           O 0
+ATOM  17462    O ARG A2229      78.417 117.954 162.337  0.65  6.43           O 0
+ATOM  17471   CA ILE A2230      80.844 119.245 162.705  0.00  0.00           C 0
+ATOM  14627  CG2 ILE A1864      84.620 116.827 166.244  0.00  0.00           C 0
+ATOM  17476  CG2 ILE A2230      83.118 119.508 163.719  0.00  0.00           C 0
+ATOM  14622   CA ILE A1864      83.899 114.424 166.234  0.00  0.00           C 0
+ATOM  14624    O ILE A1864      84.700 114.390 163.969  0.57  1.07           O 0
+ATOM  17475  CG1 ILE A2230      82.883 118.334 161.553  0.00  0.00           C 0
+TER
+END

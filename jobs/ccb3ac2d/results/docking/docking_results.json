@@ -1,0 +1,28 @@
+[
+  {
+    "best_score": -4.347,
+    "mean_top3": -4.249,
+    "all_scores": [
+      -4.347,
+      -4.215,
+      -4.185,
+      -4.114,
+      -4.064,
+      -4.01,
+      -3.963,
+      -3.957,
+      -3.939
+    ],
+    "n_poses": 9,
+    "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/ccb3ac2d/results/docking/pocket1_poses.pdbqt",
+    "pocket_id": 1,
+    "has_clash": false,
+    "pocket_drugg_score": 0.3748,
+    "center": [
+      -4.0680000000000005,
+      -10.978588235294119,
+      -1.6396470588235292
+    ],
+    "engine": "AutoDock Vina"
+  }
+]

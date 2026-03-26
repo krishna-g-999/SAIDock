@@ -1,0 +1,387 @@
+{
+  "hbonds": 35,
+  "hydrophobic": 41,
+  "interactions": [
+    {
+      "residue": "PHE441",
+      "type": "HBond",
+      "distance": 3.08
+    },
+    {
+      "residue": "ILE467",
+      "type": "HBond",
+      "distance": 2.49
+    },
+    {
+      "residue": "THR469",
+      "type": "HBond",
+      "distance": 3.49
+    },
+    {
+      "residue": "TYR769",
+      "type": "HBond",
+      "distance": 2.55
+    },
+    {
+      "residue": "SER472",
+      "type": "HBond",
+      "distance": 3.32
+    },
+    {
+      "residue": "ASN442",
+      "type": "HBond",
+      "distance": 3.33
+    },
+    {
+      "residue": "HIS466",
+      "type": "HBond",
+      "distance": 3.27
+    },
+    {
+      "residue": "THR468",
+      "type": "HBond",
+      "distance": 3.2
+    },
+    {
+      "residue": "HIS486",
+      "type": "HBond",
+      "distance": 3.37
+    },
+    {
+      "residue": "HIS487",
+      "type": "HBond",
+      "distance": 2.5
+    },
+    {
+      "residue": "SER484",
+      "type": "HBond",
+      "distance": 3.3
+    },
+    {
+      "residue": "SER485",
+      "type": "HBond",
+      "distance": 2.63
+    },
+    {
+      "residue": "ARG692",
+      "type": "HBond",
+      "distance": 3.35
+    },
+    {
+      "residue": "ARG125",
+      "type": "HBond",
+      "distance": 2.94
+    },
+    {
+      "residue": "ASN443",
+      "type": "HBond",
+      "distance": 3.15
+    },
+    {
+      "residue": "GLY691",
+      "type": "HBond",
+      "distance": 3.16
+    },
+    {
+      "residue": "GLY185",
+      "type": "HBond",
+      "distance": 2.72
+    },
+    {
+      "residue": "ASP187",
+      "type": "HBond",
+      "distance": 2.96
+    },
+    {
+      "residue": "SER191",
+      "type": "HBond",
+      "distance": 3.27
+    },
+    {
+      "residue": "ASN192",
+      "type": "HBond",
+      "distance": 3.18
+    },
+    {
+      "residue": "ARG334",
+      "type": "HBond",
+      "distance": 3.16
+    },
+    {
+      "residue": "LYS684",
+      "type": "HBond",
+      "distance": 3.12
+    },
+    {
+      "residue": "TYR804",
+      "type": "HBond",
+      "distance": 2.64
+    },
+    {
+      "residue": "ARG217",
+      "type": "HBond",
+      "distance": 3.01
+    },
+    {
+      "residue": "ASP215",
+      "type": "HBond",
+      "distance": 3.08
+    },
+    {
+      "residue": "ARG193",
+      "type": "HBond",
+      "distance": 3.26
+    },
+    {
+      "residue": "HIS149",
+      "type": "HBond",
+      "distance": 3.37
+    },
+    {
+      "residue": "GLU690",
+      "type": "HBond",
+      "distance": 3.47
+    },
+    {
+      "residue": "ARG123",
+      "type": "HBond",
+      "distance": 3.27
+    },
+    {
+      "residue": "TYR134",
+      "type": "HBond",
+      "distance": 2.97
+    },
+    {
+      "residue": "TYR126",
+      "type": "HBond",
+      "distance": 3.17
+    },
+    {
+      "residue": "HIS128",
+      "type": "HBond",
+      "distance": 3.24
+    },
+    {
+      "residue": "ASN130",
+      "type": "HBond",
+      "distance": 3.03
+    },
+    {
+      "residue": "GLU155",
+      "type": "HBond",
+      "distance": 3.25
+    },
+    {
+      "residue": "LYS158",
+      "type": "HBond",
+      "distance": 2.75
+    },
+    {
+      "residue": "ARG692",
+      "type": "Hydrophobic",
+      "distance": 4.35
+    },
+    {
+      "residue": "TYR769",
+      "type": "Hydrophobic",
+      "distance": 4.23
+    },
+    {
+      "residue": "PHE441",
+      "type": "Hydrophobic",
+      "distance": 4.1
+    },
+    {
+      "residue": "THR469",
+      "type": "Hydrophobic",
+      "distance": 4.31
+    },
+    {
+      "residue": "THR468",
+      "type": "Hydrophobic",
+      "distance": 4.47
+    },
+    {
+      "residue": "HIS466",
+      "type": "Hydrophobic",
+      "distance": 4.5
+    },
+    {
+      "residue": "TYR440",
+      "type": "Hydrophobic",
+      "distance": 4.31
+    },
+    {
+      "residue": "ILE467",
+      "type": "Hydrophobic",
+      "distance": 3.73
+    },
+    {
+      "residue": "SER484",
+      "type": "Hydrophobic",
+      "distance": 4.23
+    },
+    {
+      "residue": "ASP521",
+      "type": "Hydrophobic",
+      "distance": 4.26
+    },
+    {
+      "residue": "HIS486",
+      "type": "Hydrophobic",
+      "distance": 4.33
+    },
+    {
+      "residue": "HIS487",
+      "type": "Hydrophobic",
+      "distance": 4.46
+    },
+    {
+      "residue": "ASN443",
+      "type": "Hydrophobic",
+      "distance": 4.06
+    },
+    {
+      "residue": "GLY691",
+      "type": "Hydrophobic",
+      "distance": 4.29
+    },
+    {
+      "residue": "ASN442",
+      "type": "Hydrophobic",
+      "distance": 4.23
+    },
+    {
+      "residue": "GLY124",
+      "type": "Hydrophobic",
+      "distance": 4.45
+    },
+    {
+      "residue": "ARG125",
+      "type": "Hydrophobic",
+      "distance": 4.14
+    },
+    {
+      "residue": "HIS149",
+      "type": "Hydrophobic",
+      "distance": 3.34
+    },
+    {
+      "residue": "GLU690",
+      "type": "Hydrophobic",
+      "distance": 4.26
+    },
+    {
+      "residue": "SER447",
+      "type": "Hydrophobic",
+      "distance": 4.22
+    },
+    {
+      "residue": "PHE762",
+      "type": "Hydrophobic",
+      "distance": 3.62
+    },
+    {
+      "residue": "PHE446",
+      "type": "Hydrophobic",
+      "distance": 4.47
+    },
+    {
+      "residue": "GLN683",
+      "type": "Hydrophobic",
+      "distance": 4.17
+    },
+    {
+      "residue": "LYS684",
+      "type": "Hydrophobic",
+      "distance": 4.31
+    },
+    {
+      "residue": "SER333",
+      "type": "Hydrophobic",
+      "distance": 3.75
+    },
+    {
+      "residue": "GLY185",
+      "type": "Hydrophobic",
+      "distance": 4.45
+    },
+    {
+      "residue": "ASP187",
+      "type": "Hydrophobic",
+      "distance": 4.49
+    },
+    {
+      "residue": "ARG217",
+      "type": "Hydrophobic",
+      "distance": 4.41
+    },
+    {
+      "residue": "ALA186",
+      "type": "Hydrophobic",
+      "distance": 4.15
+    },
+    {
+      "residue": "SER191",
+      "type": "Hydrophobic",
+      "distance": 4.38
+    },
+    {
+      "residue": "ASN192",
+      "type": "Hydrophobic",
+      "distance": 4.12
+    },
+    {
+      "residue": "ARG334",
+      "type": "Hydrophobic",
+      "distance": 4.31
+    },
+    {
+      "residue": "TYR804",
+      "type": "Hydrophobic",
+      "distance": 4.35
+    },
+    {
+      "residue": "CYS153",
+      "type": "Hydrophobic",
+      "distance": 4.47
+    },
+    {
+      "residue": "TYR126",
+      "type": "Hydrophobic",
+      "distance": 4.46
+    },
+    {
+      "residue": "HIS128",
+      "type": "Hydrophobic",
+      "distance": 4.47
+    },
+    {
+      "residue": "ARG123",
+      "type": "Hydrophobic",
+      "distance": 4.39
+    },
+    {
+      "residue": "ASN130",
+      "type": "Hydrophobic",
+      "distance": 4.33
+    },
+    {
+      "residue": "TYR134",
+      "type": "Hydrophobic",
+      "distance": 4.09
+    },
+    {
+      "residue": "SER150",
+      "type": "Hydrophobic",
+      "distance": 4.04
+    },
+    {
+      "residue": "GLU155",
+      "type": "Hydrophobic",
+      "distance": 4.48
+    }
+  ],
+  "method": "distance_fallback"
+}

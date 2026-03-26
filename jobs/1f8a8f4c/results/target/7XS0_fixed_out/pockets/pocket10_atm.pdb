@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : -0.0101
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.9452
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5538
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 9.8571
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 3.4286
+HEADER 9  - Pocket volume (Monte Carlo)       : 142.8399
+HEADER 10 - Pocket volume (convex hull)       : 0.7947
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0667
+ATOM   2007   CB LYS A 269     -41.793 -21.559 -22.141  0.00  0.00           C 0
+ATOM   1998    O LEU A 268     -44.249 -18.500 -21.153  0.00  0.00           O 0
+ATOM   1993  OG1 THR A 267     -46.879 -17.219 -24.375  0.58  7.50           O 0
+ATOM   2088   CB ALA A 278     -47.651 -20.922 -21.124  0.00  0.00           C 0
+ATOM   1807    N GLY A 244     -42.067 -19.337 -28.422  0.54  1.09           N 0
+ATOM   1790  OE1 GLU A 241     -40.811 -22.901 -25.843  0.62  3.21           O 0
+ATOM   1994  CG2 THR A 267     -45.786 -16.820 -26.484  0.00  0.00           C 0
+ATOM   2003    N LYS A 269     -42.219 -19.124 -21.923  0.00  0.00           N 0
+ATOM   1787   CB GLU A 241     -39.378 -20.836 -24.914  0.00  0.00           C 0
+ATOM   1991    O THR A 267     -43.277 -15.783 -24.971  0.00  0.00           O 0
+ATOM   1799    N ASN A 243     -41.936 -16.794 -27.312  0.00  0.00           N 0
+ATOM   2010   CE LYS A 269     -42.400 -24.450 -23.371  0.00  0.00           C 0
+ATOM   1997    C LEU A 268     -43.202 -18.241 -21.758  0.00  0.00           C 0
+TER
+END

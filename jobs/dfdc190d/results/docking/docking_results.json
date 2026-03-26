@@ -1,0 +1,28 @@
+[
+  {
+    "best_score": -6.348,
+    "mean_top3": -6.267,
+    "all_scores": [
+      -6.348,
+      -6.228,
+      -6.225,
+      -6.187,
+      -5.934,
+      -5.581,
+      -5.401,
+      -5.298,
+      -5.207
+    ],
+    "n_poses": 9,
+    "pose_file": "/home/krishnasalini-rs/SAIDock/web/jobs/dfdc190d/results/docking/pocket3_poses.pdbqt",
+    "pocket_id": 3,
+    "has_clash": false,
+    "pocket_drugg_score": 0.669,
+    "center": [
+      28.172922347111566,
+      -9.814716142673408,
+      14.868579852911491
+    ],
+    "engine": "AutoDock Vina"
+  }
+]

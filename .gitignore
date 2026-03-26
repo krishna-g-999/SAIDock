@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+nohup.out
+*.log
+*.tmp
+jobs/*/results/docking/*.pdbqt
+jobs/*/results/docking/*.pdb
+jobs/*/tmp/
+.env
+.streamlit/secrets.toml

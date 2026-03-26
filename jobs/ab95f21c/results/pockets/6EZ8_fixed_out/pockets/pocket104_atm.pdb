@@ -1,0 +1,50 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   104:
+HEADER 0  - Pocket Score                      : -0.0333
+HEADER 1  - Drug Score                        : 0.0017
+HEADER 2  - Number of alpha spheres           :    43
+HEADER 3  - Mean alpha-sphere radius          : 3.7435
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4326
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 48.1667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.4167
+HEADER 9  - Pocket volume (Monte Carlo)       : 426.7773
+HEADER 10 - Pocket volume (convex hull)       : 83.4729
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 8.0000
+HEADER 13 - Number of apolar alpha sphere     :     9
+HEADER 14 - Proportion of apolar alpha sphere : 0.2093
+ATOM  11782   CB PHE A1496      57.951 103.523 145.006  0.00  0.00           C 0
+ATOM  11778    N PHE A1496      56.891 103.464 142.800  0.53  2.19           N 0
+ATOM  11804  CD2 LEU A1498      61.866 100.257 143.089  0.00  0.00           C 0
+ATOM  12040  NH2 ARG A1531      56.724  96.561 142.761  0.00  0.00           N 0
+ATOM  11742    O MET A1491      56.784 101.808 147.512  0.39  2.14           O 0
+ATOM  11785  CD2 PHE A1496      60.132 103.575 146.224  0.00  0.00           C 0
+ATOM  12008  CG1 VAL A1527      60.379  98.271 148.393  0.00  0.00           C 0
+ATOM  11753   SD MET A1492      55.365  95.303 148.739  0.00  0.00           S 0
+ATOM  12029   CB ALA A1530      59.263  91.879 147.501  0.00  0.00           C 0
+ATOM  12039  NH1 ARG A1531      56.889  94.926 141.158  0.00  0.00           N 0
+ATOM  11752   CG MET A1492      55.320  96.896 147.899  0.00  0.00           C 0
+ATOM  11758    O ASN A1493      54.028  99.767 143.832  0.67  6.43           O 0
+ATOM  11755    N ASN A1493      54.306 100.405 146.385  0.00  0.00           N 0
+ATOM  11766    O SER A1494      54.374 100.591 140.777  0.41  9.64           O 0
+ATOM  12037   NE ARG A1531      58.791  95.783 142.130  0.67  4.37           N 0
+ATOM  11781    O PHE A1496      59.537 103.267 142.247  0.42  4.29           O 0
+ATOM  11748   CA MET A1492      55.605  99.419 148.165  0.00  0.00           C 0
+ATOM  11803  CD1 LEU A1498      62.062  99.746 140.658  0.00  0.00           C 0
+ATOM  11774   CG GLU A1495      56.612 104.224 138.944  0.00  0.00           C 0
+ATOM  12038   CZ ARG A1531      57.468  95.754 142.018  0.00  0.00           C 0
+ATOM  12028    O ALA A1530      59.824  90.759 144.534  0.00  6.43           O 0
+ATOM  11770   CA GLU A1495      55.402 103.174 140.923  0.00  0.00           C 0
+ATOM  12006    O VAL A1527      61.623  95.478 147.462  0.53  3.21           O 0
+ATOM  12034   CB ARG A1531      61.269  94.466 143.258  0.00  0.00           C 0
+ATOM  12396  CD2 LEU A1577      64.659  96.179 142.194  0.00  0.00           C 0
+ATOM  11825  CD1 LEU A1501      65.027  99.373 147.037  0.00  0.00           C 0
+ATOM  12027    C ALA A1530      60.400  91.543 145.291  0.00  0.00           C 0
+ATOM  12030    N ARG A1531      61.012  92.636 144.843  0.00  0.00           N 0
+TER
+END

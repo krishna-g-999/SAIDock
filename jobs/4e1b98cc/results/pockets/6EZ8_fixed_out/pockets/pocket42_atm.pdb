@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    42:
+HEADER 0  - Pocket Score                      : 0.0447
+HEADER 1  - Drug Score                        : 0.0022
+HEADER 2  - Number of alpha spheres           :    24
+HEADER 3  - Mean alpha-sphere radius          : 3.6654
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4354
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 44.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.7500
+HEADER 9  - Pocket volume (Monte Carlo)       : 124.5874
+HEADER 10 - Pocket volume (convex hull)       : 2.3476
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 14.0000
+HEADER 13 - Number of apolar alpha sphere     :    15
+HEADER 14 - Proportion of apolar alpha sphere : 0.6250
+ATOM  17844  CD2 LEU A2274      70.908 126.443 172.294  0.00  0.00           C 0
+ATOM  17876   CB GLN A2279      68.148 127.177 176.101  0.00  0.00           C 0
+ATOM  17897   CB MET A2282      66.884 131.508 174.969  0.00  0.00           C 0
+ATOM  17875    O GLN A2279      66.088 127.917 174.346  0.00  0.00           O 0
+ATOM  17879  OE1 GLN A2279      70.840 126.757 175.602  1.00  8.57           O 0
+ATOM  17843  CD1 LEU A2274      70.250 127.517 170.144  0.00  0.00           C 0
+ATOM  17895    C MET A2282      65.787 131.517 172.703  0.00  0.00           C 0
+ATOM  17901    N VAL A2283      65.242 130.420 172.178  0.86  1.09           N 0
+ATOM  17896    O MET A2282      66.399 132.343 172.018  0.69  1.07           O 0
+ATOM  17935  NE1 TRP A2286      69.831 134.150 171.218  0.70  5.47           N 0
+ATOM  17570   CB PRO A2241      73.649 128.960 172.722  0.00  0.00           C 0
+ATOM  17568    C PRO A2241      74.539 131.305 172.455  0.00  0.00           C 0
+ATOM  17581  NE2 GLN A2242      72.054 132.516 176.560  0.67  3.28           N 0
+ATOM  17933  CD1 TRP A2286      68.787 133.722 170.436  0.00  0.00           C 0
+ATOM  17571   CG PRO A2241      73.363 128.736 174.143  0.00  0.00           C 0
+ATOM  17878   CD GLN A2279      70.611 127.260 176.700  0.00  0.00           C 0
+ATOM  17569    O PRO A2241      74.103 131.643 171.348  0.00  0.00           O 0
+ATOM  17604   SD MET A2245      71.857 131.240 167.281  0.00  0.00           S 0
+TER
+END

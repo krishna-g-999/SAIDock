@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    39:
+HEADER 0  - Pocket Score                      : -0.1446
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    21
+HEADER 3  - Mean alpha-sphere radius          : 3.9741
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6753
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -20.2500
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Amino Acid based volume Score     : 3.8750
+HEADER 9  - Pocket volume (Monte Carlo)       : 240.8909
+HEADER 10 - Pocket volume (convex hull)       : 7.7260
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 1.0000
+HEADER 13 - Number of apolar alpha sphere     :     2
+HEADER 14 - Proportion of apolar alpha sphere : 0.0952
+ATOM   7067   CA ASP A 462     -42.972  43.744  49.291  0.00  0.00           C 0
+ATOM   7053    O VAL A 461     -41.139  45.503  50.422  0.78  2.14           O 0
+ATOM   7020    O SER A 459     -42.506  49.096  53.437  0.00  0.00           O 0
+ATOM   1226    O PRO A  81     -42.497  43.951  57.604  0.68  7.50           O 0
+ATOM   1266   CE LYS A  83     -39.127  44.800  53.867  0.00  0.00           C 0
+ATOM   1267   NZ LYS A  83     -39.389  44.673  52.410  0.00  0.00           N 0
+ATOM   1265   CD LYS A  83     -39.250  46.246  54.362  0.00  0.00           C 0
+ATOM   7072  OD1 ASP A 462     -45.299  41.764  49.828  0.00  0.00           O 0
+ATOM   7069    O ASP A 462     -41.720  42.216  50.649  0.00  7.50           O 0
+ATOM   7070   CB ASP A 462     -43.955  43.048  48.341  0.00  0.00           C 0
+ATOM   6602  OE2 GLU A 433     -46.955  46.791  46.270  0.56  4.29           O 0
+ATOM   7066    N ASP A 462     -42.548  45.020  48.718  0.56  2.19           N 0
+ATOM   7031    O LYS A 460     -43.779  48.643  48.945  0.70  1.07           O 0
+ATOM   7052    C VAL A 461     -41.708  45.824  49.374  0.00  0.00           C 0
+ATOM   7335  OD1 ASP A 479     -39.163  41.426  53.521  0.00  8.57           O 0
+ATOM   7030    C LYS A 460     -42.879  48.869  49.755  0.00  0.00           C 0
+ATOM   7029   CA LYS A 460     -43.083  49.948  50.815  0.00  0.00           C 0
+TER
+END

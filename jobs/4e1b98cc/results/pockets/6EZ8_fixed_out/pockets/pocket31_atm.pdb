@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    31:
+HEADER 0  - Pocket Score                      : 0.0744
+HEADER 1  - Drug Score                        : 0.0010
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.5852
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5146
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 53.5000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 4.3333
+HEADER 9  - Pocket volume (Monte Carlo)       : 59.3527
+HEADER 10 - Pocket volume (convex hull)       : 0.2735
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 15.0000
+HEADER 13 - Number of apolar alpha sphere     :    16
+HEADER 14 - Proportion of apolar alpha sphere : 0.8889
+ATOM  16457    O HIS A2098     113.604 107.865 155.685  0.00  0.00           O 0
+ATOM  16483   CB VAL A2101     110.691 104.057 157.397  0.00  0.00           C 0
+ATOM  16448    O GLN A2097     111.830 104.623 153.890  0.00  0.00           O 0
+ATOM  16093  CG1 VAL A2050     113.904 101.544 155.060  0.00  0.00           C 0
+ATOM  16461  CD2 HIS A2098     116.851 106.121 155.037  0.00  0.00           C 0
+ATOM  16110  CD1 LEU A2053     116.002 104.877 160.825  0.00  0.00           C 0
+ATOM  16089   CA VAL A2050     116.215 101.387 156.101  0.00  0.00           C 0
+ATOM  16094  CG2 VAL A2050     115.783 102.878 154.153  0.00  0.00           C 0
+ATOM  16490   CB MET A2102     113.719 108.178 159.002  0.00  0.00           C 0
+ATOM  16484  CG1 VAL A2101     110.825 102.947 158.426  0.00  0.00           C 0
+ATOM  16091    O VAL A2050     114.948 100.137 157.717  0.00  0.00           O 0
+ATOM  16108   CB LEU A2053     115.707 102.443 160.830  0.00  0.00           C 0
+ATOM  16111  CD2 LEU A2053     113.831 103.923 161.474  0.00  0.00           C 0
+ATOM  16486    N MET A2102     111.608 107.043 158.863  0.00  0.00           N 0
+TER
+END

@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   123:
+HEADER 0  - Pocket Score                      : -0.0481
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 3.8475
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5845
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 40.6667
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 4.3333
+HEADER 9  - Pocket volume (Monte Carlo)       : 150.2602
+HEADER 10 - Pocket volume (convex hull)       : 2.5291
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 9.0000
+HEADER 13 - Number of apolar alpha sphere     :    10
+HEADER 14 - Proportion of apolar alpha sphere : 0.5263
+ATOM    434   CB CYS A  56     149.751  89.693 104.332  0.00  0.00           C 0
+ATOM    435   SG CYS A  56     151.167  90.637 104.842  0.00  0.00           S 0
+ATOM    460   NZ LYS A  59     148.921  93.447 108.718  0.72  9.84           N 0
+ATOM     82  CD1 LEU A  10     152.135  88.625 109.243  0.00  0.00           C 0
+ATOM    425   CB GLU A  55     144.396  88.815 105.137  0.00  0.00           C 0
+ATOM    428  OE1 GLU A  55     143.155  87.991 107.444  0.50  9.64           O 0
+ATOM    459   CE LYS A  59     147.938  93.765 107.650  0.00  0.00           C 0
+ATOM   5979  CG2 VAL A 770     144.009  93.636 107.496  0.00  0.00           C 0
+ATOM   5978  CG1 VAL A 770     142.734  91.734 106.594  0.00  0.00           C 0
+ATOM    430    N CYS A  56     147.411  89.626 103.703  0.00  0.00           N 0
+ATOM    431   CA CYS A  56     148.562  90.508 103.832  0.00  0.00           C 0
+ATOM    423    C GLU A  55     146.174  90.077 103.889  0.00  0.00           C 0
+ATOM    404    O VAL A  52     147.852  86.342 105.755  0.68  1.07           O 0
+ATOM    424    O GLU A  55     145.942  91.265 104.100  0.00  0.00           O 0
+TER
+END

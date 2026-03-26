@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   135:
+HEADER 0  - Pocket Score                      : -0.0709
+HEADER 1  - Drug Score                        : 0.0030
+HEADER 2  - Number of alpha spheres           :    22
+HEADER 3  - Mean alpha-sphere radius          : 4.0319
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6099
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 43.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 274.3657
+HEADER 10 - Pocket volume (convex hull)       : 10.2920
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 18.0000
+HEADER 13 - Number of apolar alpha sphere     :    19
+HEADER 14 - Proportion of apolar alpha sphere : 0.8636
+ATOM  13269   CB THR A1690      85.660  72.673 127.182  0.00  0.00           C 0
+ATOM  13271  CG2 THR A1690      85.537  71.401 128.007  0.00  0.00           C 0
+ATOM  13287   SG CYS A1693      88.576  74.656 131.915  0.00  0.00           S 0
+ATOM  13286   CB CYS A1693      87.212  75.195 130.900  0.00  0.00           C 0
+ATOM  13715   CG TRP A1749      97.363  73.310 128.528  0.00  0.00           C 0
+ATOM  13655   OH TYR A1741      93.401  75.998 128.800  0.41  7.50           O 0
+ATOM  13714   CB TRP A1749      98.140  73.531 127.297  0.00  0.00           C 0
+ATOM  13717  CD2 TRP A1749      96.614  72.142 128.857  0.00  0.00           C 0
+ATOM  13720  CE3 TRP A1749      96.347  70.944 128.191  0.00  0.00           C 0
+ATOM  13296  OE2 GLU A1694      90.161  75.123 124.345  0.00  0.00           O 0
+ATOM  13652  CE1 TYR A1741      93.225  74.262 130.412  0.00  0.00           C 0
+ATOM  13825  CG2 THR A1763      87.697  71.098 132.234  0.00  0.00           C 0
+ATOM  13841   CZ PHE A1765      91.688  69.081 131.478  0.00  0.00           C 0
+ATOM  13722  CZ3 TRP A1749      95.548  70.012 128.808  0.00  0.00           C 0
+ATOM  13723  CH2 TRP A1749      95.012  70.244 130.074  0.00  0.00           C 0
+ATOM  13650  CD1 TYR A1741      92.787  73.820 131.640  0.00  0.00           C 0
+ATOM  13293   CG GLU A1694      89.725  76.433 126.286  0.00  0.00           C 0
+ATOM  13268    O THR A1690      86.444  75.522 126.864  0.51  1.07           O 0
+ATOM  13654   CZ TYR A1741      92.968  75.557 130.024  0.00  0.00           C 0
+ATOM  13840  CE2 PHE A1765      92.234  70.177 132.104  0.00  0.00           C 0
+TER
+END

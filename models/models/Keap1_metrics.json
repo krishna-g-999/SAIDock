@@ -1,0 +1,31 @@
+{
+  "target_id": "Keap1",
+  "n_samples": 425,
+  "n_active": 411,
+  "n_inactive": 14,
+  "cv_auc_mean": 0.8992,
+  "cv_auc_std": 0.0541,
+  "top5_features": [
+    [
+      "FP_1452",
+      0.0255
+    ],
+    [
+      "BertzCT",
+      0.025
+    ],
+    [
+      "Kappa2",
+      0.0215
+    ],
+    [
+      "TPSA",
+      0.0213
+    ],
+    [
+      "FractionCSP3",
+      0.0187
+    ]
+  ],
+  "status": "trained"
+}

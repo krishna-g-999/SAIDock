@@ -1,0 +1,39 @@
+{
+  "target_id": "TDP43_pept",
+  "n_samples": 13,
+  "n_active": 5,
+  "n_inactive": 8,
+  "class_imbalance": 1.6,
+  "cv_roc_auc_mean": 1.0,
+  "cv_roc_auc_std": 0.0,
+  "cv_auprc_mean": 1.0,
+  "cv_auprc_std": 0.0,
+  "cv_mcc_mean": 1.0,
+  "cv_mcc_std": 0.0,
+  "scaffold_roc_auc": 1.0,
+  "auprc_baseline": 0.3846,
+  "top5_features": [
+    [
+      "Kappa1",
+      0.0796
+    ],
+    [
+      "LogP",
+      0.0614
+    ],
+    [
+      "AromaticRings",
+      0.0601
+    ],
+    [
+      "BertzCT",
+      0.0593
+    ],
+    [
+      "TPSA",
+      0.0546
+    ]
+  ],
+  "status": "trained",
+  "note": "ROC-AUC is reported for comparison but AUPRC is the primary metric due to class imbalance. Scaffold-split AUC tests generalisation to structurally dissimilar compounds."
+}

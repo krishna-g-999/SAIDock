@@ -1,0 +1,8 @@
+{
+  "roc_auc": 1.0,
+  "roc_auc_std": 0.0,
+  "mcc_train": 0.95978240555339,
+  "n_active": 189,
+  "n_inactive": 27,
+  "n_decoys": 23
+}

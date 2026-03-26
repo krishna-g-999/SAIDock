@@ -1,0 +1,39 @@
+{
+  "target_id": "Parkin_UBL",
+  "n_samples": 11,
+  "n_active": 2,
+  "n_inactive": 9,
+  "class_imbalance": 4.5,
+  "cv_roc_auc_mean": 0.5,
+  "cv_roc_auc_std": 0.0,
+  "cv_auprc_mean": 0.1833,
+  "cv_auprc_std": 0.0167,
+  "cv_mcc_mean": 0.0,
+  "cv_mcc_std": 0.0,
+  "scaffold_roc_auc": 0.5,
+  "auprc_baseline": 0.1818,
+  "top5_features": [
+    [
+      "Chi0v",
+      0.094
+    ],
+    [
+      "FractionCSP3",
+      0.0769
+    ],
+    [
+      "LogP",
+      0.0732
+    ],
+    [
+      "Kappa2",
+      0.0684
+    ],
+    [
+      "HBA",
+      0.0598
+    ]
+  ],
+  "status": "trained",
+  "note": "ROC-AUC is reported for comparison but AUPRC is the primary metric due to class imbalance. Scaffold-split AUC tests generalisation to structurally dissimilar compounds."
+}
